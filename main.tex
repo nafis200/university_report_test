@@ -1,0 +1,41 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{geometry}
+\geometry{margin=1.2in}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Table of Contents Customization ---
+\usepackage{tocloft}
+
+% 1. Center the "Contents" title
+\renewcommand{\contentsname}{\centering Contents}
+
+% 2. Add dots for Chapter entries (by default, report class doesn't show them for chapters)
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+\graphicspath{ {./images/} } 
+
+\begin{document}
+
+% --- 1. Front Pages (Roman numbering i, ii, iii) ---
+% Note: Ensure 'Start.tex', 'introduction.tex', etc. exist in your folder
+\include{Start} 
+\pagenumbering{roman}     
+
+\include{certificate}    
+\include{acknowledgement} 
+\include{preface}         
+
+\newpage
+\tableofcontents           % This will now be centered with dots
+
+\newpage
+\pagenumbering{arabic}    
+
+\chapter{Introduction}     
+\chapter{Background Study}
+
+\end{document}
