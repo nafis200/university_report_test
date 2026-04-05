@@ -3,39 +3,48 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} 
 \usepackage{geometry}
-\geometry{margin=1.2in}
+\geometry{margin=1.2in, bottom=1.5in}
 \usepackage{setspace}
 \onehalfspacing
-
-% --- Table of Contents Customization ---
 \usepackage{tocloft}
+\usepackage{fancyhdr}
 
-% 1. Center the "Contents" title
-\renewcommand{\contentsname}{\centering Contents}
+\pagestyle{fancy}
+\fancyhf{} 
+\renewcommand{\headrulewidth}{0pt} 
+\fancyfoot[L]{JUST Undergraduate Final Admission System} 
+\fancyfoot[R]{Page | \thepage} 
 
-% 2. Add dots for Chapter entries (by default, report class doesn't show them for chapters)
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[L]{JUST Undergraduate Final Admission System}
+  \fancyfoot[R]{Page | \thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
 
 \graphicspath{ {./images/} } 
 
 \begin{document}
 
-% --- 1. Front Pages (Roman numbering i, ii, iii) ---
-% Note: Ensure 'Start.tex', 'introduction.tex', etc. exist in your folder
-\include{Start} 
-\pagenumbering{roman}     
+\pagenumbering{roman}
+\pagestyle{empty}
 
-\include{certificate}    
-\include{acknowledgement} 
-\include{preface}         
+\include{Start}
+\include{certificate}
+\include{acknowledgement}
+\include{abstract}
+\include{preface}
 
 \newpage
-\tableofcontents           % This will now be centered with dots
+\tableofcontents           
 
 \newpage
 \pagenumbering{arabic}    
+\pagestyle{fancy}
 
-\chapter{Introduction}     
-\chapter{Background Study}
+\chapter{Introduction}
+\input{chapters/chapter1/background}
+\input{chapters/chapter1/motivation}
+\input{chapters/chapter1/objectives}
 
 \end{document}

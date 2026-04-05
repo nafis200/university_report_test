@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  2 APR 2026 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  5 APR 2026 19:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -106,27 +106,38 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip81
 \cfttabindent=\skip82
 \cfttabnumwidth=\skip83
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip84
+\f@nch@O@elh=\skip85
+\f@nch@O@erh=\skip86
+\f@nch@O@olh=\skip87
+\f@nch@O@orh=\skip88
+\f@nch@O@elf=\skip89
+\f@nch@O@erf=\skip90
+\f@nch@O@olf=\skip91
+\f@nch@O@orf=\skip92
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box51
-) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./preface.aux))
+) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count268
@@ -155,11 +166,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(86.72377pt, 424.06033pt, 86.72377pt)
-* v-part:(T,H,B)=(86.72377pt, 671.5993pt, 86.72377pt)
+* v-part:(T,H,B)=(86.72377pt, 649.91808pt, 108.405pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=424.06033pt
-* \textheight=671.5993pt
+* \textheight=649.91808pt
 * \oddsidemargin=14.45378pt
 * \evensidemargin=14.45378pt
 * \topmargin=-22.54622pt
@@ -206,9 +217,16 @@ No file certificate.tex.
 
 
 ]
+\openout2 = `abstract.aux'.
+
+
+No file abstract.tex.
 \openout2 = `preface.aux'.
 
- (./preface.tex) [2
+(./preface.tex) [2
+
+
+
 
 
 
@@ -228,31 +246,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-[1
+(./chapters/chapter1/background.tex) (./chapters/chapter1/motivation.tex [1
 
-]
-Chapter 2.
-[2
-
-] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./preface.aux))
+]) (./chapters/chapter1/objectives.tex [2]) [3] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2344 strings out of 476182
- 38649 string characters out of 5795596
- 1928975 words of memory out of 5000000
- 24332 multiletter control sequences out of 15000+600000
- 562929 words of font info for 52 fonts, out of 8000000 for 9000
+ 2577 strings out of 476182
+ 42644 string characters out of 5795596
+ 1929975 words of memory out of 5000000
+ 24546 multiletter control sequences out of 15000+600000
+ 563266 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,5n,65p,687b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (6 pages, 52486 bytes).
+ 57i,11n,65p,890b,281s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/nafis-ahamed/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on main.pdf (7 pages, 60393 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
