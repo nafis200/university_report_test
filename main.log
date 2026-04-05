@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  5 APR 2026 19:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  5 APR 2026 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -121,7 +121,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box51
-) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux))
+) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter2/ch2_main.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -237,36 +237,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 1.
-)
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
  [3
 
 
-]
+])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [4]
 Chapter 1.
 (./chapters/chapter1/background.tex) (./chapters/chapter1/motivation.tex [1
 
-]) (./chapters/chapter1/objectives.tex [2]) [3] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux))
+]) (./chapters/chapter1/objectives.tex [2]) [3]
+\openout2 = `chapters/chapter2/ch2_main.aux'.
+
+ (./chapters/chapter2/ch2_main.tex
+Chapter 2.
+(./chapters/chapter2/1_introduction.tex [4
+
+
+]) (./chapters/chapter2/2_overall_description.tex [5] [6]) (./chapters/chapter2/3_user_classes.tex [7]) (./chapters/chapter2/4_constraints.tex) (./chapters/chapter2/5_external_interface.tex [8]) (./chapters/chapter2/6_system_features_admin.tex [9]) (./chapters/chapter2/7_system_features_dean.tex) (./chapters/chapter2/8_system_features_hall.tex [10]) (./chapters/chapter2/9_system_features_medical.tex) (./chapters/chapter2/10_system_features_registrar.tex) (./chapters/chapter2/11_system_features_applicant.tex [11]) (./chapters/chapter2/12_non_functional.tex)) [12] [13] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter2/ch2_main.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2577 strings out of 476182
- 42644 string characters out of 5795596
- 1929975 words of memory out of 5000000
- 24546 multiletter control sequences out of 15000+600000
+ 2675 strings out of 476182
+ 46792 string characters out of 5795596
+ 1933975 words of memory out of 5000000
+ 24600 multiletter control sequences out of 15000+600000
  563266 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,11n,65p,890b,281s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,890b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/nafis-ahamed/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (7 pages, 60393 bytes).
+Output written on main.pdf (18 pages, 74116 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

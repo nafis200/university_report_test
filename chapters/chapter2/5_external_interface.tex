@@ -1,0 +1,25 @@
+\section{External Interface Requirements}
+
+\subsection{User Interfaces}
+The system provides a web-based user interface designed for simplicity and usability. Interfaces are role-based, ensuring that each user (Admin, Dean Office, Hall Office, Medical Office, Registrar Office, Applicant) can only access permitted features.
+
+The interface includes:
+\begin{itemize}
+    \item Clear navigation and dashboard
+    \item Form validation with proper instructions
+    \item Role-specific panels for efficient task completion
+\end{itemize}
+
+\subsection{Integration with Existing Data}
+The system supports integration with pre-existing admission data provided by the administration in Excel format. The admin uploads this data, which is then used to generate applicant accounts.
+
+\subsection{Integration with Internal Modules}
+All modules (Dean, Hall, Medical, Registrar) are interconnected and share a centralized database to ensure real-time updates and consistency.
+
+\subsection{Authentication and Authorization}
+The system implements secure authentication and role-based authorization:
+\begin{itemize}
+    \item Admin provides login credentials to users
+    \item Applicants log in using GST Application ID
+    \item Access control ensures users can only perform authorized actions
+\end{itemize}
