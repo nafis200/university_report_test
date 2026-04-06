@@ -1,11 +1,9 @@
 \subsubsection{View User Information}
 
-This use case allows the Admin to view detailed profiles and access levels of all users (Applicants and Staff) registered within the system.
+This use case allows the Admin to view detailed profiles and access levels of all users (Applicants and Staff) registered within the system. It is essential for verifying user identity, checking account status, and managing system-wide permissions in the \textit{JUST Undergraduate Final Admission System}.
 
 \begin{table}[htbp]
     \centering
-    \caption{Use Case Table: View User Information (UC-1.5)}
-    \label{tab:view_user_info}
     \renewcommand{\arraystretch}{1.5}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
@@ -13,18 +11,23 @@ This use case allows the Admin to view detailed profiles and access levels of al
         Use Case ID & UC-1.5 \\ \hline
         Use Case Name & View User Information \\ \hline
         Primary Actors & Admin \\ \hline
-        Goal in Context & To display the full profile details and role of a specific user. \\ \hline
-        Precondition & Admin must be logged into the system with valid credentials. \\ \hline
-        Triggers & Need to verify user credentials or check account status. \\ \hline
+        Goal in Context & To display the full profile details, account status, and role of a specific user. \\ \hline
+        Precondition & Admin must be authenticated and signed into the administrative dashboard. \\ \hline
+        Post-condition & Detailed user information is retrieved from the database and displayed on the screen. \\ \hline
+        Triggers & Admin needs to verify user credentials or investigate a specific account's activity. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Visit the Admin dashboard.
-            \item Navigate to the 'User Management' or 'View Users' section.
-            \item Search for a specific user by ID or Email.
-            \item Click on the user's profile to see detailed information.
-            \item System fetches data from PostgreSQL and displays it on the UI.
+            \item The Admin navigates to the \textbf{User Management} or \textbf{All Users} section in the dashboard.
+            \item The Admin uses the search bar to find a specific user by their ID, Name, or Email.
+            \item The Admin clicks on the 'View Details' or 'Profile' icon of the selected user.
+            \item The Next.js API fetches the specific user's record from the PostgreSQL database via Prisma.
+            \item The system renders a detailed profile view including personal, contact, and role information.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Invalid Role:} Non-admin users attempting to access this section; Database error. \\ \hline
-        Frequency of Use & High frequency. \\ \hline
+        Exception & \textbf{User Not Found:} If the requested ID does not exist, the system displays a "Record Not Found" error message. \\ \hline
+        Frequency of Use & High (Used frequently for administrative oversight). \\ \hline
     \end{tabularx}
+    
+   
+    \caption{Use Case Table: View User Information (UC-1.5)}
+    \label{tab:use_case_view_user_info}
 \end{table}

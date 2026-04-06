@@ -2,11 +2,10 @@
 
 This use case describes the administrative process of permanently removing a user's record from the \textit{JUST Undergraduate Final Admission System}. It allows the Admin to maintain system integrity by deleting redundant, unauthorized, or incorrect accounts from the database.
 
-\begin{table}[htbp]
+\begin{table}[!htbp]
     \centering
-    \caption{Use Case Table: Delete User Information (UC-1.4)}
-    \label{tab:use_case_delete_user}
-    \renewcommand{\arraystretch}{1.5}
+    \small
+    \renewcommand{\arraystretch}{1.4}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
@@ -20,14 +19,18 @@ This use case describes the administrative process of permanently removing a use
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
             \item The Admin navigates to the \textbf{User Management} section in the dashboard.
-            \item The system fetches the list of all registered users.
+            \item The system fetches the list of all registered users from the database.
             \item The Admin identifies and selects the specific user to be deleted.
             \item The Admin clicks the \textbf{Delete} button associated with the user.
             \item A confirmation modal appears to prevent accidental deletion.
-            \item Upon confirmation, the backend executes the delete query.
+            \item Upon confirmation, the backend executes the delete query using Prisma.
             \item The system updates the UI and displays a success notification.
         \end{enumerate} \\ \hline
         Exception & \textbf{Deletion Failed:} If the user is linked to critical active records, the system prevents deletion and shows a "Constraint Error." \\ \hline
         Frequency of Use & Low to Medium (As needed for system cleanup). \\ \hline
     \end{tabularx}
+    
+    \caption{Use Case Table: Delete User Information (UC-1.4)}
+    \label{tab:use_case_delete_user}
 \end{table}
+\FloatBarrier

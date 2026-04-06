@@ -1,29 +1,35 @@
 \subsubsection{Update Profile}
 
-\begin{table}[htbp]
+This use case allows registered applicants to manage and modify their personal profile information within the \textit{JUST Undergraduate Final Admission System}. It ensures that applicants can keep their contact details and personal records up to date throughout the admission process.
+
+\begin{table}[!htbp]
     \centering
-    \caption{Use Case Table: Update Profile (UC-1.8)}
-    \label{tab:update_profile}
-    \renewcommand{\arraystretch}{1.5}
-    % এখানে tabularx ব্যবহার করা হয়েছে যা আপনার এররগুলো দূর করবে
-    \begin{tabularx}{\textwidth}{|p{4cm}|X|}
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-1.8 \\ \hline
         Use Case Name & Update Profile \\ \hline
         Primary Actors & Applicant \\ \hline
-        Goal in Context & Update user profile information. \\ \hline
-        Precondition & User must be signed in to the system. \\ \hline
-        Triggers & Requirement to update personal details. \\ \hline
+        Goal in Context & To successfully update and save the applicant's personal profile information. \\ \hline
+        Precondition & The applicant must be securely signed into the system. \\ \hline
+        Post-condition & The updated profile details are saved in the PostgreSQL database and reflected on the UI. \\ \hline
+        Triggers & The applicant needs to change or correct their personal details, such as phone number or address. \\ \hline
         Scenario & 
-        % itemize এর বদলে enumerate ব্যবহার করা হয়েছে যা টেবিলের ভেতরে বেশি স্টেবল
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Visit the dashboard.
-            \item Click on the profile section.
-            \item Modify the information fields.
-            \item Click on the save changes button.
+            \item The applicant navigates to the \textbf{Profile} or \textbf{Settings} section from the dashboard.
+            \item The system displays the current profile information in an editable form.
+            \item The applicant modifies the necessary information fields.
+            \item The applicant clicks the \textbf{Save Changes} or \textbf{Update Profile} button.
+            \item The system validates the input and updates the record via the Prisma ORM.
+            \item A success message is displayed, confirming the profile update.
         \end{enumerate} \\ \hline
-        Exception & Invalid role or session timeout. \\ \hline
-        Frequency of Use & High frequency. \\ \hline
+        Exception & \textbf{Session Timeout:} If the user is inactive for too long, the system redirects them to the login page without saving changes. \\ \hline
+        Frequency of Use & Medium to High (As needed by the applicant). \\ \hline
     \end{tabularx}
+    
+    \caption{Use Case Table: Update Profile (UC-1.8)}
+    \label{tab:use_case_update_profile}
 \end{table}
+\FloatBarrier
