@@ -44,3 +44,14 @@
 \contentsline {subsection}{\numberline {2.12.4}Maintainability}{12}{}%
 \contentsline {subsection}{\numberline {2.12.5}Usability}{12}{}%
 \contentsline {subsection}{\numberline {2.12.6}Reliability}{13}{}%
+\contentsline {chapter}{\numberline {3}System Design and Methodology}{14}{}%
+\contentsline {section}{\numberline {3.1}Use Case Diagram}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}User Management}{14}{}%
+\contentsline {subsubsection}{Sign in}{15}{}%
+\contentsline {subsubsection}{View Applicant List}{15}{}%
+\contentsline {subsubsection}{Update User Information}{17}{}%
+\contentsline {subsubsection}{Delete User Information}{17}{}%
+\contentsline {subsubsection}{View User Information}{17}{}%
+\contentsline {subsubsection}{Fill-up Application Form}{18}{}%
+\contentsline {subsubsection}{Download Application Form}{18}{}%
+\contentsline {subsubsection}{Update Profile}{18}{}%

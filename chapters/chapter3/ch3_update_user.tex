@@ -1,0 +1,30 @@
+\subsubsection{Update User Information}
+
+This use case describes the administrative process of modifying existing user data within the system. It ensures that the Admin can maintain accurate records for all institutional roles.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Use Case Table: Update User Information (UC-1.3)}
+    \label{tab:update_user_info}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-1.3 \\ \hline
+        Use Case Name & Update User Information \\ \hline
+        Primary Actors & Admin \\ \hline
+        Goal in Context & To modify or correct the information of any registered user. \\ \hline
+        Precondition & Admin must be securely authenticated and signed into the dashboard. \\ \hline
+        Triggers & Requirement to update credentials, roles, or personal details of a user. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Visit the Admin dashboard.
+            \item Search and select the specific user from the user management list.
+            \item Update the necessary information in the provided fields.
+            \item Click the \textbf{Update} button.
+            \item System performs backend validation and updates the PostgreSQL database via Prisma.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Invalid Role:} Attempted access by a non-admin user; \textbf{Validation Error:} Duplicate unique fields. \\ \hline
+        Frequency of Use & High frequency. \\ \hline
+    \end{tabularx}
+\end{table}

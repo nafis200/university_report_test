@@ -1,0 +1,29 @@
+\subsubsection{Update Profile}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Use Case Table: Update Profile (UC-1.8)}
+    \label{tab:update_profile}
+    \renewcommand{\arraystretch}{1.5}
+    % এখানে tabularx ব্যবহার করা হয়েছে যা আপনার এররগুলো দূর করবে
+    \begin{tabularx}{\textwidth}{|p{4cm}|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-1.8 \\ \hline
+        Use Case Name & Update Profile \\ \hline
+        Primary Actors & Applicant \\ \hline
+        Goal in Context & Update user profile information. \\ \hline
+        Precondition & User must be signed in to the system. \\ \hline
+        Triggers & Requirement to update personal details. \\ \hline
+        Scenario & 
+        % itemize এর বদলে enumerate ব্যবহার করা হয়েছে যা টেবিলের ভেতরে বেশি স্টেবল
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Visit the dashboard.
+            \item Click on the profile section.
+            \item Modify the information fields.
+            \item Click on the save changes button.
+        \end{enumerate} \\ \hline
+        Exception & Invalid role or session timeout. \\ \hline
+        Frequency of Use & High frequency. \\ \hline
+    \end{tabularx}
+\end{table}

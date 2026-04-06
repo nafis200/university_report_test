@@ -1,0 +1,26 @@
+\subsubsection{Fill-up Application Form}
+
+\begin{table}[htbp]
+\centering
+\caption{Use Case Table of Fill-up Application Form}
+\label{tab:fillup_form}
+\renewcommand{\arraystretch}{1.5} % রো-এর উচ্চতা একটু বাড়ানো হয়েছে পড়ার সুবিধার জন্য
+\begin{tabularx}{\textwidth}{|l|X|} % X কলামটি বাকি জায়গা অটোমেটিক দখল করবে
+\hline
+\rowcolor{gray!20} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID      & Use Case 1.6 \\ \hline
+Use Case Name    & Fill-up Application Form \\ \hline
+Primary Actors   & Applicant \\ \hline
+Goal in Context  & To fill the application form successfully \\ \hline
+Precondition     & The applicant must be signed into the system \\ \hline
+Triggers         & Applicant navigates to the application section \\ \hline
+Scenario         & 
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}, before=\vspace{-0.5\baselineskip}]
+    \item Visit Applicant dashboard.
+    \item Click on the "Fill-up Form" button.
+    \item Complete all required steps and submit.
+\end{itemize} \\ \hline
+Exception        & Invalid role or session timeout \\ \hline
+Frequency of Use & High frequency \\ \hline
+\end{tabularx}
+\end{table}

@@ -1,0 +1,30 @@
+\subsubsection{View User Information}
+
+This use case allows the Admin to view detailed profiles and access levels of all users (Applicants and Staff) registered within the system.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Use Case Table: View User Information (UC-1.5)}
+    \label{tab:view_user_info}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-1.5 \\ \hline
+        Use Case Name & View User Information \\ \hline
+        Primary Actors & Admin \\ \hline
+        Goal in Context & To display the full profile details and role of a specific user. \\ \hline
+        Precondition & Admin must be logged into the system with valid credentials. \\ \hline
+        Triggers & Need to verify user credentials or check account status. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Visit the Admin dashboard.
+            \item Navigate to the 'User Management' or 'View Users' section.
+            \item Search for a specific user by ID or Email.
+            \item Click on the user's profile to see detailed information.
+            \item System fetches data from PostgreSQL and displays it on the UI.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Invalid Role:} Non-admin users attempting to access this section; Database error. \\ \hline
+        Frequency of Use & High frequency. \\ \hline
+    \end{tabularx}
+\end{table}

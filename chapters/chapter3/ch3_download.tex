@@ -1,0 +1,26 @@
+\subsubsection{Download Application Form}
+
+\begin{table}[htbp]
+\centering
+\caption{Use Case Table of Download Application Form}
+\label{tab:download_application}
+\renewcommand{\arraystretch}{1.5} % রো-এর উচ্চতা বাড়ানোর জন্য
+\begin{tabularx}{\textwidth}{|l|X|} % টেবিলটি পেজের প্রস্থ অনুযায়ী অটো-অ্যাডজাস্ট হবে
+\hline
+\rowcolor{gray!20} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID      & Use Case 1.7 \\ \hline
+Use Case Name    & Download Application Form \\ \hline
+Primary Actors   & Applicant \\ \hline
+Goal in Context  & To download the completed application form for records \\ \hline
+Precondition     & The applicant must be signed in and the form must be completed \\ \hline
+Triggers         & Applicant needs a hard copy or digital backup of the form \\ \hline
+Scenario         & 
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}, before=\vspace{-0.5\baselineskip}]
+    \item Visit the Applicant dashboard.
+    \item Click on the "Download" or "Generate PDF" button.
+    \item Save the file to the local device.
+\end{itemize} \\ \hline
+Exception        & File not generated or session expired \\ \hline
+Frequency of Use & High frequency (usually once per applicant) \\ \hline
+\end{tabularx}
+\end{table}

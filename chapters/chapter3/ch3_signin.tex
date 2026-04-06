@@ -1,0 +1,32 @@
+\subsubsection{Sign in}
+
+This use case describes the authentication process for the \textit{JUST Undergraduate Final Admission System}. It ensures that only authorized personnel and registered applicants can access the system's restricted functionalities.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Use Case Table: Sign in (UC-1.1)}
+    \label{tab:use_case_signin}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-1.1 \\ \hline
+        Use Case Name & Sign in \\ \hline
+        Primary Actors & Admin, Dean Office, Hall Office, Medical Office, Registrar Office, Applicant \\ \hline
+        Goal in Context & To gain authorized access to the system dashboard. \\ \hline
+        Precondition & The user must have a valid account with a Username and Password. \\ \hline
+        Post-condition & The user is redirected to their respective dashboard based on their role. \\ \hline
+        Triggers & User attempts to access a protected route or clicks the Sign-in link. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item The user navigates to the System Login page.
+            \item The user enters their Username/Email and Password.
+            \item The user clicks the \textbf{Login} button.
+            \item The Next.js backend validates the credentials against the PostgreSQL database using Prisma.
+            \item Upon successful validation, a secure session is established.
+            \item The user is granted access to the system dashboard.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Invalid Credentials:} If the credentials do not match, the system displays an "Access Denied" error message. \\ \hline
+        Frequency of Use & Extremely High (Daily). \\ \hline
+    \end{tabularx}
+\end{table}

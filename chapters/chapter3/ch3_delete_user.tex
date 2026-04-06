@@ -1,0 +1,26 @@
+\subsubsection{Delete User Information}
+
+\begin{table}[htbp]
+\centering
+\caption{Use Case Table of Delete User Information}
+\label{tab:delete_user}
+\renewcommand{\arraystretch}{1.5} % টেবিলের রো গুলোর উচ্চতা বাড়ানোর জন্য
+\begin{tabularx}{\textwidth}{|l|X|} % পেজের প্রস্থ অনুযায়ী অটো-অ্যাডজাস্ট হবে
+\hline
+\rowcolor{gray!20} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID      & Use Case 1.4 \\ \hline
+Use Case Name    & Delete User Information \\ \hline
+Primary Actors   & Admin \\ \hline
+Goal in Context  & To permanently remove a user's record from the system \\ \hline
+Precondition     & Admin must be authenticated and authorized \\ \hline
+Triggers         & Admin identifies a redundant or unauthorized account \\ \hline
+Scenario         & 
+\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}, before=\vspace{-0.5\baselineskip}]
+    \item Navigate to the Admin dashboard.
+    \item Locate the specific user from the user list.
+    \item Click the "Delete" button and confirm the action.
+\end{itemize} \\ \hline
+Exception        & User not found or permission denied \\ \hline
+Frequency of Use & Low to Medium (depending on system maintenance) \\ \hline
+\end{tabularx}
+\end{table}
