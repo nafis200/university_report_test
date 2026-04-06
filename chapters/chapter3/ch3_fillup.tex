@@ -1,26 +1,33 @@
 \subsubsection{Fill-up Application Form}
 
+This use case outlines the process for a registered applicant to submit their academic and personal details through the \textit{JUST Undergraduate Final Admission System}. It is a multi-step procedure designed to collect necessary documentation and information required for the final admission validation.
+
 \begin{table}[htbp]
-\centering
-\caption{Use Case Table of Fill-up Application Form}
-\label{tab:fillup_form}
-\renewcommand{\arraystretch}{1.5} % রো-এর উচ্চতা একটু বাড়ানো হয়েছে পড়ার সুবিধার জন্য
-\begin{tabularx}{\textwidth}{|l|X|} % X কলামটি বাকি জায়গা অটোমেটিক দখল করবে
-\hline
-\rowcolor{gray!20} \textbf{Characteristics} & \textbf{Description} \\ \hline
-Use Case ID      & Use Case 1.6 \\ \hline
-Use Case Name    & Fill-up Application Form \\ \hline
-Primary Actors   & Applicant \\ \hline
-Goal in Context  & To fill the application form successfully \\ \hline
-Precondition     & The applicant must be signed into the system \\ \hline
-Triggers         & Applicant navigates to the application section \\ \hline
-Scenario         & 
-\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}, before=\vspace{-0.5\baselineskip}]
-    \item Visit Applicant dashboard.
-    \item Click on the "Fill-up Form" button.
-    \item Complete all required steps and submit.
-\end{itemize} \\ \hline
-Exception        & Invalid role or session timeout \\ \hline
-Frequency of Use & High frequency \\ \hline
-\end{tabularx}
+    \centering
+    \caption{Use Case Table: Fill-up Application Form (UC-1.6)}
+    \label{tab:use_case_fillup_form}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-1.6 \\ \hline
+        Use Case Name & Fill-up Application Form \\ \hline
+        Primary Actors & Applicant \\ \hline
+        Goal in Context & To successfully submit the complete admission application form. \\ \hline
+        Precondition & The applicant must be signed in and should not have a previously submitted pending application. \\ \hline
+        Post-condition & The application data is stored in the database, and the status is set to "Pending" for office review. \\ \hline
+        Triggers & Applicant clicks on the "Apply Now" or "Fill-up Form" button on their dashboard. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item The applicant navigates to the application form section.
+            \item The system presents a multi-step form (Personal Info, Academic History, Document Upload).
+            \item The applicant enters all required information and uploads necessary files (Photo, Signature, etc.).
+            \item The applicant reviews the information for any errors.
+            \item The applicant clicks the \textbf{Submit} button.
+            \item The Next.js frontend sends the data to the API, which persists it in PostgreSQL via Prisma.
+            \item A success confirmation message is displayed to the applicant.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Validation Error:} If required fields are empty or files are in an unsupported format, the system prompts the user to correct the errors. \\ \hline
+        Frequency of Use & Once per applicant (High volume during admission periods). \\ \hline
+    \end{tabularx}
 \end{table}

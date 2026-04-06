@@ -138,6 +138,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT main.toc
+INPUT ./main.lot
+INPUT ./main.lot
+INPUT main.lot
+OUTPUT main.lot
 INPUT ./chapters/chapter1/background.tex
 INPUT ./chapters/chapter1/background.tex
 INPUT ./chapters/chapter1/background.tex
@@ -242,11 +246,6 @@ INPUT ./chapters/chapter3/ch3_download.tex
 INPUT ./chapters/chapter3/ch3_download.tex
 INPUT ./chapters/chapter3/ch3_download.tex
 INPUT chapters/chapter3/ch3_download.tex
-INPUT ./chapters/chapter3/ch3_update_profile.tex
-INPUT ./chapters/chapter3/ch3_update_profile.tex
-INPUT ./chapters/chapter3/ch3_update_profile.tex
-INPUT ./chapters/chapter3/ch3_update_profile.tex
-INPUT chapters/chapter3/ch3_update_profile.tex
 INPUT main.aux
 INPUT ./Start.aux
 INPUT ./Start.aux
