@@ -1,0 +1,110 @@
+\subsection{Applicant Profile Management}
+
+The Applicant Profile Management use case diagram consists of two primary actors: Admin and Applicant. This module handles various operations including creating accounts, updating profiles, filling up admission forms, generating and downloading the application forms, and managing edit requests.
+
+% Diagram Input
+\input{chapters/chapter3/ch3_applicant_diagram}
+
+\subsubsection{Create Account}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.1 \\ \hline
+Use Case Name & Create Account \\ \hline
+Primary Actors & Applicant \\ \hline
+Goal & Create a new account \\ \hline
+Precondition & Must be a new user for the system \\ \hline
+Scenario & 1. Give all inputs \newline 2. Click Register button. \\ \hline
+Exception & Invalid GST Applicant ID \\ \hline
+Frequency & High \\ \hline
+\end{tabularx}
+\caption{Create Account (UC-6.1)}
+\end{table}
+
+\subsubsection{Update Profile}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.2 \\ \hline
+Use Case Name & Update Profile \\ \hline
+Primary Actors & Applicant \\ \hline
+Scenario & 1. Visit Dashboard \newline 2. Click Profile icon \newline 3. Select Update \newline 4. Click Update button. \\ \hline
+\end{tabularx}
+\caption{Update Profile (UC-6.2)}
+\end{table}
+
+\subsubsection{Fill-up Application Form}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.3 \\ \hline
+Use Case Name & Fill-up Application Form \\ \hline
+Scenario & 1. Click Fill-up Application \newline 2. Enter Form \newline 3. Complete all 5 steps. \\ \hline
+\end{tabularx}
+\caption{Fill-up Application Form (UC-6.3)}
+\end{table}
+
+\subsubsection{Generate Application Form}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.4 \\ \hline
+Use Case Name & Generate Application Form \\ \hline
+Scenario & 1. Visit Dashboard \newline 2. Click Generate Application Form button. \\ \hline
+\end{tabularx}
+\caption{Generate Application Form (UC-6.4)}
+\end{table}
+
+\subsubsection{Download Application Form}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.5 \\ \hline
+Use Case Name & Download Application Form \\ \hline
+Scenario & 1. Visit Dashboard \newline 2. Click Download Application Form button. \\ \hline
+\end{tabularx}
+\caption{Download Application Form (UC-6.5)}
+\end{table}
+
+\subsubsection{Send Edit Request}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.6 \\ \hline
+Use Case Name & Send Edit Request \\ \hline
+Scenario & 1. Click Send Edit Request button. \\ \hline
+\end{tabularx}
+\caption{Send Edit Request (UC-6.6)}
+\end{table}
+
+\subsubsection{Approve Edit Request}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.7 \\ \hline
+Use Case Name & Approve Edit Request \\ \hline
+Primary Actors & Admin \\ \hline
+Scenario & 1. Log in \newline 2. Click Edit Request \newline 3. Click Permit button. \\ \hline
+\end{tabularx}
+\caption{Approve Edit Request (UC-6.7)}
+\end{table}
+
+\subsubsection{Update Applicant Info}
+\begin{table}[htbp]\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|l|X|}\hline
+\rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+Use Case ID & UC-6.8 \\ \hline
+Use Case Name & Update Applicant Information \\ \hline
+Primary Actors & Admin \\ \hline
+Scenario & 1. Log in \newline 2. Click Applicant Table \newline 3. Input values \newline 4. Click Update button. \\ \hline
+\end{tabularx}
+\caption{Update Applicant Information (UC-6.8)}
+\end{table}

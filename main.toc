@@ -64,3 +64,44 @@
 \contentsline {subsubsection}{\numberline {3.1.2.7}View Applicant Lists (All, Waited, Admitted)}{28}{}%
 \contentsline {subsubsection}{\numberline {3.1.2.8}Pending Documents and Reminders}{28}{}%
 \contentsline {subsubsection}{\numberline {3.1.2.9}Seats Status and Data Export}{29}{}%
+\contentsline {subsection}{\numberline {3.1.3}Hall Office Management}{29}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}Search Applicant}{31}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}Show Applicant Profile}{31}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}Receive Bank Receipt}{31}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}Admit Applicant (Hall Clearance)}{32}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}View Applicant Lists}{32}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}Update Applicant Info}{32}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}Export and Download Records}{33}{}%
+\contentsline {subsection}{\numberline {3.1.4}Medical Office Management}{33}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}Search Applicant}{33}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Show Applicant Profile}{35}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}Insert/ Update Medical Info}{35}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.4}Generate and Print Medical Report}{35}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.5}Admit Applicant (Medical Clearance)}{35}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.6}View Applicant Lists}{36}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.7}Update Applicant Info}{36}{}%
+\contentsline {subsubsection}{\numberline {3.1.4.8}Export and Download Records}{36}{}%
+\contentsline {subsection}{\numberline {3.1.5}Registrar Office Management}{37}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}Search Applicant}{37}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Show Applicant Profile}{39}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Receive Documents}{39}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.4}Admit Applicant}{39}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.5}View All Applicant}{40}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.6}View Waited Applicant}{40}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.7}View Admitted Applicant}{41}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.8}Export Bulk Applicant Lists}{41}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.9}Update Applicant Information}{42}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.10}View Pending Document Applicant}{42}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.11}Receive Pending Documents}{43}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.12}View Department Seats Status}{43}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.13}Export Applicant List}{43}{}%
+\contentsline {subsubsection}{\numberline {3.1.5.14}Create New Record}{45}{}%
+\contentsline {subsection}{\numberline {3.1.6}Applicant Profile Management}{45}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.1}Create Account}{45}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.2}Update Profile}{47}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.3}Fill-up Application Form}{47}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.4}Generate Application Form}{47}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.5}Download Application Form}{48}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.6}Send Edit Request}{48}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.7}Approve Edit Request}{49}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.8}Update Applicant Information (Admin)}{49}{}%

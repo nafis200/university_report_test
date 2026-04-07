@@ -1,0 +1,43 @@
+\begin{tikzpicture}[
+    node distance = 1cm and 2cm,
+    actor/.style={scale=0.5},
+    usecase/.style={ellipse, draw, minimum width=4cm, minimum height=0.7cm, align=center, font=\small},
+    link/.style={draw, thick}
+]
+% System Boundary
+\draw[thick] (0, 0) rectangle (9, -12);
+\node at (4.5, -0.5) {\textbf{Hall Office Management}};
+
+% Actors
+\node (hallAuth) at (-2, -5.5) {
+    \begin{tikzpicture}[scale=0.5]
+        \draw[thick] (0,1.2) circle (0.4cm); \draw[thick] (0,0.8) -- (0,-0.8);
+        \draw[thick] (-0.8,0.4) -- (0.8,0.4); \draw[thick] (0,-0.8) -- (-0.5,-1.8); \draw[thick] (0,-0.8) -- (0.5,-1.8);
+        \node at (0,-2.5) {\small Hall Authority};
+    \end{tikzpicture}
+};
+
+\node (admin) at (11, -5.5) {
+    \begin{tikzpicture}[scale=0.5]
+        \draw[thick] (0,1.2) circle (0.4cm); \draw[thick] (0,0.8) -- (0,-0.8);
+        \draw[thick] (-0.8,0.4) -- (0.8,0.4); \draw[thick] (0,-0.8) -- (-0.5,-1.8); \draw[thick] (0,-0.8) -- (0.5,-1.8);
+        \node at (0,-2.5) {\small Admin};
+    \end{tikzpicture}
+};
+
+% Use Cases
+\node[usecase] (uc1) at (4.5, -1.5) {Search Applicant};
+\node[usecase] (uc2) at (4.5, -2.5) {Show Applicant Profile};
+\node[usecase] (uc3) at (4.5, -3.5) {Receive Bank Receipt};
+\node[usecase] (uc4) at (4.5, -4.5) {Admit Applicant};
+\node[usecase] (uc5) at (4.5, -5.5) {View Waited Applicants};
+\node[usecase] (uc6) at (4.5, -6.5) {View Admitted Applicants};
+\node[usecase] (uc7) at (4.5, -7.5) {Update Applicant Info};
+\node[usecase] (uc8) at (4.5, -8.5) {Download Official Record};
+\node[usecase] (uc9) at (4.5, -9.5) {Export Admitted List};
+
+% Connections
+\foreach \i in {uc1,uc2,uc3,uc4,uc5,uc6,uc8,uc9} \draw[link] (hallAuth) -- (\i.west);
+\draw[link] (admin) -- (uc7.east);
+\draw[link] (admin) -- (uc4.east);
+\end{tikzpicture}

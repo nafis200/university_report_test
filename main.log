@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  7 APR 2026 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  7 APR 2026 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,64 +174,231 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box55
 ) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen161
+\pgf@y=\dimen162
+\pgf@xa=\dimen163
+\pgf@ya=\dimen164
+\pgf@xb=\dimen165
+\pgf@yb=\dimen166
+\pgf@xc=\dimen167
+\pgf@yc=\dimen168
+\pgf@xd=\dimen169
+\pgf@yd=\dimen170
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count272
+\c@pgf@countb=\count273
+\c@pgf@countc=\count274
+\c@pgf@countd=\count275
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count276
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count277
+\pgfsyssoftpath@bigbuffer@items=\count278
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count279
+\pgfmath@box=\box57
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count280
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen172
+\pgf@picmaxx=\dimen173
+\pgf@picminy=\dimen174
+\pgf@picmaxy=\dimen175
+\pgf@pathminx=\dimen176
+\pgf@pathmaxx=\dimen177
+\pgf@pathminy=\dimen178
+\pgf@pathmaxy=\dimen179
+\pgf@xx=\dimen180
+\pgf@xy=\dimen181
+\pgf@yx=\dimen182
+\pgf@yy=\dimen183
+\pgf@zx=\dimen184
+\pgf@zy=\dimen185
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen186
+\pgf@path@lasty=\dimen187
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen188
+\pgf@shorten@start@additional=\dimen189
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count281
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen190
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen191
+\pgf@pt@y=\dimen192
+\pgf@pt@temp=\dimen193
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen194
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count282
+\pgf@shadingcount=\count283
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box61
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box62
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count284
+\pgfplotmarksize=\dimen256
+)
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikz@lastmovetox=\dimen261
+\tikz@lastmovetoy=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count285
+\tikznumberofchildren=\count286
+\tikznumberofcurrentchild=\count287
+\tikz@fig@count=\count288
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count289
+\pgfmatrixcurrentcolumn=\count290
+\pgf@matrix@numberofcolumns=\count291
+)
+\tikz@expandcount=\count292
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen265
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count272
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count293
+\l__pdf_internal_box=\box67
 ) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter2/ch2_main.aux) (./chapters/chapter3/ch3_main.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count273
-\scratchdimen=\dimen159
-\scratchbox=\box57
-\nofMPsegments=\count274
-\nofMParguments=\count275
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count276
-\MPscratchDim=\dimen160
-\MPnumerator=\count277
-\makeMPintoPDFobject=\count278
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count294
+\scratchdimen=\dimen266
+\scratchbox=\box68
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen267
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks40
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
@@ -272,7 +439,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 \openout2 = `Start.aux'.
 
 (./Start.tex
-<images/images.jpeg, id=1, 211.79124pt x 239.89626pt>
+<images/images.jpeg, id=4, 211.79124pt x 239.89626pt>
 File: images/images.jpeg Graphic file (type jpg)
 <use images/images.jpeg>
 Package pdftex.def Info: images/images.jpeg  used on input line 21.
@@ -318,15 +485,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [3
 
 
-] [4])
-\tf@toc=\write3
-\openout3 = `main.toc'.
+] [4] [5])
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
- [5] (./main.lot)
-\tf@lot=\write4
-\openout4 = `main.lot'.
+ [6] (./main.lot [7])
+\tf@lot=\write5
+\openout5 = `main.lot'.
 
- [6]
+ [8]
 Chapter 1.
 (./chapters/chapter1/background.tex) (./chapters/chapter1/motivation.tex [1
 
@@ -343,10 +510,10 @@ Chapter 2.
 
  (./chapters/chapter3/ch3_main.tex
 Chapter 3.
-<./chapters/chapter3/images/user.png, id=70, 1263.72125pt x 835.12pt>
+<./chapters/chapter3/images/user.png, id=79, 1263.72125pt x 835.12pt>
 File: ./chapters/chapter3/images/user.png Graphic file (type png)
 <use ./chapters/chapter3/images/user.png>
-Package pdftex.def Info: ./chapters/chapter3/images/user.png  used on input line 9.
+Package pdftex.def Info: ./chapters/chapter3/images/user.png  used on input line 11.
 (pdftex.def)             Requested size: 360.45386pt x 238.2028pt.
 (./chapters/chapter3/ch3_signin.tex [14
 
@@ -354,35 +521,60 @@ Package pdftex.def Info: ./chapters/chapter3/images/user.png  used on input line
 
 
  <./chapters/chapter3/images/user.png>]) (./chapters/chapter3/ch3_view_applicant.tex [15]) (./chapters/chapter3/ch3_update_user.tex [16] [17]) (./chapters/chapter3/ch3_delete_user.tex) (./chapters/chapter3/ch3_view_user.tex [18]) (./chapters/chapter3/ch3_fillup.tex [19]) (./chapters/chapter3/ch3_download.tex [20] [21])
-<./chapters/chapter3/images/dean.png, id=101, 1041.8925pt x 1027.84pt>
+<./chapters/chapter3/images/dean.png, id=110, 1041.8925pt x 1027.84pt>
 File: ./chapters/chapter3/images/dean.png Graphic file (type png)
 <use ./chapters/chapter3/images/dean.png>
-Package pdftex.def Info: ./chapters/chapter3/images/dean.png  used on input line 29.
+Package pdftex.def Info: ./chapters/chapter3/images/dean.png  used on input line 31.
 (pdftex.def)             Requested size: 360.45386pt x 355.59325pt.
  (./chapters/chapter3/ch3_dean_search.tex) (./chapters/chapter3/ch3_dean_profile.tex [22 <./chapters/chapter3/images/dean.png>] [23] [24]) (./chapters/chapter3/ch3_dean_verify_form.tex) (./chapters/chapter3/ch3_dean_verify_docs.tex [25] [26]) (./chapters/chapter3/ch3_dean_admit.tex) (./chapters/chapter3/ch3_dean_reject.tex [27]) (./chapters/chapter3/ch3_dean_view_lists.tex) (./chapters/chapter3/ch3_dean_pending.tex [28]) (./chapters/chapter3/ch3_dean_status_export.tex
 Underfull \hbox (badness 4634) in paragraph at lines 20--20
 []|\OT1/cmr/m/n/10.95 To mon-i-tor en-roll-ment ca-pac-ity and gen-er-ate re-ports in
  []
 
-)) [29] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter2/ch2_main.aux) (./chapters/chapter3/ch3_main.aux))
+) (./chapters/chapter3/ch3_hall_diagram.tex)
+Overfull \hbox (13.06165pt too wide) in paragraph at lines 43--55
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_hall_search.tex [29] [30]) (./chapters/chapter3/ch3_hall_profile.tex) (./chapters/chapter3/ch3_hall_receipt.tex [31]) (./chapters/chapter3/ch3_hall_admit.tex) (./chapters/chapter3/ch3_hall_lists.tex
+Underfull \hbox (badness 5652) in paragraph at lines 11--11
+[]|\OT1/cmr/m/n/10.95 1. Nav-i-gate to side-bar. 2. Se-lect re-spec-tive list
+ []
+
+) (./chapters/chapter3/ch3_hall_update.tex [32]) (./chapters/chapter3/ch3_hall_export_download.tex) (./chapters/chapter3/ch3_medical_diagram.tex)
+Overfull \hbox (14.12624pt too wide) in paragraph at lines 46--75
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_medical_search.tex [33] [34]) (./chapters/chapter3/ch3_medical_profile.tex) (./chapters/chapter3/ch3_medical_info.tex) (./chapters/chapter3/ch3_medical_report.tex) (./chapters/chapter3/ch3_medical_admit.tex [35]) (./chapters/chapter3/ch3_medical_lists.tex) (./chapters/chapter3/ch3_medical_update.tex) (./chapters/chapter3/ch3_medical_export_download.tex [36]) (./chapters/chapter3/ch3_registrar_diagram.tex)
+Overfull \hbox (15.31248pt too wide) in paragraph at lines 59--96
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_registrar_search.tex [37] [38]) (./chapters/chapter3/ch3_registrar_profile.tex) (./chapters/chapter3/ch3_registrar_receive.tex) (./chapters/chapter3/ch3_registrar_admit.tex [39]) (./chapters/chapter3/ch3_registrar_view_all.tex) (./chapters/chapter3/ch3_registrar_waited.tex [40]) (./chapters/chapter3/ch3_registrar_admitted.tex) (./chapters/chapter3/ch3_registrar_export.tex [41]) (./chapters/chapter3/ch3_registrar_update.tex) (./chapters/chapter3/ch3_registrar_pending.tex [42]) (./chapters/chapter3/ch3_registrar_receive_pending.tex) (./chapters/chapter3/ch3_registrar_seat.tex) (./chapters/chapter3/ch3_registrar_export_all.tex [43] [44]) (./chapters/chapter3/ch3_registrar_create.tex) (./chapters/chapter3/ch3_applicant_diagram.tex)
+Overfull \hbox (1.18391pt too wide) in paragraph at lines 45--124
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_applicant_create.tex [45] [46]) (./chapters/chapter3/ch3_applicant_update_profile.tex) (./chapters/chapter3/ch3_applicant_fillup.tex) (./chapters/chapter3/ch3_applicant_generate.tex [47]) (./chapters/chapter3/ch3_applicant_download.tex) (./chapters/chapter3/ch3_applicant_send_edit.tex [48]) (./chapters/chapter3/ch3_applicant_approve_edit.tex) (./chapters/chapter3/ch3_applicant_update_info.tex [49])) [50] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter2/ch2_main.aux) (./chapters/chapter3/ch3_main.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4541 strings out of 476182
- 82045 string characters out of 5795596
- 1938975 words of memory out of 5000000
- 26345 multiletter control sequences out of 15000+600000
+ 15590 strings out of 476182
+ 336619 string characters out of 5795596
+ 1941975 words of memory out of 5000000
+ 37080 multiletter control sequences out of 15000+600000
  564837 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,12n,70p,890b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,87p,890b,1115s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/nafis-ahamed/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (36 pages, 574121 bytes).
+Output written on main.pdf (59 pages, 618898 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 234 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
