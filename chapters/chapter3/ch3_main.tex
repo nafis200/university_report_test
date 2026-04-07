@@ -135,3 +135,90 @@ The Applicant Profile Management module manages the student's interaction with t
 \input{chapters/chapter3/ch3_applicant_send_edit}
 \input{chapters/chapter3/ch3_applicant_approve_edit}
 \input{chapters/chapter3/ch3_applicant_update_info}
+
+
+\subsubsection{User Management}
+
+The User Management activity diagram illustrates the workflow of the system's administrative and user functions. 
+Admin and users must first sign in with valid credentials. Once authenticated, the system forks based on 
+user roles and actions.
+
+\begin{figure}[H] % [htbp] এর বদলে [H] ব্যবহার করুন
+\centering
+\input{chapters/chapter3/act_user_management.tex}
+\caption{Activity Diagram of User Management System}
+\label{fig:user_management_activity}
+\end{figure}
+
+\subsubsection{Dean Office Management}
+
+The Dean Office Management activity diagram illustrates the workflow for faculty-level admission administration. Once the Dean or Registrar signs in successfully, the system allows for diverse operations including applicant searching, document verification, and seat status monitoring.
+
+\begin{figure}[H]
+    \centering
+    % adjustbox ব্যবহার করলে ডায়াগ্রামটি কেটে যাবে না
+    \begin{adjustbox}{width=\textwidth}
+        \input{chapters/chapter3/act_dean_office_management.tex}
+    \end{adjustbox}
+    \caption{Activity Diagram of Dean Office Management (UC-5.0)}
+    \label{fig:dean_office_activity}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Hall Office Management}
+
+The Hall Office Management activity diagram illustrates the operational workflow for residential hall admission tasks. It covers the process from secure authentication to applicant search, document receipt, and final admission, as well as administrative tasks like exporting applicant lists and downloading official records.
+
+\begin{figure}[H]
+    \centering
+    % adjustbox ব্যবহার করলে ডায়াগ্রামটি মার্জিনের বাইরে যাবে না
+    \begin{adjustbox}{width=\textwidth}
+        \input{chapters/chapter3/act_hall_office_management.tex}
+    \end{adjustbox}
+    \caption{Activity Diagram of Hall Office Management (UC-6.0)}
+    \label{fig:hall_office_activity}
+\end{figure}
+\FloatBarrier
+
+
+\subsubsection{Medical Office Management}
+
+The Medical Office Management activity diagram illustrates the workflow for managing applicant medical records and admissions. After a successful sign-in, the medical officer can search for applicants, update medical information, generate health reports, and manage the admitted and waited applicant lists.
+
+\begin{figure}[H]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+        \input{chapters/chapter3/act_medical_office_management.tex}
+    \end{adjustbox}
+    \caption{Activity Diagram of Medical Office Management (UC-4.0)}
+    \label{fig:medical_office_activity}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Registrar Office Management}
+
+The Registrar Office Management activity diagram details the high-level administrative tasks handled by the registrar. This includes secure authentication, applicant management (searching, document receipt, and admission), and robust reporting features such as exporting lists and creating customized new records for official documentation.
+
+\begin{figure}[H]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+        \input{chapters/chapter3/act_registrar_office_management.tex}
+    \end{adjustbox}
+    \caption{Activity Diagram of Registrar Office Management (UC-7.0)}
+    \label{fig:registrar_office_activity}
+\end{figure}
+\FloatBarrier
+
+\subsubsection{Applicant Profile Management}
+
+The Applicant Profile Management activity diagram illustrates the interactive workflow for students using the admission system. It encompasses the secure login process using GST credentials, profile updates, the multi-step application form filling process, and the final generation and download of the application form, including the ability to send edit requests post-submission.
+
+\begin{figure}[H]
+    \centering
+    \begin{adjustbox}{width=\textwidth}
+        \input{chapters/chapter3/act_applicant_profile_management.tex}
+    \end{adjustbox}
+    \caption{Activity Diagram of Applicant Profile Management (UC-2.0)}
+    \label{fig:applicant_profile_activity}
+\end{figure}
+\FloatBarrier

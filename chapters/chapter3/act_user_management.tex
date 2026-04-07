@@ -1,0 +1,79 @@
+\begin{tikzpicture}[node distance=1.2cm, auto]
+    % Styles definition
+    \tikzset{
+        start/.style={circle, fill=purple!80!black, minimum size=12pt},
+        action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=10pt, inner sep=6pt, text width=3cm, align=center, font=\footnotesize\bfseries},
+        decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=2, inner sep=2pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
+        fork/.style={rectangle, fill=purple!90!black, minimum width=9cm, minimum height=0.15cm},
+        stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=10pt},
+        arrow/.style={-Stealth, thick, draw=gray!80},
+        labelNode/.style={font=\scriptsize\bfseries, fill=green!80, inner sep=1pt}
+    }
+
+    % Nodes for Authentication
+    \node [start] (start) {};
+    \node [action, below=of start] (signin) {Sign in};
+    \node [decision, below=of signin] (checkSign) {Sign in Successful?};
+    \node [decision, below=1.5cm of checkSign] (checkRole) {User Role?};
+
+    % Fork
+    \node [fork, below=1.5cm of checkRole] (mainFork) {};
+
+    % Top Row Branches
+    \node [action, left=2.8cm of mainFork, anchor=north] (viewApp) {View Applicant List};
+    \node [action, below=0.2cm of mainFork.center] (viewUser) {View User Information};
+    \node [action, right=2.8cm of mainFork, anchor=north] (handleEdit) {Handle Edit Request};
+
+    % View User Sub-Fork
+    \node [fork, below=0.8cm of viewUser, minimum width=6cm] (subFork) {};
+
+    % Update/Delete Branches
+    \node [action, left=0.8cm of subFork, anchor=north] (delUser) {Delete User};
+    \node [decision, below=of delUser] (confirmDel) {Delete User?};
+    \node [action, below=of confirmDel] (succDel) {Successfully Delete User};
+
+    \node [action, right=0.8cm of subFork, anchor=north] (updUser) {Update User};
+    \node [decision, below=of updUser] (confirmUpd) {Update User?};
+    \node [action, below=of confirmUpd] (succUpd) {Successfully Update User};
+
+    % End Nodes
+    \node [stop, below=8.5cm of viewApp] (stop1) {};
+    \node [stop, below=1cm of succDel] (stop2) {};
+    \node [stop, below=1cm of succUpd] (stop3) {};
+    \node [stop, below=8.5cm of handleEdit] (stop4) {};
+
+    % Connectors
+    \draw [arrow] (start) -- (signin);
+    \draw [arrow] (signin) -- (checkSign);
+    
+    % Loops for Auth
+    \draw [arrow] (checkSign.west) -- ++(-0.8,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+    \draw [arrow] (checkSign) -- node[labelNode] {yes} (checkRole);
+    \draw [arrow] (checkRole.east) -- ++(1.2,0) |- node[labelNode, pos=0.2] {No} (signin.east);
+    \draw [arrow] (checkRole) -- node[labelNode] {Yes} (mainFork);
+
+    % Fork connections
+    \draw [arrow] (mainFork.west) ++(1.7,0) -- (viewApp);
+    \draw [arrow] (mainFork.center) -- (viewUser);
+    \draw [arrow] (mainFork.east) ++(-1.7,0) -- (handleEdit);
+
+    % Sub-fork and CRUD logic
+    \draw [arrow] (viewUser) -- (subFork);
+    \draw [arrow] (subFork.west) ++(2.2,0) -- (delUser);
+    \draw [arrow] (subFork.east) ++(-2.2,0) -- (updUser);
+
+    \draw [arrow] (delUser) -- (confirmDel);
+    \draw [arrow] (confirmDel) -- node[labelNode] {Yes} (succDel);
+    \draw [arrow] (confirmDel.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (delUser.west);
+
+    \draw [arrow] (updUser) -- (confirmUpd);
+    \draw [arrow] (confirmUpd) -- node[labelNode] {Yes} (succUpd);
+    \draw [arrow] (confirmUpd.east) -- ++(0.5,0) |- node[labelNode, pos=0.2] {No} (updUser.east);
+
+    % Final arrows to stop nodes
+    \draw [arrow] (viewApp) -- (stop1);
+    \draw [arrow] (handleEdit) -- (stop4);
+    \draw [arrow] (succDel) -- (stop2);
+    \draw [arrow] (succUpd) -- (stop3);
+
+\end{tikzpicture}

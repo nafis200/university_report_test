@@ -105,3 +105,9 @@
 \contentsline {subsubsection}{\numberline {3.1.6.6}Send Edit Request}{48}{}%
 \contentsline {subsubsection}{\numberline {3.1.6.7}Approve Edit Request}{49}{}%
 \contentsline {subsubsection}{\numberline {3.1.6.8}Update Applicant Information (Admin)}{49}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.9}User Management}{50}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.10}Dean Office Management}{52}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.11}Hall Office Management}{53}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.12}Medical Office Management}{53}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.13}Registrar Office Management}{54}{}%
+\contentsline {subsubsection}{\numberline {3.1.6.14}Applicant Profile Management}{55}{}%

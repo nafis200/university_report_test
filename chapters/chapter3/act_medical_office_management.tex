@@ -1,0 +1,72 @@
+\begin{tikzpicture}[
+    node distance=1.1cm and 0.4cm, 
+    auto,
+    start/.style={circle, fill=purple!80!black, minimum size=10pt},
+    action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
+    decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
+    fork/.style={rectangle, fill=purple!90!black, minimum height=0.15cm},
+    stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=8pt},
+    arrow/.style={-Stealth, thick, draw=gray!80},
+    labelNode/.style={font=\tiny\bfseries, fill=green!80, inner sep=1pt}
+]
+
+    % --- Authentication ---
+    \node [start] (start) {};
+    \node [action, below=of start, text width=1.8cm] (signin) {Sign in};
+    \node [decision, below=0.6cm of signin] (checkSign) {Valid Access?};
+    \node [fork, below=1cm of checkSign, minimum width=13cm] (forkMain) {};
+
+    % --- Left Branch: Medical Admission ---
+    \node [action, below=1cm of forkMain, xshift=-4.5cm] (actAdmin) {Admission Management};
+    \node [fork, below=0.8cm of actAdmin, minimum width=6cm] (forkMed) {};
+    
+    \node [action, below=0.8cm of forkMed, xshift=-2cm] (actSearch) {Search \& Show Profile};
+    \node [action, right=0.3cm of actSearch] (actMedical) {Insert/Update Medical Info};
+    \node [action, right=0.3cm of actMedical] (actReport) {Generate \& Print Report};
+    
+    \node [action, below=1.2cm of actMedical] (actAdmit) {Admit Applicant};
+    \node [stop, below=1.8cm of actAdmit] (stopLeft) {};
+
+    % --- Middle Branch ---
+    \node [action, below=1cm of forkMain, xshift=0.5cm] (actDownload) {Download Official Record (PDF)};
+
+    % --- Right Branch ---
+    \node [action, below=1cm of forkMain, xshift=4.5cm] (actView) {View \& Export Applicants};
+    \node [fork, below=0.8cm of actView, minimum width=4.5cm] (forkView) {};
+    
+    \node [action, below=0.8cm of forkView, xshift=-1.3cm] (actLists) {Waited/Admitted \\ Lists};
+    \node [action, right=0.3cm of actLists] (actExport) {Export Applicant List};
+    \node [stop, below=3.5cm of actExport] (stopRight) {};
+
+    % --- Drawing Arrows ---
+    \draw [arrow] (start) -- (signin);
+    \draw [arrow] (signin) -- (checkSign);
+    \draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+    \draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
+
+    % Left Branch Flow
+    \draw [arrow] (forkMain.south -| actAdmin) -- (actAdmin);
+    \draw [arrow] (actAdmin) -- (forkMed);
+    \draw [arrow] (forkMed.south -| actSearch) -- (actSearch);
+    \draw [arrow] (forkMed.south -| actMedical) -- (actMedical);
+    \draw [arrow] (forkMed.south -| actReport) -- (actReport);
+    
+    % Fixing Overlaps here (Using shifted vertical lines)
+    \draw [arrow] (actSearch.south) -- ++(0,-1) -| (stopLeft);
+    \draw [arrow] (actMedical) -- (actAdmit);
+    \draw [arrow] (actAdmit) -- (stopLeft);
+    \draw [arrow] (actReport.south) -- ++(0,-1) -| (stopLeft);
+
+    % Middle Branch Flow
+    \draw [arrow] (forkMain.south -| actDownload) -- (actDownload);
+    \draw [arrow] (actDownload.south) -- ++(0,-1.5) -| (stopRight);
+
+    % Right Branch Flow
+    \draw [arrow] (forkMain.south -| actView) -- (actView);
+    \draw [arrow] (actView) -- (forkView);
+    \draw [arrow] (forkView.south -| actLists) -- (actLists);
+    \draw [arrow] (forkView.south -| actExport) -- (actExport);
+    \draw [arrow] (actLists.south) -- ++(0,-0.5) -| (stopRight);
+    \draw [arrow] (actExport) -- (stopRight);
+
+\end{tikzpicture}

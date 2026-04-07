@@ -1,0 +1,68 @@
+\begin{tikzpicture}[
+    node distance=1.1cm and 0.4cm, 
+    auto,
+    start/.style={circle, fill=purple!80!black, minimum size=10pt},
+    action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
+    decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
+    fork/.style={rectangle, fill=purple!90!black, minimum height=0.15cm},
+    stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=8pt},
+    arrow/.style={-Stealth, thick, draw=gray!80},
+    labelNode/.style={font=\tiny\bfseries, fill=green!80, inner sep=1pt}
+]
+
+    % --- Authentication (Step i) ---
+    \node [start] (start) {};
+    \node [action, below=of start, text width=1.8cm] (signin) {Sign in};
+    \node [decision, below=0.6cm of signin] (checkSign) {Valid Access?};
+    \node [fork, below=1cm of checkSign, minimum width=13cm] (forkMain) {};
+
+    % --- LEFT BRANCH: ADMISSION (Step ii) ---
+    \node [action, below=1cm of forkMain, xshift=-4.8cm] (actAdmin) {Admission Management};
+    \node [fork, below=0.8cm of actAdmin, minimum width=5.5cm] (forkReg) {};
+    
+    \node [action, below=0.8cm of forkReg, xshift=-1.6cm] (actSearch) {Search \& Show Profile};
+    \node [action, right=0.3cm of actSearch] (actAdmit) {Receive Document \& Admit};
+    \node [stop, below=1.2cm of actAdmit] (stopLeft) {};
+
+    % --- MIDDLE BRANCH: SIDEBAR UTILITIES (Step vii, viii) ---
+    \node [action, below=1cm of forkMain, xshift=0cm] (actPending) {View Pending Documents};
+    \node [action, below=1.5cm of actPending] (actCreate) {Create New Record (Excel)};
+
+    % --- RIGHT BRANCH: LISTS & EXPORT (Step iii, iv, v, vi) ---
+    \node [action, below=1cm of forkMain, xshift=4.2cm] (actView) {View \& Export Applicants};
+    \node [fork, below=0.8cm of actView, minimum width=4.5cm] (forkView) {};
+    
+    \node [action, below=0.8cm of forkView, xshift=-1.3cm] (actLists) {All/Waited/Admitted \\ Lists};
+    \node [action, right=0.3cm of actLists] (actExport) {Export Applicant List};
+    \node [stop, below=3.5cm of actExport] (stopRight) {};
+
+    % --- DRAWING ARROWS ---
+    
+    % Step i: Sign in Flow
+    \draw [arrow] (start) -- (signin);
+    \draw [arrow] (signin) -- (checkSign);
+    \draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+    \draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
+
+    % Step ii: Admission Flow
+    \draw [arrow] (forkMain.south -| actAdmin) -- (actAdmin);
+    \draw [arrow] (actAdmin) -- (forkReg);
+    \draw [arrow] (forkReg.south -| actSearch) -- (actSearch);
+    \draw [arrow] (forkReg.south -| actAdmit) -- (actAdmit);
+    \draw [arrow] (actSearch.south) -- ++(0,-0.6) -| (stopLeft);
+    \draw [arrow] (actAdmit) -- (stopLeft);
+
+    % Step vii & viii: Sidebar Flow
+    \draw [arrow] (forkMain.south -| actPending) -- (actPending);
+    \draw [arrow] (actPending) -- (actCreate);
+    \draw [arrow] (actCreate.south) -- ++(0,-0.8) -| (stopRight);
+
+    % Step iii-vi: List & Export Flow
+    \draw [arrow] (forkMain.south -| actView) -- (actView);
+    \draw [arrow] (actView) -- (forkView);
+    \draw [arrow] (forkView.south -| actLists) -- (actLists);
+    \draw [arrow] (forkView.south -| actExport) -- (actExport);
+    \draw [arrow] (actLists.south) -- ++(0,-0.5) -| (stopRight);
+    \draw [arrow] (actExport) -- (stopRight);
+
+\end{tikzpicture}
