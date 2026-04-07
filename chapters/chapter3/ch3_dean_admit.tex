@@ -1,0 +1,31 @@
+\subsubsection{Admit Applicant (Dean Clearance)}
+
+This use case allows the Dean Office to grant final clearance for admission after successful verification of all records.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.5 \\ \hline
+        Use Case Name & Admit Applicant \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Goal in Context & To grant final admission clearance to the applicant. \\ \hline
+        Precondition & All documents must be verified and the applicant must be eligible. \\ \hline
+        Post-condition & Applicant status is changed to 'Admitted' and department seat count is updated. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Search for an eligible applicant record.
+            \item Review the final summary of the candidate.
+            \item Click the \textbf{Admit} button.
+            \item System updates the record in PostgreSQL.
+        \end{enumerate} \\ \hline
+        Exception & Seat capacity full or role unauthorized. \\ \hline
+        Frequency of Use & High \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Admit Applicant (UC-2.5)}
+    \label{tab:dean_admit}
+\end{table}
+\FloatBarrier

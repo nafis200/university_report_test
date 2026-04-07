@@ -1,0 +1,32 @@
+\subsubsection{Show Applicant Profile}
+
+This use case describes how the Dean Office views an individual applicant's profile. It provides a detailed view of the candidate's personal information and academic records, which is essential for making informed admission decisions.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.2 \\ \hline
+        Use Case Name & Show Applicant Profile \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Goal in Context & To display the detailed profile of a specific applicant for review. \\ \hline
+        Precondition & The user must be signed in with Dean Office credentials and have searched for an applicant. \\ \hline
+        Post-condition & The system successfully displays the applicant's detailed data from the PostgreSQL database via Prisma ORM. \\ \hline
+        Triggers & Need to review specific academic or personal details of a candidate for admission processing. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item The user searches for a specific applicant from the applicant list.
+            \item The user clicks on the \textbf{Profile} or \textbf{View Details} button.
+            \item The system fetches the applicant data using Prisma.
+            \item The system displays the comprehensive profile including personal details, academic results, and payment records.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Data Not Found:} If the record does not exist, an error message is shown. \textbf{Access Denied:} Unauthorized users are restricted. \\ \hline
+        Frequency of Use & High (During the admission screening phase). \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Show Applicant Profile (UC-2.2)}
+    \label{tab:dean_profile}
+\end{table}
+\FloatBarrier

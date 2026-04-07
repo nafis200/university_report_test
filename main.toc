@@ -54,3 +54,13 @@
 \contentsline {subsubsection}{\numberline {3.1.1.5}View User Information}{18}{}%
 \contentsline {subsubsection}{\numberline {3.1.1.6}Fill-up Application Form}{19}{}%
 \contentsline {subsubsection}{\numberline {3.1.1.7}Download Application Form}{20}{}%
+\contentsline {subsection}{\numberline {3.1.2}Dean Office Management}{22}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Search Applicant}{22}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Show Applicant Profile}{23}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Verify Application Form}{25}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}Verify Required Documents}{25}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}Admit Applicant (Dean Clearance)}{27}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.6}Reject Applicant}{27}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.7}View Applicant Lists (All, Waited, Admitted)}{28}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.8}Pending Documents and Reminders}{28}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.9}Seats Status and Data Export}{29}{}%

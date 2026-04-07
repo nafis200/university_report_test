@@ -1,0 +1,29 @@
+\subsubsection{Reject Applicant}
+
+This use case describes the procedure for rejecting an applicant if significant discrepancies are found in their documents or eligibility.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.6 \\ \hline
+        Use Case Name & Reject Applicant \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Goal in Context & To disqualify an applicant due to errors or non-compliance. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Search for the specific applicant.
+            \item Click the \textbf{Reject} button.
+            \item Provide a reason for rejection (optional/required).
+            \item System updates the status to 'Rejected'.
+        \end{enumerate} \\ \hline
+        Exception & Invalid role or accidental rejection of verified candidates. \\ \hline
+        Frequency of Use & High \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Reject Applicant (UC-2.6)}
+    \label{tab:dean_reject}
+\end{table}
+\FloatBarrier

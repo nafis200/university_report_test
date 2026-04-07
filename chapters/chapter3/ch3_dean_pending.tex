@@ -1,0 +1,29 @@
+\subsubsection{Pending Documents and Reminders}
+
+This section covers receiving pending documents and sending reminder messages to applicants who have yet to complete their documentation.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.11, 2.12, 2.13 \\ \hline
+        Use Case Name & Manage Pending Documents \& Send Reminders \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Scenario (Reminder) & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Identify applicant with missing documents.
+            \item Select the missing items and click \textbf{Send Message}.
+            \item System triggers a notification to the applicant's contact.
+        \end{enumerate} \\ \hline
+        Scenario (Receive) & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Click \textbf{Pending Documents Action} from the sidebar.
+            \item Update the record upon receiving physical copies.
+        \end{enumerate} \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Pending Documents Management (UC-2.11 - 2.13)}
+\end{table}
+\FloatBarrier

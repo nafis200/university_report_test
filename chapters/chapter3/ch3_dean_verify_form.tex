@@ -1,0 +1,33 @@
+\subsubsection{Verify Application Form}
+
+This use case describes the procedure for the Dean Office to verify the submitted application form. It ensures that the applicant's data and uploaded documents are consistent with the university's requirements before granting final approval.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.3 \\ \hline
+        Use Case Name & Verify Application Form \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Goal in Context & To successfully validate and approve the applicant's submitted application form. \\ \hline
+        Precondition & The user must be signed in with Dean Office privileges and an application must be pending review. \\ \hline
+        Post-condition & The application status is updated to 'Verified' in the PostgreSQL database and reflected on the system. \\ \hline
+        Triggers & Requirement to process and authorize candidate applications for the final admission list. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item The user searches for a specific applicant record from the pending list.
+            \item The user navigates to the \textbf{Verification} or \textbf{Review} section.
+            \item The system displays the submitted data and documents via the interface.
+            \item The user reviews the information and clicks the \textbf{Approve} or \textbf{Verify} button.
+            \item The system updates the status using Prisma ORM.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Data Mismatch:} If the information is incorrect, the user may reject the form or request a correction from the applicant. \\ \hline
+        Frequency of Use & High (During peak admission cycles). \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Verify Application Form (UC-2.3)}
+    \label{tab:dean_verify_form}
+\end{table}
+\FloatBarrier

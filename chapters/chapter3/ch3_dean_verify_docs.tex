@@ -1,0 +1,32 @@
+\subsubsection{Verify Required Documents}
+
+This use case describes how the Dean Office verifies the physical or uploaded documents of an applicant. It ensures all academic certificates and required papers are authentic and meet the university's criteria.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.4 \\ \hline
+        Use Case Name & Verify Required Documents \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Goal in Context & To successfully verify and confirm the validity of applicant documents. \\ \hline
+        Precondition & The user must be signed in and the applicant's record must be accessed. \\ \hline
+        Post-condition & The document status is updated to 'Verified' in the PostgreSQL database. \\ \hline
+        Triggers & Initiation of document screening during the admission process. \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Search for a specific applicant from the dashboard.
+            \item Click on the \textbf{Verify Required Documents} section.
+            \item Select the specific documents provided by the candidate.
+            \item Click the \textbf{Verify} button to confirm via Prisma ORM.
+        \end{enumerate} \\ \hline
+        Exception & \textbf{Invalid Role:} Unauthorized staff attempt verification. \textbf{Missing Docs:} System flags missing files. \\ \hline
+        Frequency of Use & High \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Verify Required Documents (UC-2.4)}
+    \label{tab:dean_verify_docs}
+\end{table}
+\FloatBarrier

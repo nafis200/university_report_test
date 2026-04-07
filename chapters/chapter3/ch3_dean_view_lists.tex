@@ -1,0 +1,25 @@
+\subsubsection{View Applicant Lists (All, Waited, Admitted)}
+
+These use cases describe how the Dean Office monitors different categories of applicants through the dashboard sidebar.
+
+\begin{table}[!htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        Use Case ID & UC-2.7, 2.8, 2.9 \\ \hline
+        Use Case Name & View All / Waited / Admitted Applicants \\ \hline
+        Primary Actors & Dean Office \\ \hline
+        Scenario & 
+        \begin{enumerate}[nosep, leftmargin=*]
+            \item Log in to the Dean Dashboard.
+            \item Select the respective item (\textbf{All / Waited / Admitted}) from the sidebar.
+            \item The system queries the PostgreSQL database via Prisma and displays the filtered list.
+        \end{enumerate} \\ \hline
+        Frequency of Use & High \\ \hline
+    \end{tabularx}
+    \caption{Use Case Table: Applicant List Management (UC-2.7 - 2.9)}
+\end{table}
+\FloatBarrier
