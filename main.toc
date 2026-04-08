@@ -112,3 +112,9 @@
 \contentsline {subsubsection}{\numberline {3.1.6.13}Registrar Office Management}{54}{}%
 \contentsline {subsubsection}{\numberline {3.1.6.14}Applicant Profile Management}{55}{}%
 \contentsline {subsection}{\numberline {3.1.7}System Database Schema}{57}{}%
+\contentsline {chapter}{\numberline {4}Implementation Details}{59}{}%
+\contentsline {section}{\numberline {4.1}Authentication}{59}{}%
+\contentsline {subsection}{\numberline {4.1.1}Sign in Page and Process}{59}{}%
+\contentsline {section}{\numberline {4.2}Student Module Implementation}{60}{}%
+\contentsline {subsection}{\numberline {4.2.1}Final Admission Form}{61}{}%
+\contentsline {subsection}{\numberline {4.2.2}Application Summary and PDF Download}{62}{}%

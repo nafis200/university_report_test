@@ -1,0 +1,25 @@
+
+
+\section{Authentication}
+
+\subsection{Sign in Page and Process}
+Authentication is the primary security layer of the system, ensuring that only authorized users can access their respective features. The system provides a centralized login interface for all user roles, including students, administrators, and various office personnel.
+
+The interface is designed with a focus on usability and accessibility, featuring a bilingual (English and Bengali) layout to assist all users. The following section describes the main authentication entry point.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{chapters/chapter4/images/login.png}
+    \caption{System Authentication (Login Page)}
+    \label{fig:authentication_login}
+\end{figure}
+
+The login page, as shown in Figure \ref{fig:authentication_login}, utilizes a clean and modern card-based design. The authentication workflow involves the following steps:
+
+\begin{itemize}
+    \item \textbf{Credential Input:} The user is required to enter a unique identifier and a secure password. For students, the system supports login via their registered \textbf{Email} or \textbf{GST Admission Roll}. The password field is pre-configured to accept the \textbf{HSC Roll} for initial access.
+    \item \textbf{Password Visibility:} A toggle icon is integrated into the password field, allowing users to verify their input before submission, which reduces entry errors.
+    \item \textbf{Submission:} Once the credentials are provided, the user interacts with the \textbf{Login} button to initiate the verification process.
+    \item \textbf{Redirection:} Upon successful validation, the system's backend determines the user's role and automatically redirects them to the appropriate dashboard (e.g., Student, Dean, or Registrar).
+    \item \textbf{Error Handling:} In the event of incorrect credentials, the system prevents access and displays an alert indicating that the username or password does not match, maintaining the security of the application.
+\end{itemize}
