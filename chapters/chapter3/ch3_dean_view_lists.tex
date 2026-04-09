@@ -1,6 +1,6 @@
-\subsubsection{View Applicant Lists (All, Waited, Admitted)}
+\subsubsection{Application List Views (All, Waiting, Admittees)}
 
-These use cases describe how the Dean Office monitors different categories of applicants through the dashboard sidebar.
+This use case explains the process through which the Dean’s office is able to track different types of applicants through the sidebar menu of the dashboard.
 
 \begin{table}[!htbp]
     \centering
@@ -8,18 +8,18 @@ These use cases describe how the Dean Office monitors different categories of ap
     \renewcommand{\arraystretch}{1.4}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
-        Use Case ID & UC-2.7, 2.8, 2.9 \\ \hline
-        Use Case Name & View All / Waited / Admitted Applicants \\ \hline
-        Primary Actors & Dean Office \\ \hline
-        Scenario & 
+        \rowcolor[gray]{0.9} \textbf{Characteristic} & \textbf{Explanation} \\ \hline
+        Use Case Number & UC-2.7, 2.8, 2.9 \\ \hline
+        Name of Use Case & View All, Waiting \& Admitted Applicants \\ \hline
+        Actors & Dean’s Office \\ \hline
+        Steps & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Log in to the Dean Dashboard.
-            \item Select the respective item (\textbf{All / Waited / Admitted}) from the sidebar.
-            \item The system queries the PostgreSQL database via Prisma and displays the filtered list.
+            \item Login to the Dean’s Dashboard.
+            \item Select the specific type (All / Waiting / Admitted).
+            \item The system will then search for relevant information in the PostgreSQL database through Prisma.
         \end{enumerate} \\ \hline
         Frequency of Use & High \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Applicant List Management (UC-2.7 - 2.9)}
+    \caption{Use Case Table: Application List Management (UC-2.7 - 2.9)}
 \end{table}
 \FloatBarrier

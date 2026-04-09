@@ -1,6 +1,6 @@
 \subsubsection{Pending Documents and Reminders}
 
-This section covers receiving pending documents and sending reminder messages to applicants who have yet to complete their documentation.
+This use case entails obtaining pending documents and making reminders for applicants who do not have complete documentation.
 
 \begin{table}[!htbp]
     \centering
@@ -8,20 +8,20 @@ This section covers receiving pending documents and sending reminder messages to
     \renewcommand{\arraystretch}{1.4}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristic} & \textbf{Description} \\ \hline
         Use Case ID & UC-2.11, 2.12, 2.13 \\ \hline
         Use Case Name & Manage Pending Documents \& Send Reminders \\ \hline
-        Primary Actors & Dean Office \\ \hline
-        Scenario (Reminder) & 
+        Primary Actor & Dean Office \\ \hline
+        Scenarios Reminder Scenario: & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Identify applicant with missing documents.
-            \item Select the missing items and click \textbf{Send Message}.
-            \item System triggers a notification to the applicant's contact.
+            \item Determine which applicant does not have pending documents.
+            \item Select the required documents and choose Send Message.
+            \item The system sends an alert to the applicant's communication point.
         \end{enumerate} \\ \hline
-        Scenario (Receive) & 
+        Scenario: Receive Documents: & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Click \textbf{Pending Documents Action} from the sidebar.
-            \item Update the record upon receiving physical copies.
+            \item Select the Action Pending Documents in the side bar menu.
+            \item Document receipt is noted after receiving the physical document.
         \end{enumerate} \\ \hline
     \end{tabularx}
     \caption{Use Case Table: Pending Documents Management (UC-2.11 - 2.13)}

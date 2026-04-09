@@ -1,6 +1,6 @@
 \subsubsection{Admit Applicant (Dean Clearance)}
 
-This use case allows the Dean Office to grant final clearance for admission after successful verification of all records.
+The use case gives the Dean Office the ability to provide final clearance for admission after successful verification of all records.
 
 \begin{table}[!htbp]
     \centering
@@ -10,22 +10,22 @@ This use case allows the Dean Office to grant final clearance for admission afte
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-2.5 \\ \hline
-        Use Case Name & Admit Applicant \\ \hline
-        Primary Actors & Dean Office \\ \hline
-        Goal in Context & To grant final admission clearance to the applicant. \\ \hline
-        Precondition & All documents must be verified and the applicant must be eligible. \\ \hline
-        Post-condition & Applicant status is changed to 'Admitted' and department seat count is updated. \\ \hline
-        Scenario & 
+        Name of Use Case & Admit Applicant \\ \hline
+        Main Actors & Dean Office \\ \hline
+        Goal & The goal of the use case is to allow admission clearance of the applicant. \\ \hline
+        Precondition & Documents should be verified, and the applicant should be eligible. \\ \hline
+        Post Condition & The applicant is set as “Admitted,” while the seats in the department are increased. \\ \hline
+        Steps & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Search for an eligible applicant record.
-            \item Review the final summary of the candidate.
-            \item Click the \textbf{Admit} button.
-            \item System updates the record in PostgreSQL.
+            \item Find the eligible record of the applicant.
+            \item Read the final summary of the candidate.
+            \item Press the Admit button.
+            \item Record is saved in PostgreSQL database.
         \end{enumerate} \\ \hline
-        Exception & Seat capacity full or role unauthorized. \\ \hline
-        Frequency of Use & High \\ \hline
+        Exceptions & Full seat or unauthorized role. \\ \hline
+        Usage Frequency & Very Frequent \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Admit Applicant (UC-2.5)}
+    \caption{Use Case Table 2.12: UC-2.5}
     \label{tab:dean_admit}
 \end{table}
 \FloatBarrier

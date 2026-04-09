@@ -1,6 +1,7 @@
-\subsubsection{Verify Application Form}
+\subsubsection{Validate Applicant’s Form}
 
-This use case describes the procedure for the Dean Office to verify the submitted application form. It ensures that the applicant's data and uploaded documents are consistent with the university's requirements before granting final approval.
+This use case outlines how the Dean Office validates an applicant’s application form. 
+It ensures that the provided information is accurate before giving final approval.
 
 \begin{table}[!htbp]
     \centering
@@ -10,24 +11,24 @@ This use case describes the procedure for the Dean Office to verify the submitte
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-2.3 \\ \hline
-        Use Case Name & Verify Application Form \\ \hline
+        Use Case Name & Validate Applicant’s Form \\ \hline
         Primary Actors & Dean Office \\ \hline
-        Goal in Context & To successfully validate and approve the applicant's submitted application form. \\ \hline
-        Precondition & The user must be signed in with Dean Office privileges and an application must be pending review. \\ \hline
-        Post-condition & The application status is updated to 'Verified' in the PostgreSQL database and reflected on the system. \\ \hline
-        Triggers & Requirement to process and authorize candidate applications for the final admission list. \\ \hline
+        Goal in Context & Validation of the applicant’s application form. \\ \hline
+        Pre-condition & The user must log in as Dean Office and an application must be pending for verification. \\ \hline
+        Post Condition & The application status is updated as `Verified' in the PostgreSQL database. \\ \hline
+        Triggers & Processing and validation of applications for the final admission list. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The user searches for a specific applicant record from the pending list.
-            \item The user navigates to the \textbf{Verification} or \textbf{Review} section.
-            \item The system displays the submitted data and documents via the interface.
-            \item The user reviews the information and clicks the \textbf{Approve} or \textbf{Verify} button.
+            \item The user accesses the pending application records.
+            \item The user navigates to the \textbf{Verification} or \textbf{Review} page.
+            \item The system displays the submitted form data.
+            \item The user checks the data and clicks \textbf{Approve} or \textbf{Verify}.
             \item The system updates the status using Prisma ORM.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Data Mismatch:} If the information is incorrect, the user may reject the form or request a correction from the applicant. \\ \hline
-        Frequency of Use & High (During peak admission cycles). \\ \hline
+        Exception & Data Mismatch: If the data does not match, the user may reject the form or ask the applicant to resubmit it. \\ \hline
+        Frequency of Use & High (in peak admission periods) \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Verify Application Form (UC-2.3)}
-    \label{tab:dean_verify_form}
+    \caption{Use Case Table: Validate Applicant’s Form (UC-2.3)}
+    \label{tab:dean_validate_form}
 \end{table}
 \FloatBarrier

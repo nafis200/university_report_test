@@ -1,6 +1,6 @@
-\subsubsection{Delete User Information}
+\subsubsection{Remove User Data}
 
-This use case describes the administrative process of permanently removing a user's record from the \textit{JUST Undergraduate Final Admission System}. It allows the Admin to maintain system integrity by deleting redundant, unauthorized, or incorrect accounts from the database.
+This use case outlines the administrative action of deleting a user’s account from the \textit{JUST Undergraduate Final Admission System}. This use case enables the Admin to ensure data integrity by eliminating unnecessary or duplicate accounts from the database.
 
 \begin{table}[!htbp]
     \centering
@@ -10,27 +10,26 @@ This use case describes the administrative process of permanently removing a use
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-1.4 \\ \hline
-        Use Case Name & Delete User Information \\ \hline
+        Use Case Name & Remove User Data \\ \hline
         Primary Actors & Admin \\ \hline
-        Goal in Context & To permanently remove a specific user record from the system database. \\ \hline
-        Precondition & The Admin must be signed in and authorized with administrative privileges. \\ \hline
-        Post-condition & The user record is successfully removed from the PostgreSQL database via Prisma. \\ \hline
-        Triggers & Admin identifies an account that needs to be removed for maintenance or security reasons. \\ \hline
+        Goal in Context & To permanently delete a specified user account from the system database. \\ \hline
+        Precondition & The Admin must be logged into the system with administrative privileges. \\ \hline
+        Post-condition & The specified user account will be successfully deleted from the PostgreSQL database through Prisma. \\ \hline
+        Trigger & Admin notices that a certain account requires deletion for maintenance purposes. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The Admin navigates to the \textbf{User Management} section in the dashboard.
-            \item The system fetches the list of all registered users from the database.
-            \item The Admin identifies and selects the specific user to be deleted.
-            \item The Admin clicks the \textbf{Delete} button associated with the user.
-            \item A confirmation modal appears to prevent accidental deletion.
-            \item Upon confirmation, the backend executes the delete query using Prisma.
-            \item The system updates the UI and displays a success notification.
+            \item The Admin goes to the User Management page on the dashboard.
+            \item The system retrieves the complete list of registered users in the database.
+            \item The Admin identifies the particular user to be deleted.
+            \item The Admin clicks on the Delete button for the selected user.
+            \item The system displays a confirmation dialog box to avoid unintended deletion.
+            \item After confirming the action, the backend performs the deletion using Prisma.
         \end{enumerate} \\ \hline
         Exception & \textbf{Deletion Failed:} If the user is linked to critical active records, the system prevents deletion and shows a "Constraint Error." \\ \hline
         Frequency of Use & Low to Medium (As needed for system cleanup). \\ \hline
     \end{tabularx}
     
-    \caption{Use Case Table: Delete User Information (UC-1.4)}
-    \label{tab:use_case_delete_user}
+    \caption{Use Case Table: Remove User Data (UC-1.4)}
+    \label{tab:use_case_remove_user}
 \end{table}
 \FloatBarrier

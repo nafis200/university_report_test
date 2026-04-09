@@ -1,6 +1,6 @@
 \subsubsection{Update User Information}
 
-This use case describes the administrative process of modifying existing user data within the system. It ensures that the Admin can maintain accurate records for all institutional roles in the \textit{JUST Undergraduate Final Admission System}, allowing for corrections in personal details, roles, or account status.
+This use case outlines the procedure of changing user information within the system to ensure that there is accurate information about all users in the \textit{JUST Undergraduate Final Admission System} as an administrator.
 
 \begin{table}[!htbp]
     \centering
@@ -12,22 +12,22 @@ This use case describes the administrative process of modifying existing user da
         Use Case ID & UC-1.3 \\ \hline
         Use Case Name & Update User Information \\ \hline
         Primary Actors & Admin \\ \hline
-        Goal in Context & To modify, correct, or update the profile information of any registered user. \\ \hline
-        Precondition & Admin must be securely authenticated and signed into the administrative dashboard. \\ \hline
-        Post-condition & The updated user information is successfully persisted in the PostgreSQL database. \\ \hline
-        Triggers & Requirement to update contact details, institutional roles, or personal information of a user. \\ \hline
+        Goal in Context & To change or update user information as needed. \\ \hline
+        Precondition & Admin is successfully signed in into the administrative dashboard. \\ \hline
+        Post-condition & The user data is correctly updated within the PostgreSQL database. \\ \hline
+        Trigger & A need to update or correct any information regarding a user in the system. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The Admin navigates to the \textbf{User Management} section of the dashboard.
-            \item The Admin searches for the specific user and clicks on the \textbf{Edit} icon/button.
-            \item The system populates a form with the user's current data from the database.
-            \item The Admin modifies the necessary fields (e.g., Name, Email, Role, or Status).
-            \item The Admin clicks the \textbf{Update} or \textbf{Save Changes} button.
-            \item The Next.js backend performs validation and updates the record via Prisma.
-            \item A success notification is displayed to the Admin.
+            \item The Admin opens the User Management tab in the admin dashboard.
+            \item The Admin finds the specific user in question and clicks on the Edit button/icon.
+            \item The Admin receives the user’s data in a filled form from the database.
+            \item The necessary information fields, such as name, email, role, or status, are edited by the Admin.
+            \item The Admin clicks on Update or Save Changes.
+            \item The Next.js backend validates and saves the new user data using Prisma.
+            \item The Admin receives a success message.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Validation Error:} If a duplicate email or invalid data format is entered, the system prevents the update and shows an error message. \\ \hline
-        Frequency of Use & High (Used for regular data maintenance). \\ \hline
+        Exception & \textbf{Validation Error:} In case of entering invalid data such as a duplicate email address, the system prevents the update and shows an error message. \\ \hline
+        Frequency of Use & High (Used regularly for maintaining user data). \\ \hline
     \end{tabularx}
     
     \caption{Use Case Table: Update User Information (UC-1.3)}

@@ -1,6 +1,6 @@
-\subsubsection{Sign in}
+\subsubsection{Login Process}
 
-This use case describes the authentication process for the \textit{JUST Undergraduate Final Admission System}. It ensures that only authorized personnel and registered applicants can access the system's restricted functionalities.
+This use case explains how users log into the \textit{JUST Undergraduate Final Admission System}. It ensures that only authorized users such as staff members and applicants can access the system and its features.
 
 \begin{table}[htbp]
     \centering
@@ -9,26 +9,25 @@ This use case describes the authentication process for the \textit{JUST Undergra
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-1.1 \\ \hline
-        Use Case Name & Sign in \\ \hline
+        Use Case Name & Login Process \\ \hline
         Primary Actors & Admin, Dean Office, Hall Office, Medical Office, Registrar Office, Applicant \\ \hline
-        Goal in Context & To gain authorized access to the system dashboard. \\ \hline
-        Precondition & The user must have a valid account with a Username and Password. \\ \hline
+        Purpose & To allow users to securely access the system dashboard. \\ \hline
+        Precondition & The user must have a valid account with a username or email and password. \\ \hline
         Post-condition & The user is redirected to their respective dashboard based on their role. \\ \hline
-        Triggers & User attempts to access a protected route or clicks the Sign-in link. \\ \hline
+        Trigger & The user tries to access a protected page or clicks on the login option. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The user navigates to the System Login page.
-            \item The user enters their Username/Email and Password.
-            \item The user clicks the \textbf{Login} button.
-            \item The Next.js backend validates the credentials against the PostgreSQL database using Prisma.
-            \item Upon successful validation, a secure session is established.
-            \item The user is granted access to the system dashboard.
+            \item The user opens the login page of the system.
+            \item The user enters their username or email along with the password.
+            \item The user clicks the Login button.
+            \item The system checks the entered information with the PostgreSQL database using Next.js and Prisma.
+            \item If the information is correct, a secure session is created.
+            \item The user is then allowed to enter the dashboard.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Invalid Credentials:} If the credentials do not match, the system displays an "Access Denied" error message. \\ \hline
-        Frequency of Use & Extremely High (Daily). \\ \hline
+        Exception & \textbf{Invalid Credentials:} If the entered information is incorrect, the system shows an "Access Denied" message. \\ \hline
+        Frequency of Use & Very High (used daily). \\ \hline
     \end{tabularx}
-    
-    % --- এখানে ফিক্স করা হয়েছে: প্রথমে টেবিল শেষ হবে, তারপর ক্যাপশন ---
-    \caption{Use Case Table: Sign in (UC-1.1)}
-    \label{tab:use_case_signin}
+
+    \caption{Use Case Table: Login Process (UC-1.1)}
+    \label{tab:use_case_login}
 \end{table}

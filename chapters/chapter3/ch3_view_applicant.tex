@@ -1,6 +1,6 @@
 \subsubsection{View Applicant List}
 
-This use case describes the procedure for administrative actors to access and review the records of candidates who have applied for admission. It allows various administrative offices (Dean, Hall, Medical, Registrar) to filter and monitor the status of applicants throughout the admission lifecycle.
+This use case allows administrative staff to access and browse the list of applicants for admission. It provides Admin, Dean, Hall, Medical, and Registrar offices with the ability to filter and monitor applicants based on their category.
 
 \begin{table}[!htbp]
     \centering
@@ -12,20 +12,20 @@ This use case describes the procedure for administrative actors to access and re
         Use Case ID & UC-1.2 \\ \hline
         Use Case Name & View Applicant List \\ \hline
         Primary Actors & Admin, Dean Office, Hall Office, Medical Office, Registrar Office \\ \hline
-        Goal in Context & To filter and view different applicant categories (All, Admitted, or Waiting). \\ \hline
-        Precondition & The user must be securely authenticated and signed into the administrative dashboard. \\ \hline
-        Post-condition & The requested list of applicants is fetched and displayed on the UI. \\ \hline
-        Triggers & Need to verify candidate status or proceed with departmental clearance. \\ \hline
+        Goal & To sort and display applicant records by filtering categories such as All, Admitted, or Waiting. \\ \hline
+        Precondition & The user must be logged in with proper credentials to view applicant records. \\ \hline
+        Post-condition & The selected applicant list is displayed on the user interface. \\ \hline
+        Trigger & When there is a need to verify an applicant’s status or departmental clearance. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The user visits the Dashboard after a successful login.
-            \item The user clicks on the 'Applicant Management' or 'View List' option from the sidebar.
-            \item The user chooses a specific list category (e.g., All Applicants, Admitted, or Waiting).
-            \item The Next.js backend fetches the data from the PostgreSQL database through Prisma.
-            \item The system displays the applicant records in a responsive data table.
+            \item The user logs in and opens the Dashboard.
+            \item The user selects 'Applicant Management' or 'View List' from the sidebar menu.
+            \item The user chooses a specific category (All Applicants, Admitted, or Waiting).
+            \item The system retrieves the relevant data from the PostgreSQL database using Prisma.
+            \item The applicant records are displayed in a structured table for review.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Access Denied:} If the user’s role does not have permission to view certain lists, the system shows an unauthorized access message. \\ \hline
-        Frequency of Use & High (Used frequently for administrative tasks). \\ \hline
+        Exception & \textbf{Access Denied:} If the user does not have permission to view the list, an "Unauthorized Access" message is shown. \\ \hline
+        Frequency of Use & High (used frequently by administrative staff). \\ \hline
     \end{tabularx}
     \caption{Use Case Table: View Applicant List (UC-1.2)}
     \label{tab:view_applicant_list}

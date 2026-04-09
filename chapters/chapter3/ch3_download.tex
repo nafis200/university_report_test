@@ -1,6 +1,6 @@
 \subsubsection{Download Application Form}
 
-This use case provides the applicant with the ability to generate and download a formal PDF version of their submitted application. It serves as an official record for the applicant, which is essential for the physical verification process at \textit{Jashore University of Science and Technology (JUST)}.
+This use case enables the applicant to create and download a PDF version of the submitted application. The use case serves as an official documentation for the applicant, which is vital during the physical verification procedure at the \textit{JUST}.
 
 \begin{table}[!htbp]
     \centering
@@ -12,21 +12,21 @@ This use case provides the applicant with the ability to generate and download a
         Use Case ID & UC-1.7 \\ \hline
         Use Case Name & Download Application Form \\ \hline
         Primary Actors & Applicant \\ \hline
-        Goal in Context & To obtain a digital or physical copy of the completed admission form for official documentation. \\ \hline
-        Precondition & The applicant must be securely signed in and must have successfully submitted their admission application. \\ \hline
-        Post-condition & A PDF document is dynamically generated and successfully downloaded to the applicant's local device. \\ \hline
-        Triggers & The applicant clicks the \textbf{Download PDF} or \textbf{Print Application} button on their personal dashboard. \\ \hline
+        Goal in Context & To have a digital/physical copy of their admission application form as documentation. \\ \hline
+        Precondition & The applicant should have logged in to the application and should have submitted his/her application form already. \\ \hline
+        Post-condition & A PDF file will be generated and downloaded to the applicant’s device. \\ \hline
+        Triggers & The applicant clicks the “Download PDF” or “Print Application” button in their dashboard. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The applicant navigates to their personal dashboard.
-            \item The system verifies the application status from the PostgreSQL database.
-            \item The applicant clicks the \textbf{Download PDF} button.
-            \item The Next.js server-side logic triggers the PDF generation engine using the applicant's stored data.
-            \item The system initiates the file download stream in the user's browser.
-            \item The applicant saves the generated PDF file for future reference and physical submission.
+            \item The applicant logs into their personal dashboard.
+            \item The system checks the application status from the database using PostgreSQL.
+            \item The applicant presses the button “Download PDF” on the dashboard.
+            \item The server-side of the Next.js generates the application in PDF format based on the stored application data.
+            \item The file download starts in the browser of the applicant.
+            \item The applicant downloads the application form in PDF format.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Generation Error:} If there is a server-side failure or the database is unreachable, a "PDF Generation Failed" error is displayed. \\ \hline
-        Frequency of Use & High (Once per applicant after the successful submission of the form). \\ \hline
+        Exception & \textbf{Generation Error:} If the server fails or the database cannot be reached, the system displays a "PDF Generation Failed" error. \\ \hline
+        Frequency of Use & High (Once per applicant after submission). \\ \hline
     \end{tabularx}
     
     \caption{Use Case Table: Download Application Form (UC-1.7)}

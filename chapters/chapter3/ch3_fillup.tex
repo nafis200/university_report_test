@@ -1,6 +1,6 @@
-\subsubsection{Fill-up Application Form}
+\subsubsection{Fill-Up Application Form}
 
-This use case outlines the process for a registered applicant to submit their academic and personal details through the \textit{JUST Undergraduate Final Admission System}. It is a multi-step procedure designed to collect necessary documentation and information required for the final admission validation.
+This use case will describe how the process of filling out the application form using the \textit{JUST Undergraduate Final Admission System} works. This process involves several steps in order to obtain the documentation and other important information needed for the final admission validation.
 
 \begin{table}[!htbp]
     \centering
@@ -10,26 +10,25 @@ This use case outlines the process for a registered applicant to submit their ac
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-1.6 \\ \hline
-        Use Case Name & Fill-up Application Form \\ \hline
+        Use Case Name & Fill-Up Application Form \\ \hline
         Primary Actors & Applicant \\ \hline
-        Goal in Context & To successfully submit the complete admission application form. \\ \hline
-        Precondition & The applicant must be signed in and should not have a previously submitted pending application. \\ \hline
-        Post-condition & The application data is stored in the database, and the status is set to "Pending" for office review. \\ \hline
-        Triggers & Applicant clicks on the "Apply Now" or "Fill-up Form" button on their dashboard. \\ \hline
+        Goal in Context & To successfully submit the completed admission application form. \\ \hline
+        Precondition & The user needs to sign in and should not have a pending application already submitted. \\ \hline
+        Post-condition & The admission application form is saved in the database under the "Pending" status. \\ \hline
+        Triggers & Clicking "Apply now" or "Fill-up Form" from the dashboard menu. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The applicant navigates to the application form section.
-            \item The system presents a multi-step form (Personal Info, Academic History, Document Upload).
-            \item The applicant enters all required information and uploads necessary files (Photo, Signature, etc.).
-            \item The applicant reviews the information for any errors.
-            \item The applicant clicks the \textbf{Submit} button.
-            \item The Next.js frontend sends the data to the API, which persists it in PostgreSQL via Prisma.
-            \item A success confirmation message is displayed to the applicant.
+            \item The applicant goes to the admission form section.
+            \item The applicant sees that the form consists of several stages (Personal Information, Academic History, Document Upload).
+            \item The applicant fills in the form with the needed data (Photo, Signature, etc.).
+            \item The applicant checks if the entered data is correct.
+            \item The applicant clicks the Submit button.
+            \item The Next.js frontend passes the information to the API, then it is saved to PostgreSQL via Prisma.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Validation Error:} If required fields are empty or files are in an unsupported format, the system prompts the user to correct the errors. \\ \hline
-        Frequency of Use & Once per applicant (High volume during admission periods). \\ \hline
+        Exception & \textbf{Validation Error:} If required fields are missing or uploaded files are in unsupported formats, the system prompts the applicant to correct the errors. \\ \hline
+        Frequency of Use & Once per applicant (High during admission periods). \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Fill-up Application Form (UC-1.6)}
+    \caption{Use Case Table: Fill-Up Application Form (UC-1.6)}
     \label{tab:use_case_fillup_form}
 \end{table}
 \FloatBarrier

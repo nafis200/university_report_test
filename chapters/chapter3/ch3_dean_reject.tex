@@ -1,6 +1,6 @@
-\subsubsection{Reject Applicant}
+\subsubsection{Decline Applicant}
 
-This use case describes the procedure for rejecting an applicant if significant discrepancies are found in their documents or eligibility.
+This use case outlines how to decline an applicant in case discrepancies exist in their documentation or eligibility.
 
 \begin{table}[!htbp]
     \centering
@@ -8,22 +8,22 @@ This use case describes the procedure for rejecting an applicant if significant 
     \renewcommand{\arraystretch}{1.4}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristic} & \textbf{Description} \\ \hline
         Use Case ID & UC-2.6 \\ \hline
-        Use Case Name & Reject Applicant \\ \hline
-        Primary Actors & Dean Office \\ \hline
-        Goal in Context & To disqualify an applicant due to errors or non-compliance. \\ \hline
-        Scenario & 
+        Use Case Name & Decline Applicant \\ \hline
+        Primary Actors & Dean’s Office \\ \hline
+        Goal in Context & The goal is to exclude an applicant due to mistakes or violations. \\ \hline
+        Steps & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Search for the specific applicant.
-            \item Click the \textbf{Reject} button.
-            \item Provide a reason for rejection (optional/required).
-            \item System updates the status to 'Rejected'.
+            \item Locate the relevant applicant.
+            \item Click on the Decline button.
+            \item Give a reason for declining the application (optional/mandatory).
+            \item The system marks the application as “Declined.”
         \end{enumerate} \\ \hline
-        Exception & Invalid role or accidental rejection of verified candidates. \\ \hline
-        Frequency of Use & High \\ \hline
+        Exception & Occurs when unauthorized users decline valid applicants or reject applicants incorrectly. \\ \hline
+        Usage Frequency & High \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Reject Applicant (UC-2.6)}
-    \label{tab:dean_reject}
+    \caption{Use Case Table: Decline Applicant (UC-2.6)}
+    \label{tab:dean_decline}
 \end{table}
 \FloatBarrier

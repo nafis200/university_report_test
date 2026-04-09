@@ -1,13 +1,17 @@
 \subsubsection{Receive Bank Receipt}
+
 \begin{table}[!htbp]
-    \centering\small\renewcommand{\arraystretch}{1.4}
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
     \begin{tabularx}{\textwidth}{|l|X|}
-        \hline \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \hline
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-3.3 \\ \hline
         Use Case Name & Receive Bank Receipt \\ \hline
         Primary Actors & Hall Office \\ \hline
-        Goal & Confirm the physical or digital bank receipt for hall fees. \\ \hline
-        Scenario & 1. Search applicant. 2. Click 'Receive Receipt' button. 3. System updates PostgreSQL via Prisma. \\ \hline
+        Goal & To confirm the physical or electronic copy of hall fees. \\ \hline
+        Scenario & 1. Find the applicant. 2. Click 'Receive Receipt' button. 3. The system will update PostgreSQL database using Prisma. \\ \hline
     \end{tabularx}
     \caption{Use Case: Receive Bank Receipt (UC-3.3)}
 \end{table}

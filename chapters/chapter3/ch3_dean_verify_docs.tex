@@ -1,6 +1,6 @@
 \subsubsection{Verify Required Documents}
 
-This use case describes how the Dean Office verifies the physical or uploaded documents of an applicant. It ensures all academic certificates and required papers are authentic and meet the university's criteria.
+In this use case, the Dean Office verifies the uploaded physical documents of an applicant, ensuring that all the academic certificates and other necessary papers are genuine and satisfy the university requirements.
 
 \begin{table}[!htbp]
     \centering
@@ -11,22 +11,22 @@ This use case describes how the Dean Office verifies the physical or uploaded do
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-2.4 \\ \hline
         Use Case Name & Verify Required Documents \\ \hline
-        Primary Actors & Dean Office \\ \hline
-        Goal in Context & To successfully verify and confirm the validity of applicant documents. \\ \hline
-        Precondition & The user must be signed in and the applicant's record must be accessed. \\ \hline
-        Post-condition & The document status is updated to 'Verified' in the PostgreSQL database. \\ \hline
-        Triggers & Initiation of document screening during the admission process. \\ \hline
-        Scenario & 
+        Primary Actor & Dean Office \\ \hline
+        Purpose of Use Case & To ensure the successful verification and confirmation of the applicant’s documents. \\ \hline
+        Precondition & User must be logged in, and the applicant’s records must be accessed. \\ \hline
+        Post-Condition & Document status changes to “Verified” in the PostgreSQL database. \\ \hline
+        Trigger & Initiation of the process of verifying documents during the admission process. \\ \hline
+        Scenario Steps & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item Search for a specific applicant from the dashboard.
-            \item Click on the \textbf{Verify Required Documents} section.
-            \item Select the specific documents provided by the candidate.
-            \item Click the \textbf{Verify} button to confirm via Prisma ORM.
+            \item Step 1: Search for a particular applicant from the dashboard.
+            \item Step 2: Go to the Verify Required Documents tab.
+            \item Step 3: Choose specific documents submitted by the candidate.
+            \item Step 4: Click Verify to confirm using Prisma ORM.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Invalid Role:} Unauthorized staff attempt verification. \textbf{Missing Docs:} System flags missing files. \\ \hline
-        Frequency of Use & High \\ \hline
+        Exceptions & Invalid Role: Unapproved personnel tries to perform verification. Missing Docs: System raises an alert due to missing documents. \\ \hline
+        Frequency of Use & Very high \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Verify Required Documents (UC-2.4)}
+    \caption{Table of Use Case: Verify Required Documents (UC-2.4)}
     \label{tab:dean_verify_docs}
 \end{table}
 \FloatBarrier
