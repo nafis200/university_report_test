@@ -1,43 +1,73 @@
 \section{Introduction}
 
 \subsection{Purpose}
-The primary purpose of the JUST Undergraduate Final Admission System (JUST-UFAS) is to provide a secure, efficient, and user-friendly platform for completing the final admission process. The previous manual and semi-automated system had several limitations, including lack of proper validation, poor code quality, absence of structured design patterns, and no mechanism to enforce admission deadlines.
 
-This system is the first structured and fully integrated solution developed by the JUST Undergraduate Admission Committee. It aims to eliminate existing issues by introducing proper validation, deadline control, role-based access, and a more maintainable and scalable architecture.
+\noindent The main goal of the Undergraduate Final Admission System (JUST-UFAS) is to give a safe, fast and easy-to-use platform for finishing the final admission process.
 
-This Software Requirement Specification (SRS) document describes the complete workflow of the final admission process, including:
+\vspace{0.3cm}
+
+\noindent The old manual and semi-automated system had problems.
+
+\vspace{0.3cm}
+
+\noindent These problems included no checks, bad code, no structured design and no way to enforce deadlines.
+
+\vspace{0.3cm}
+
+\noindent This system is the fully integrated solution made by the JUST Undergraduate Admission Committee.
+
+\vspace{0.3cm}
+
+\noindent It aims to fix existing problems by adding checks controlling deadlines and giving different access levels to users.
+
+\vspace{0.3cm}
+
+\noindent The system also has an more scalable design.
+
+\vspace{0.3cm}
+
+\noindent This Software Requirement Specification (SRS) document explains the workflow of the final admission process, which includes:
+
 \begin{itemize}
-    \item Applicant interaction through online application form submission.
-    \item Verification and clearance by the Dean Office with required documents.
-    \item Bank receipt verification by the Hall Office.
-    \item Medical examination and reporting by the Medical Center.
-    \item Final approval and document collection by the Registrar Office.
-    \item Administrative control for managing users, roles, and system operations.
+    \item Applicants filling out forms.
+    \item The Dean Office. Clearing applicants with required documents.
+    \item The Hall Office verifying bank receipts.
+    \item The Medical Center doing exams and reporting results.
+    \item The Registrar Office giving approval and collecting documents.
+    \item Administrative control for managing users, roles and system operations.
 \end{itemize}
 
 \subsection{Document Conventions}
-The following conventions are used throughout this SRS document:
+
+\noindent The following conventions are used in this SRS document:
+
 \begin{itemize}
-    \item Section headings are numbered hierarchically.
-    \item \textbf{Bold text} indicates important terms or concepts.
-    \item All figures and tables are labeled with appropriate names and numbering.
+    \item Section headings are numbered.
+    \item \textbf{Bold text} shows terms or concepts.
+    \item All figures and tables have labels and numbers.
     \item The following abbreviations are used:
     \begin{itemize}
         \item JUST: Jashore University of Science and Technology.
         \item SRS: Software Requirements Specification.
-        \item JUST-UFAS: JUST Undergraduate Final Admission System.
+        \item UFAS: JUST Undergraduate Final Admission System.
     \end{itemize}
 \end{itemize}
 
 \subsection{Intended Audience and Reading Suggestions}
-This document follows IEEE SRS standards and is intended for:
+
+\noindent This document follows IEEE SRS standards.
+
+\vspace{0.3cm}
+
+\noindent It is for:
+
 \begin{itemize}
     \item Admission Committee members
     \item Project Supervisor
     \item Chairman of the CSE Department
     \item Internal and External Viva Board Members
     \item Future Developers and System Maintainers
-    \item Any stakeholders interested in understanding the system
+    \item Any stakeholders interested, in understanding the Undergraduate Final Admission System (JUST-UFAS).
 \end{itemize}
 
-Readers are encouraged to begin with the Introduction and Overall Description sections before proceeding to detailed requirements.
+\noindent Readers should start with the Introduction and Overall Description sections before moving to requirements.

@@ -1,64 +1,51 @@
 \chapter{Testing and Quality Assurance}
 
-Software testing is an indispensable phase of the development life cycle for the JUST Undergraduate Final Admission System (JUST-UFAS). It ensures the reliability, security, and correctness of the system before it is deployed for the 2026 admission session. This chapter details the multi-layered testing strategy employed, ranging from automated unit tests to manual functional verification.
+\setlength{\parindent}{0pt} % পুরো চ্যাপ্টারের জন্য ইন্ডেন্ট বন্ধ করা হলো
+
+The JUST Undergraduate Final Admission System needs to be tested well. This is an important part of making sure the system works correctly before we use it for the 2026 admission session. We want to make sure the JUST Undergraduate Final Admission System is reliable, secure and correct.
+
+\medskip
+This part of the book explains how we tested the Undergraduate Final Admission System in many different ways from automatic tests to manual checks.
 
 \section{Automated White Box Testing with Vitest}
-As the system is built on the Next.js framework, we utilized \textbf{Vitest} for high-performance unit testing. White box testing allows us to verify the internal logic, functions, and components of the application.
+
+We used Vitest to test the Undergraduate Final Admission System because it is built on the Next.js framework. Vitest helps us test the parts of the JUST Undergraduate Final Admission System like the functions and components to make sure they work correctly.
 
 \subsection{Component Rendering Tests}
-Using \textit{Vitest} alongside \textit{React Testing Library}, we ensured that the core UI components render without crashing.
-\begin{itemize}
-    \item \textbf{Verification Point:} We tested the rendering of the landing page, navigation bar, and admission form.
-    \item \textbf{Outcome:} The tests confirmed that the "JUST-UFAS" title and essential action buttons are correctly mounted in the DOM.
-\end{itemize}
+We used Vitest and React Testing Library to test if the main parts of the user interface work properly. We checked to see if the main page navigation bar and admission form show up without any problems. The tests showed that the title of the Undergraduate Final Admission System and the important buttons are in the right place.
 
-\subsection{Logical and Utility Function Testing}
-We implemented unit tests for independent functions that handle sensitive data logic.
-\begin{itemize}
-    \item \textbf{Date Formatting:} A utility function was tested to ensure that ISO strings from the database are converted into user-friendly formats (e.g., "DD-MM-YYYY") for admission deadlines.
-    \item \textbf{GPA Calculation:} Functions responsible for validating GST scores against department-specific eligibility criteria were tested with various edge cases.
-\end{itemize}
+\subsection{Utility Function Testing}
+We tested the functions that handle sensitive data like dates and scores. We tested a function that changes dates from the database into a format that's easy to read, like ``DD-MM-YYYY''. We also tested the functions that calculate scores to make sure they are correct.
 
 \section{Backend API Testing with Postman}
-To ensure the robustness of our RESTful APIs developed with Node.js and Prisma, we conducted extensive testing using \textbf{Postman}.
-
-\begin{itemize}
-    \item \textbf{Endpoint Integrity:} We sent various HTTP requests (GET, POST, PATCH) to endpoints like \texttt{/api/applicants} and \texttt{/api/auth}.
-    \item \textbf{JSON Schema Validation:} Verified that the backend returns the correct JSON structure. For instance, the applicant list API must return an array of objects containing valid GST IDs and merit positions.
-    \item \textbf{Status Code Verification:} Ensured that the server returns appropriate status codes: \texttt{200 OK} for success, \texttt{401 Unauthorized} for invalid logins, and \texttt{400 Bad Request} for malformed data.
-\end{itemize}
+We used Postman to test the backend of the Undergraduate Final Admission System, which was built with Node.js and Prisma. We sent kinds of requests to the backend to make sure it works correctly. We checked to see if the backend returns the information like a list of applicants with their scores and positions.
 
 \section{Manual Functional Testing}
-Manual testing was performed to simulate real-world user behavior and ensure the system's usability from a student and administrator's perspective.
+We did tests to make sure the JUST Undergraduate Final Admission System works well from a users point of view. We tested the admission form to make sure it works correctly. We tried submitting the form without filling in all the required fields. We got an error message.
 
 \subsection{Form Validation Testing}
-The admission form is the most critical part of the student module. We performed exhaustive manual tests on all input fields.
-\begin{itemize}
-    \item \textbf{Empty Field Validation:} Attempting to submit the form without mandatory fields (e.g., Permanent Address) triggers an immediate error message via Tailwind-styled toast notifications.
-    \item \textbf{Input Constraints:} We tested numeric fields to ensure that character inputs are restricted, preventing potential database errors.
-\end{itemize}
+We tested all the fields in the admission form to make sure they work correctly. We tried putting in the kind of information like letters in a field that only allows numbers.
 
 \subsection{Role-Based Access Control (RBAC) Test}
-We manually verified that the security boundaries between different user roles are strictly enforced.
-\begin{itemize}
-    \item \textbf{Verification:} A student account was used to attempt access to the Dean's approval dashboard (\texttt{/admin/dean}).
-    \item \textbf{Result:} The system successfully redirected the user to the login page, proving that the middleware protection is functioning correctly.
-\end{itemize}
+We tested to make sure that different users can only access the parts of the Undergraduate Final Admission System that they are allowed to. We tried to access a part of the system that's only, for administrators and we were redirected to the login page.
 
 \section{Summary of Test Results}
-The overall testing phase concluded with a 100\% pass rate for all critical modules. Table \ref{tab:detailed_test_summary} summarizes the key test outcomes.
+All the tests we did on the Undergraduate Final Admission System passed, which means it is working correctly. The table below shows the results of the tests.
 
-\begin{table}[H]
+\vspace{0.5cm}
+
+\begin{table}[h]
     \centering
-    \caption{Detailed Testing Outcome Summary}
-    \label{tab:detailed_test_summary}
-    \begin{tabular}{|l|l|l|c|}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|l|c|}
         \hline
-        \rowcolor{gray!20} \textbf{Test Category} & \textbf{Testing Tool} & \textbf{Objective} & \textbf{Status} \\ \hline
-        Unit Testing & Vitest & Internal logic validation & Passed \\ \hline
-        API Testing & Postman & REST endpoint integrity & Passed \\ \hline
-        UI Validation & Manual & Form errors \& UX & Passed \\ \hline
-        Security (RBAC) & Manual/Postman & Unauthorized access prevention & Passed \\ \hline
-        Data Integrity & Prisma/SQL & CRUD operation verification & Passed \\ \hline
+        \textbf{Test Category} & \textbf{Testing Tool} & \textbf{Status} \\ \hline
+        White Box Testing & Vitest & Passed \\ \hline
+        API Testing & Postman & Passed \\ \hline
+        Functional Testing & Manual & Passed \\ \hline
+        Validation & Manual & Passed \\ \hline
+        RBAC & Manual & Passed \\ \hline
     \end{tabular}
+    \caption{Summary of Testing Results for JUST-UFAS}
+    \label{tab:test_summary}
 \end{table}
