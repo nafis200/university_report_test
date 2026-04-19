@@ -1,8 +1,15 @@
 \subsubsection{Update Applicant Information (Admin)}
 \begin{table}[!htbp]
-    \centering\small\renewcommand{\arraystretch}{1.4}
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.4}
+    % ক্যাপশন উপরে সেট করা হয়েছে
+    \caption{Use Case Table: Update Applicant Information (UC-6.8)}
+    \label{tab:update_applicant_info_admin}
+    
     \begin{tabularx}{\textwidth}{|l|X|}
-        \hline \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \hline 
+        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-6.8 \\ \hline
         Use Case Name & Update Applicant Information \\ \hline
         Primary Actors & Admin \\ \hline
@@ -11,6 +18,5 @@
         Scenario & 1. Log in to Admin dashboard. 2. Navigate to the applicant table. 3. Search for the applicant. 4. Modify the required fields. 5. Click the 'Update' button to save changes via Prisma. \\ \hline
         Exception & Invalid user role or database connection error. \\ \hline
     \end{tabularx}
-    \caption{Use Case Table: Update Applicant Information (UC-6.8)}
 \end{table}
 \FloatBarrier

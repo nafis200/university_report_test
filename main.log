@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  10 APR 2026 01:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.4.2)  20 APR 2026 02:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -415,7 +415,11 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box69
-) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./chapters/chapter3/ch3_main.aux))
+) (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./Abbreviation.aux) (./chapters/chapter2/ch2_main.aux) (./chapters/chapter3/ch3_main.aux) (./chapters/chapter4/ch4_main.aux
+
+LaTeX Warning: Label `fig:hall_status_manage' multiply defined.
+
+) (./chapters/chapter5/testing.aux) (./chapters/chapter6/deployment.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -492,21 +496,26 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 File: images/images.jpeg Graphic file (type jpg)
 <use images/images.jpeg>
 Package pdftex.def Info: images/images.jpeg  used on input line 21.
-(pdftex.def)             Requested size: 93.29378pt x 105.6718pt.
+(pdftex.def)             Requested size: 84.81076pt x 96.06294pt.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/images.jpeg>])
 \openout2 = `certificate.aux'.
 
+ (./certificate.tex
+Overfull \hbox (1.09499pt too wide) in paragraph at lines 29--29
+ [][]
+ []
 
-No file certificate.tex.
+) [1
+
+
+
+]
 \openout2 = `acknowledgement.aux'.
 
-(./acknowledgement.tex) [1
-
-
-
+ (./acknowledgement.tex) [2
 
 
 
@@ -517,57 +526,334 @@ No file certificate.tex.
 No file abstract.tex.
 \openout2 = `preface.aux'.
 
-(./preface.tex) [2
+(./preface.tex) [3
 
 
 
 
 
 
-] (./main.toc
+]
+\openout2 = `Abbreviation.aux'.
+
+ (./Abbreviation.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
+(Font)              <12> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
- [3
+(Font)              <6> on input line 9.
+) [4
 
 
-] [4])
+
+] (./main.toc [5
+
+
+] [6] [7] [8])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5] (./main.lot [6])
+ [9] [10] (./main.lot [11])
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [7]
+ [12]
 Chapter 1.
-[1
+(./chapters/chapter1/background.tex) (./chapters/chapter1/motivation.tex [1
 
-]
+]) (./chapters/chapter1/objectives.tex [2]) (./chapters/chapter1/contributor.tex [3]) [4]
+\openout2 = `chapters/chapter2/ch2_main.aux'.
+
+ (./chapters/chapter2/ch2_main.tex
+Chapter 2.
+
+Overfull \hbox (12.41954pt too wide) in paragraph at lines 2--2
+[][]  
+ []
+
+(./chapters/chapter2/1_introduction.tex [5
+
+
+]) (./chapters/chapter2/2_overall_description.tex [6] [7]) (./chapters/chapter2/3_user_classes.tex [8]) (./chapters/chapter2/4_constraints.tex) (./chapters/chapter2/5_external_interface.tex [9]) (./chapters/chapter2/6_system_features_admin.tex [10]) (./chapters/chapter2/7_system_features_dean.tex [11]) (./chapters/chapter2/8_system_features_hall.tex) (./chapters/chapter2/9_system_features_medical.tex [12]) (./chapters/chapter2/10_system_features_registrar.tex) (./chapters/chapter2/11_system_features_applicant.tex [13]) (./chapters/chapter2/12_non_functional.tex [14])) [15]
 \openout2 = `chapters/chapter3/ch3_main.aux'.
 
  (./chapters/chapter3/ch3_main.tex
-Chapter 2.
-<./chapters/chapter3/images/user.png, id=37, 1263.72125pt x 835.12pt>
+Chapter 3.
+<./chapters/chapter3/images/user.png, id=98, 1263.72125pt x 835.12pt>
 File: ./chapters/chapter3/images/user.png Graphic file (type png)
 <use ./chapters/chapter3/images/user.png>
 Package pdftex.def Info: ./chapters/chapter3/images/user.png  used on input line 11.
 (pdftex.def)             Requested size: 360.45386pt x 238.2028pt.
-(./chapters/chapter3/ch3_signin.tex [2
+(./chapters/chapter3/ch3_signin.tex [16
 
 
- <./chapters/chapter3/images/user.png>]) (./chapters/chapter3/ch3_view_applicant.tex [3]) (./chapters/chapter3/ch3_update_user.tex
-Underfull \hbox (badness 1540) in paragraph at lines 31--31
+
+
+ <./chapters/chapter3/images/user.png>]) (./chapters/chapter3/ch3_view_applicant.tex [17] [18]) (./chapters/chapter3/ch3_update_user.tex
+Underfull \hbox (badness 1540) in paragraph at lines 33--33
 []|\OT1/cmr/m/n/10.95 The user data is cor-rectly up-dated within the Post-greSQL
  []
 
-[4] [5]) (./chapters/chapter3/ch3_delete_user.tex) (./chapters/chapter3/ch3_view_user.tex [6]) (./chapters/chapter3/ch3_fillup.tex [7] [8]) (./chapters/chapter3/ch3_download.tex)
-<./chapters/chapter3/images/dean.png, id=65, 1041.8925pt x 1027.84pt>
+) (./chapters/chapter3/ch3_delete_user.tex [19]) (./chapters/chapter3/ch3_view_user.tex [20]) (./chapters/chapter3/ch3_fillup.tex [21]) (./chapters/chapter3/ch3_download.tex [22] [23])
+<./chapters/chapter3/images/dean.png, id=129, 1041.8925pt x 1027.84pt>
 File: ./chapters/chapter3/images/dean.png Graphic file (type png)
 <use ./chapters/chapter3/images/dean.png>
 Package pdftex.def Info: ./chapters/chapter3/images/dean.png  used on input line 31.
 (pdftex.def)             Requested size: 360.45386pt x 355.59325pt.
- [9] [10 <./chapters/chapter3/images/dean.png>] (./chapters/chapter3/ch3_dean_search.tex) (./chapters/chapter3/ch3_dean_profile.tex [11] [12]) (./chapters/chapter3/ch3_dean_verify_form.tex) (./chap
+ (./chapters/chapter3/ch3_dean_search.tex [24 <./chapters/chapter3/images/dean.png>]) (./chapters/chapter3/ch3_dean_profile.tex [25] [26]) (./chapters/chapter3/ch3_dean_verify_form.tex) (./chapters/chapter3/ch3_dean_verify_docs.tex [27] [28]) (./chapters/chapter3/ch3_dean_admit.tex) (./chapters/chapter3/ch3_dean_reject.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\OT1/cmr/m/n/10.95 Give a rea-son for de-clin-ing the ap-pli-ca-tion (op-
+ []
+
+[29]) (./chapters/chapter3/ch3_dean_view_lists.tex) (./chapters/chapter3/ch3_dean_pending.tex [30]) (./chapters/chapter3/ch3_dean_status_export.tex) (./chapters/chapter3/ch3_hall_diagram.tex)
+Overfull \hbox (13.06165pt too wide) in paragraph at lines 43--55
+ [][] 
+ []
+
+[31] (./chapters/chapter3/ch3_hall_search.tex [32]) (./chapters/chapter3/ch3_hall_profile.tex) (./chapters/chapter3/ch3_hall_receipt.tex [33]) (./chapters/chapter3/ch3_hall_admit.tex) (./chapters/chapter3/ch3_hall_lists.tex) (./chapters/chapter3/ch3_hall_update.tex [34]) (./chapters/chapter3/ch3_hall_export_download.tex) (./chapters/chapter3/ch3_medical_diagram.tex)
+Overfull \hbox (14.12624pt too wide) in paragraph at lines 46--75
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_medical_search.tex [35] [36]) (./chapters/chapter3/ch3_medical_profile.tex) (./chapters/chapter3/ch3_medical_info.tex) (./chapters/chapter3/ch3_medical_report.tex) (./chapters/chapter3/ch3_medical_admit.tex [37]) (./chapters/chapter3/ch3_medical_lists.tex) (./chapters/chapter3/ch3_medical_update.tex) (./chapters/chapter3/ch3_medical_export_download.tex [38]) (./chapters/chapter3/ch3_registrar_diagram.tex)
+Overfull \hbox (15.31248pt too wide) in paragraph at lines 59--96
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_registrar_search.tex [39] [40]) (./chapters/chapter3/ch3_registrar_profile.tex) (./chapters/chapter3/ch3_registrar_receive.tex) (./chapters/chapter3/ch3_registrar_admit.tex [41]) (./chapters/chapter3/ch3_registrar_view_all.tex) (./chapters/chapter3/ch3_registrar_waited.tex [42]) (./chapters/chapter3/ch3_registrar_admitted.tex) (./chapters/chapter3/ch3_registrar_export.tex [43]) (./chapters/chapter3/ch3_registrar_update.tex
+Underfull \hbox (badness 3240) in paragraph at lines 20--20
+[]|\OT1/cmr/m/n/10.95 Manually up-date/modify par-tic-u-lar fields of an ap-pli-cant's
+ []
+
+) (./chapters/chapter3/ch3_registrar_pending.tex [44]) (./chapters/chapter3/ch3_registrar_receive_pending.tex) (./chapters/chapter3/ch3_registrar_seat.tex [45]) (./chapters/chapter3/ch3_registrar_export_all.tex) (./chapters/chapter3/ch3_registrar_create.tex [46]) (./chapters/chapter3/ch3_applicant_diagram.tex)
+Overfull \hbox (1.18391pt too wide) in paragraph at lines 45--124
+ [][] 
+ []
+
+(./chapters/chapter3/ch3_applicant_create.tex [47] [48]) (./chapters/chapter3/ch3_applicant_update_profile.tex) (./chapters/chapter3/ch3_applicant_fillup.tex) (./chapters/chapter3/ch3_applicant_generate.tex [49]) (./chapters/chapter3/ch3_applicant_download.tex) (./chapters/chapter3/ch3_applicant_send_edit.tex [50]) (./chapters/chapter3/ch3_applicant_approve_edit.tex) (./chapters/chapter3/ch3_applicant_update_info.tex [51]) (./chapters/chapter3/act_user_management.tex)
+Overfull \hbox (89.5083pt too wide) in paragraph at lines 79--149
+ [][] 
+ []
+
+[52] [53] (./chapters/chapter3/act_dean_office_management.tex) [54] (./chapters/chapter3/act_hall_office_management.tex
+Overfull \hbox (14.08517pt too wide) in paragraph at lines 35--35
+ [][][]\OT1/cmr/bx/n/8 Waited/Admitted 
+ []
+
+) [55] (./chapters/chapter3/act_medical_office_management.tex
+Overfull \hbox (14.08517pt too wide) in paragraph at lines 37--37
+ [][][]\OT1/cmr/bx/n/8 Waited/Admitted 
+ []
+
+) [56] (./chapters/chapter3/act_registrar_office_management.tex
+Overfull \hbox (31.80753pt too wide) in paragraph at lines 35--35
+ [][][]\OT1/cmr/bx/n/8 All/Waited/Admitted 
+ []
+
+) [57] (./chapters/chapter3/act_applicant_profile_management.tex) [58] [59]
+
+pdfTeX warning: pdflatex (file ./chapters/chapter3/images/University Diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<chapters/chapter3/images/University Diagram.pdf, id=248, page=1, 847.96799pt x 599.74063pt>
+File: chapters/chapter3/images/University Diagram.pdf Graphic file (type pdf)
+<use chapters/chapter3/images/University Diagram.pdf, page 1>
+Package pdftex.def Info: chapters/chapter3/images/University Diagram.pdf , page1 used on input line 234.
+(pdftex.def)             Requested size: 534.31369pt x 377.9118pt.
+<chapters/chapter3/images/Untitled.pdf, id=249, page=1, 1084.05pt x 1927.2pt>
+File: chapters/chapter3/images/Untitled.pdf Graphic file (type pdf)
+<use chapters/chapter3/images/Untitled.pdf, page 1>
+Package pdftex.def Info: chapters/chapter3/images/Untitled.pdf , page1 used on input line 245.
+(pdftex.def)             Requested size: 360.45386pt x 640.80067pt.
+[60 <./chapters/chapter3/images/University Diagram.pdf>]
+Overfull \vbox (10.87706pt too high) has occurred while \output is active []
+
+ [61 <./chapters/chapter3/images/Untitled.pdf>])
+\openout2 = `chapters/chapter4/ch4_main.aux'.
+
+ (./chapters/chapter4/ch4_main.tex
+Chapter 4.
+(./chapters/chapter4/1_authentication.tex [62
+
+
+
+
+]
+<chapters/chapter4/images/login.png, id=324, 487.8225pt x 491.8375pt>
+File: chapters/chapter4/images/login.png Graphic file (type png)
+<use chapters/chapter4/images/login.png>
+Package pdftex.def Info: chapters/chapter4/images/login.png  used on input line 41.
+(pdftex.def)             Requested size: 254.43878pt x 256.53746pt.
+) (./chapters/chapter4/2_student_implementation.tex [63]
+<chapters/chapter4/images/form.png, id=328, 917.4275pt x 643.40375pt>
+File: chapters/chapter4/images/form.png Graphic file (type png)
+<use chapters/chapter4/images/form.png>
+Package pdftex.def Info: chapters/chapter4/images/form.png  used on input line 11.
+(pdftex.def)             Requested size: 360.45386pt x 252.79178pt.
+ [64 <./chapters/chapter4/images/login.png>]) (./chapters/chapter4/download.tex [65 <./chapters/chapter4/images/form.png>]
+<chapters/chapter4/images/download.png, id=337, 897.3525pt x 100.375pt>
+File: chapters/chapter4/images/download.png Graphic file (type png)
+<use chapters/chapter4/images/download.png>
+Package pdftex.def Info: chapters/chapter4/images/download.png  used on input line 8.
+(pdftex.def)             Requested size: 339.24956pt x 37.94684pt.
+) (./chapters/chapter4/3_submission_status.tex
+<chapters/chapter4/images/complain.png, id=338, 1222.5675pt x 616.3025pt>
+File: chapters/chapter4/images/complain.png Graphic file (type png)
+<use chapters/chapter4/images/complain.png>
+Package pdftex.def Info: chapters/chapter4/images/complain.png  used on input line 7.
+(pdftex.def)             Requested size: 360.45386pt x 181.70421pt.
+ [66 <./chapters/chapter4/images/download.png>]) (./chapters/chapter4/4_data_management.tex [67 <./chapters/chapter4/images/complain.png>]
+<chapters/chapter4/images/excelupload.png, id=348, 646.415pt x 485.815pt>
+File: chapters/chapter4/images/excelupload.png Graphic file (type png)
+<use chapters/chapter4/images/excelupload.png>
+Package pdftex.def Info: chapters/chapter4/images/excelupload.png  used on input line 9.
+(pdftex.def)             Requested size: 318.04524pt x 239.02994pt.
+<chapters/chapter4/images/examAnoucement.png, id=349, 1242.6425pt x 395.4775pt>
+File: chapters/chapter4/images/examAnoucement.png Graphic file (type png)
+<use chapters/chapter4/images/examAnoucement.png>
+Package pdftex.def Info: chapters/chapter4/images/examAnoucement.png  used on input line 24.
+(pdftex.def)             Requested size: 318.04524pt x 101.21654pt.
+ [68 <./chapters/chapter4/images/excelupload.png>]) (./chapters/chapter4/5_user_administration.tex
+<chapters/chapter4/images/credentail.png, id=354, 949.5475pt x 521.95pt>
+File: chapters/chapter4/images/credentail.png Graphic file (type png)
+<use chapters/chapter4/images/credentail.png>
+Package pdftex.def Info: chapters/chapter4/images/credentail.png  used on input line 11.
+(pdftex.def)             Requested size: 318.04524pt x 174.82446pt.
+ [69 <./chapters/chapter4/images/examAnoucement.png>]
+<chapters/chapter4/images/userManagement.png, id=359, 1254.6875pt x 564.1075pt>
+File: chapters/chapter4/images/userManagement.png Graphic file (type png)
+<use chapters/chapter4/images/userManagement.png>
+Package pdftex.def Info: chapters/chapter4/images/userManagement.png  used on input line 22.
+(pdftex.def)             Requested size: 381.6517pt x 171.59203pt.
+) (./chapters/chapter4/6_complaint_handling.tex [70 <./chapters/chapter4/images/credentail.png> <./chapters/chapter4/images/userManagement.png>]
+<chapters/chapter4/images/checkcomplain.png, id=365, 1229.59375pt x 223.83624pt>
+File: chapters/chapter4/images/checkcomplain.png Graphic file (type png)
+<use chapters/chapter4/images/checkcomplain.png>
+Package pdftex.def Info: chapters/chapter4/images/checkcomplain.png  used on input line 11.
+(pdftex.def)             Requested size: 360.45386pt x 65.61784pt.
+) (./chapters/chapter4/7_dean_verification.tex [71 <./chapters/chapter4/images/checkcomplain.png>]
+<chapters/chapter4/images/applicantList.png, id=370, 1238.6275pt x 562.1pt>
+File: chapters/chapter4/images/applicantList.png Graphic file (type png)
+<use chapters/chapter4/images/applicantList.png>
+Package pdftex.def Info: chapters/chapter4/images/applicantList.png  used on input line 11.
+(pdftex.def)             Requested size: 381.6517pt x 173.19423pt.
+<chapters/chapter4/images/listTable.png, id=371, 1185.42876pt x 341.275pt>
+File: chapters/chapter4/images/listTable.png Graphic file (type png)
+<use chapters/chapter4/images/listTable.png>
+Package pdftex.def Info: chapters/chapter4/images/listTable.png  used on input line 22.
+(pdftex.def)             Requested size: 381.6517pt x 109.87157pt.
+ [72 <./chapters/chapter4/images/applicantList.png>]) (./chapters/chapter4/8_dean_approval.tex
+<chapters/chapter4/images/approvedList.png, id=377, 1203.49625pt x 334.24875pt>
+File: chapters/chapter4/images/approvedList.png Graphic file (type png)
+<use chapters/chapter4/images/approvedList.png>
+Package pdftex.def Info: chapters/chapter4/images/approvedList.png  used on input line 7.
+(pdftex.def)             Requested size: 360.45386pt x 100.10709pt.
+) (./chapters/chapter4/9_dean_sync.tex [73 <./chapters/chapter4/images/listTable.png> <./chapters/chapter4/images/approvedList.png>]
+<chapters/chapter4/images/uploadDrive.png, id=383, 575.14874pt x 405.515pt>
+File: chapters/chapter4/images/uploadDrive.png Graphic file (type png)
+<use chapters/chapter4/images/uploadDrive.png>
+Package pdftex.def Info: chapters/chapter4/images/uploadDrive.png  used on input line 11.
+(pdftex.def)             Requested size: 296.84093pt x 209.29733pt.
+) (./chapters/chapter4/10_registrar_verification.tex [74 <./chapters/chapter4/images/uploadDrive.png>]
+File: chapters/chapter4/images/applicantList.png Graphic file (type png)
+<use chapters/chapter4/images/applicantList.png>
+Package pdftex.def Info: chapters/chapter4/images/applicantList.png  used on input line 11.
+(pdftex.def)             Requested size: 381.6517pt x 173.19423pt.
+File: chapters/chapter4/images/listTable.png Graphic file (type png)
+<use chapters/chapter4/images/listTable.png>
+Package pdftex.def Info: chapters/chapter4/images/listTable.png  used on input line 22.
+(pdftex.def)             Requested size: 381.6517pt x 109.87157pt.
+ [75]) (./chapters/chapter4/11_registrar_archive.tex
+File: chapters/chapter4/images/uploadDrive.png Graphic file (type png)
+<use chapters/chapter4/images/uploadDrive.png>
+Package pdftex.def Info: chapters/chapter4/images/uploadDrive.png  used on input line 11.
+(pdftex.def)             Requested size: 296.84093pt x 209.29733pt.
+ [76]) (./chapters/chapter4/12_registrar_status.tex
+File: chapters/chapter4/images/approvedList.png Graphic file (type png)
+<use chapters/chapter4/images/approvedList.png>
+Package pdftex.def Info: chapters/chapter4/images/approvedList.png  used on input line 6.
+(pdftex.def)             Requested size: 360.45386pt x 100.10709pt.
+ [77]) (./chapters/chapter4/13_hall_allocation.tex
+File: chapters/chapter4/images/approvedList.png Graphic file (type png)
+<use chapters/chapter4/images/approvedList.png>
+Package pdftex.def Info: chapters/chapter4/images/approvedList.png  used on input line 6.
+(pdftex.def)             Requested size: 360.45386pt x 100.10709pt.
+) (./chapters/chapter4/14_hall_records.tex
+File: chapters/chapter4/images/applicantList.png Graphic file (type png)
+<use chapters/chapter4/images/applicantList.png>
+Package pdftex.def Info: chapters/chapter4/images/applicantList.png  used on input line 9.
+(pdftex.def)             Requested size: 381.6517pt x 173.19423pt.
+ [78]
+File: chapters/chapter4/images/listTable.png Graphic file (type png)
+<use chapters/chapter4/images/listTable.png>
+Package pdftex.def Info: chapters/chapter4/images/listTable.png  used on input line 19.
+(pdftex.def)             Requested size: 381.6517pt x 109.87157pt.
+) (./chapters/chapter4/15_hall_sync.tex
+File: chapters/chapter4/images/uploadDrive.png Graphic file (type png)
+<use chapters/chapter4/images/uploadDrive.png>
+Package pdftex.def Info: chapters/chapter4/images/uploadDrive.png  used on input line 11.
+(pdftex.def)             Requested size: 296.84093pt x 209.29733pt.
+ [79]) (./chapters/chapter4/16_medical_clearance.tex
+File: chapters/chapter4/images/approvedList.png Graphic file (type png)
+<use chapters/chapter4/images/approvedList.png>
+Package pdftex.def Info: chapters/chapter4/images/approvedList.png  used on input line 6.
+(pdftex.def)             Requested size: 360.45386pt x 100.10709pt.
+ [80]) (./chapters/chapter4/17_medical_records.tex
+File: chapters/chapter4/images/applicantList.png Graphic file (type png)
+<use chapters/chapter4/images/applicantList.png>
+Package pdftex.def Info: chapters/chapter4/images/applicantList.png  used on input line 11.
+(pdftex.def)             Requested size: 381.6517pt x 173.19423pt.
+File: chapters/chapter4/images/listTable.png Graphic file (type png)
+<use chapters/chapter4/images/listTable.png>
+Package pdftex.def Info: chapters/chapter4/images/listTable.png  used on input line 22.
+(pdftex.def)             Requested size: 381.6517pt x 109.87157pt.
+) (./chapters/chapter4/18_medical_sync.tex [81]
+File: chapters/chapter4/images/uploadDrive.png Graphic file (type png)
+<use chapters/chapter4/images/uploadDrive.png>
+Package pdftex.def Info: chapters/chapter4/images/uploadDrive.png  used on input line 11.
+(pdftex.def)             Requested size: 296.84093pt x 209.29733pt.
+)) [82] [83]
+\openout2 = `chapters/chapter5/testing.aux'.
+
+ (./chapters/chapter5/testing.tex
+Chapter 5.
+[84
+
+
+
+
+] [85]) [86]
+\openout2 = `chapters/chapter6/deployment.aux'.
+
+ (./chapters/chapter6/deployment.tex
+Chapter 6.
+[87
+
+
+
+
+] [88]) [89] (./main.aux (./Start.aux) (./certificate.aux) (./acknowledgement.aux) (./abstract.aux) (./preface.aux) (./Abbreviation.aux) (./chapters/chapter2/ch2_main.aux) (./chapters/chapter3/ch3_main.aux) (./chapters/chapter4/ch4_main.aux) (./chapters/chapter5/testing.aux) (./chapters/chapter6/deployment.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 17953 strings out of 476182
+ 393432 string characters out of 5795596
+ 1943975 words of memory out of 5000000
+ 39292 multiletter control sequences out of 15000+600000
+ 565766 words of font info for 61 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,12n,87p,890b,1107s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/nafis-ahamed/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (102 pages, 1503977 bytes).
+PDF statistics:
+ 474 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+

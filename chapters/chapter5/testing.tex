@@ -2,14 +2,14 @@
 
 \setlength{\parindent}{0pt} % পুরো চ্যাপ্টারের জন্য ইন্ডেন্ট বন্ধ করা হলো
 
-The JUST Undergraduate Final Admission System needs to be tested well. This is an important part of making sure the system works correctly before we use it for the 2026 admission session. We want to make sure the JUST Undergraduate Final Admission System is reliable, secure and correct.
+The Digital Admission Procedure Management for Post-GST Candidates needs to be tested well. This is an important part of making sure the system works correctly before we use it for the 2026 admission session. We want to make sure the Digital Admission Procedure Management for Post-GST Candidates is reliable, secure and correct.
 
 \medskip
 This part of the book explains how we tested the Undergraduate Final Admission System in many different ways from automatic tests to manual checks.
 
 \section{Automated White Box Testing with Vitest}
 
-We used Vitest to test the Undergraduate Final Admission System because it is built on the Next.js framework. Vitest helps us test the parts of the JUST Undergraduate Final Admission System like the functions and components to make sure they work correctly.
+We used Vitest to test the Undergraduate Final Admission System because it is built on the Next.js framework. Vitest helps us test the parts of the Digital Admission Procedure Management for Post-GST Candidates like the functions and components to make sure they work correctly.
 
 \subsection{Component Rendering Tests}
 We used Vitest and React Testing Library to test if the main parts of the user interface work properly. We checked to see if the main page navigation bar and admission form show up without any problems. The tests showed that the title of the Undergraduate Final Admission System and the important buttons are in the right place.
@@ -21,7 +21,7 @@ We tested the functions that handle sensitive data like dates and scores. We tes
 We used Postman to test the backend of the Undergraduate Final Admission System, which was built with Node.js and Prisma. We sent kinds of requests to the backend to make sure it works correctly. We checked to see if the backend returns the information like a list of applicants with their scores and positions.
 
 \section{Manual Functional Testing}
-We did tests to make sure the JUST Undergraduate Final Admission System works well from a users point of view. We tested the admission form to make sure it works correctly. We tried submitting the form without filling in all the required fields. We got an error message.
+We did tests to make sure the Digital Admission Procedure Management for Post-GST Candidates works well from a users point of view. We tested the admission form to make sure it works correctly. We tried submitting the form without filling in all the required fields. We got an error message.
 
 \subsection{Form Validation Testing}
 We tested all the fields in the admission form to make sure they work correctly. We tried putting in the kind of information like letters in a field that only allows numbers.
@@ -46,6 +46,6 @@ All the tests we did on the Undergraduate Final Admission System passed, which m
         Validation & Manual & Passed \\ \hline
         RBAC & Manual & Passed \\ \hline
     \end{tabular}
-    \caption{Summary of Testing Results for JUST-UFAS}
+    \caption{Summary of Testing Results for JUST-DAPM-PGC}
     \label{tab:test_summary}
 \end{table}

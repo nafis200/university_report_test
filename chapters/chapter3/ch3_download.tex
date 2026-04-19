@@ -6,6 +6,10 @@ This use case enables the applicant to create and download a PDF version of the 
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
+    % ক্যাপশন এবং লেবেল উপরে সেট করা হয়েছে
+    \caption{Use Case Table: Download Application Form (UC-1.7)}
+    \label{tab:use_case_download_form}
+    
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
@@ -28,8 +32,5 @@ This use case enables the applicant to create and download a PDF version of the 
         Exception & \textbf{Generation Error:} If the server fails or the database cannot be reached, the system displays a "PDF Generation Failed" error. \\ \hline
         Frequency of Use & High (Once per applicant after submission). \\ \hline
     \end{tabularx}
-    
-    \caption{Use Case Table: Download Application Form (UC-1.7)}
-    \label{tab:use_case_download_form}
 \end{table}
 \FloatBarrier

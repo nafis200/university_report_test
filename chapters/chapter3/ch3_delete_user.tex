@@ -1,11 +1,15 @@
 \subsubsection{Remove User Data}
 
-This use case outlines the administrative action of deleting a user’s account from the \textit{JUST Undergraduate Final Admission System}. This use case enables the Admin to ensure data integrity by eliminating unnecessary or duplicate accounts from the database.
+This use case outlines the administrative action of deleting a user’s account from the \textit{Digital Admission Procedure Management for Post-GST Candidates}. This use case enables the Admin to ensure data integrity by eliminating unnecessary or duplicate accounts from the database.
 
 \begin{table}[!htbp]
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
+    % ক্যাপশন এবং লেবেল উপরে সেট করা হয়েছে
+    \caption{Use Case Table: Remove User Data (UC-1.4)}
+    \label{tab:use_case_remove_user}
+    
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
@@ -28,8 +32,5 @@ This use case outlines the administrative action of deleting a user’s account 
         Exception & \textbf{Deletion Failed:} If the user is linked to critical active records, the system prevents deletion and shows a "Constraint Error." \\ \hline
         Frequency of Use & Low to Medium (As needed for system cleanup). \\ \hline
     \end{tabularx}
-    
-    \caption{Use Case Table: Remove User Data (UC-1.4)}
-    \label{tab:use_case_remove_user}
 \end{table}
 \FloatBarrier

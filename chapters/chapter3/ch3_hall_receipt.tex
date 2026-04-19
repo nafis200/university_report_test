@@ -4,7 +4,9 @@
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
-    \begin{tabularx}{\textwidth}{|l|X|}
+    \caption{Use Case: Receive Bank Receipt (UC-3.3)} % ক্যাপশন এখন উপরে
+    \label{tab:receive-bank-receipt}
+    \begin{tabular}{|l|p{10cm}|} 
         \hline
         \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
         Use Case ID & UC-3.3 \\ \hline
@@ -12,7 +14,6 @@
         Primary Actors & Hall Office \\ \hline
         Goal & To confirm the physical or electronic copy of hall fees. \\ \hline
         Scenario & 1. Find the applicant. 2. Click 'Receive Receipt' button. 3. The system will update PostgreSQL database using Prisma. \\ \hline
-    \end{tabularx}
-    \caption{Use Case: Receive Bank Receipt (UC-3.3)}
+    \end{tabular}
 \end{table}
 \FloatBarrier
