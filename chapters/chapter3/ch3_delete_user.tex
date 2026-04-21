@@ -12,7 +12,7 @@ This use case outlines the administrative action of deleting a user’s account 
     
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-1.4 \\ \hline
         Use Case Name & Remove User Data \\ \hline
         Primary Actors & Admin \\ \hline
@@ -29,7 +29,7 @@ This use case outlines the administrative action of deleting a user’s account 
             \item The system displays a confirmation dialog box to avoid unintended deletion.
             \item After confirming the action, the backend performs the deletion using Prisma.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Deletion Failed:} If the user is linked to critical active records, the system prevents deletion and shows a "Constraint Error." \\ \hline
+        Exception & {Deletion Failed:} If the user is linked to critical active records, the system prevents deletion and shows a "Constraint Error." \\ \hline
         Frequency of Use & Low to Medium (As needed for system cleanup). \\ \hline
     \end{tabularx}
 \end{table}

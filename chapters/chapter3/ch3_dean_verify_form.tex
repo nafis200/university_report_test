@@ -1,9 +1,14 @@
 \subsubsection{Validate Applicant’s Form}
 
-This use case outlines how the Dean Office validates an applicant’s application form. 
-It ensures that the provided information is accurate before giving final approval.
+This use case describes the process through which the Dean Office verifies the application form of the applicant.
+It makes sure that the details submitted are accurate before granting final permission.
+At this phase, the system automatically compares the details entered in the form 
+with the electronic records uploaded to detect any discrepancies. The Dean Office examines essential elements, such as 
+candidate qualification, quota availability, and GST test results to safeguard the entire admission process. When the verification 
+process is complete successfully, the application is tagged as "Verified," and the candidate advances to the next level of 
+registration. In cases where there are discrepancies, the Dean Office may mark the application for corrections or explain why it was rejected.
 
-\begin{table}[!htbp]
+\begin{table}[H]
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
@@ -13,7 +18,7 @@ It ensures that the provided information is accurate before giving final approva
     
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-2.3 \\ \hline
         Use Case Name & Validate Applicant’s Form \\ \hline
         Primary Actors & Dean Office \\ \hline
@@ -24,9 +29,9 @@ It ensures that the provided information is accurate before giving final approva
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
             \item The user accesses the pending application records.
-            \item The user navigates to the \textbf{Verification} or \textbf{Review} page.
+            \item The user navigates to the {Verification} or {Review} page.
             \item The system displays the submitted form data.
-            \item The user checks the data and clicks \textbf{Approve} or \textbf{Verify}.
+            \item The user checks the data and clicks {Approve} or {Verify}.
             \item The system updates the status using Prisma ORM.
         \end{enumerate} \\ \hline
         Exception & Data Mismatch: If the data does not match, the user may reject the form or ask the applicant to resubmit it. \\ \hline

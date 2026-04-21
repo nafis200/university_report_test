@@ -10,7 +10,7 @@ This use case allows registered applicants to manage and modify their personal p
     \label{tab:use_case_update_profile}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-1.8 \\ \hline
         Use Case Name & Update Profile \\ \hline
         Primary Actors & Applicant \\ \hline
@@ -20,14 +20,14 @@ This use case allows registered applicants to manage and modify their personal p
         Triggers & The applicant needs to change or correct their personal details, such as phone number or address. \\ \hline
         Scenario & 
         \begin{enumerate}[nosep, leftmargin=*]
-            \item The applicant navigates to the \textbf{Profile} or \textbf{Settings} section from the dashboard.
+            \item The applicant navigates to the {Profile} or {Settings} section from the dashboard.
             \item The system displays the current profile information in an editable form.
             \item The applicant modifies the necessary information fields.
-            \item The applicant clicks the \textbf{Save Changes} or \textbf{Update Profile} button.
+            \item The applicant clicks the {Save Changes} or {Update Profile} button.
             \item The system validates the input and updates the record via the Prisma ORM.
             \item A success message is displayed, confirming the profile update.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Session Timeout:} If the user is inactive for too long, the system redirects them to the login page without saving changes. \\ \hline
+        Exception & {Session Timeout:} If the user is inactive for too long, the system redirects them to the login page without saving changes. \\ \hline
         Frequency of Use & Medium to High (As needed by the applicant). \\ \hline
     \end{tabularx}
 \end{table}

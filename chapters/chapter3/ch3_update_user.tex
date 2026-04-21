@@ -2,15 +2,17 @@
 
 This use case outlines the procedure of changing user information within the system to ensure that there is accurate information about all users in the \textit{Digital Admission Procedure Management for Post-GST Candidates} as an administrator.
 
-\begin{table}[!htbp]
+% \FloatBarrier % যদি টেবিলটির আগে টেক্সট অন্য পেজে চলে যায় তবে এটি ব্যবহার করুন
+
+\begin{table}[H] % [H] ব্যবহারের মাধ্যমে টেবিলটি ঠিক এই পজিশনেই থাকবে
     \centering
     \small
-    \renewcommand{\arraystretch}{1.4}
-    \caption{Use Case Table: Update User Information (UC-1.3)} % ক্যাপশন উপরে আনা হয়েছে
+    \renewcommand{\arraystretch}{1.5}
+    \caption{Use Case Table: Update User Information (UC-1.3)}
     \label{tab:use_case_update_user_info}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-1.3 \\ \hline
         Use Case Name & Update User Information \\ \hline
         Primary Actors & Admin \\ \hline
@@ -28,8 +30,7 @@ This use case outlines the procedure of changing user information within the sys
             \item The Next.js backend validates and saves the new user data using Prisma.
             \item The Admin receives a success message.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Validation Error:} In case of entering invalid data such as a duplicate email address, the system prevents the update and shows an error message. \\ \hline
+        Exception & {Validation Error:} In case of entering invalid data such as a duplicate email address, the system prevents the update and shows an error message. \\ \hline
         Frequency of Use & High (Used regularly for maintaining user data). \\ \hline
     \end{tabularx}
 \end{table}
-\FloatBarrier

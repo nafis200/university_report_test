@@ -2,17 +2,18 @@
 
 This use case will describe how the process of filling out the application form using the \textit{Digital Admission Procedure Management for Post-GST Candidates} works. This process involves several steps in order to obtain the documentation and other important information needed for the final admission validation.
 
-\begin{table}[!htbp]
+
+
+\begin{table}[H] % [H] ব্যবহারের ফলে গ্যাপ তৈরি হবে না এবং টেবিলটি ঠিক এখানেই বসবে
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
-    % ক্যাপশন এবং লেবেল উপরে সেট করা হয়েছে
     \caption{Use Case Table: Fill-Up Application Form (UC-1.6)}
     \label{tab:use_case_fillup_form}
     
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-1.6 \\ \hline
         Use Case Name & Fill-Up Application Form \\ \hline
         Primary Actors & Applicant \\ \hline
@@ -29,8 +30,7 @@ This use case will describe how the process of filling out the application form 
             \item The applicant clicks the Submit button.
             \item The Next.js frontend passes the information to the API, then it is saved to PostgreSQL via Prisma.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Validation Error:} If required fields are missing or uploaded files are in unsupported formats, the system prompts the applicant to correct the errors. \\ \hline
+        Exception & {Validation Error:} If required fields are missing or uploaded files are in unsupported formats, the system prompts the applicant to correct the errors. \\ \hline
         Frequency of Use & Once per applicant (High during admission periods). \\ \hline
     \end{tabularx}
 \end{table}
-\FloatBarrier

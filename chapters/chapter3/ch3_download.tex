@@ -2,17 +2,17 @@
 
 This use case enables the applicant to create and download a PDF version of the submitted application. The use case serves as an official documentation for the applicant, which is vital during the physical verification procedure at the \textit{JUST}.
 
-\begin{table}[!htbp]
+\begin{table}[H] % [H] ব্যবহারের ফলে গ্যাপ তৈরি হবে না এবং টেবিলটি ঠিক এখানেই বসবে
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
-    % ক্যাপশন এবং লেবেল উপরে সেট করা হয়েছে
+    % ক্যাপশন এবং লেবেল উপরে সেট করা হয়েছে
     \caption{Use Case Table: Download Application Form (UC-1.7)}
     \label{tab:use_case_download_form}
     
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline
-        \rowcolor[gray]{0.9} \textbf{Characteristics} & \textbf{Description} \\ \hline
+        \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-1.7 \\ \hline
         Use Case Name & Download Application Form \\ \hline
         Primary Actors & Applicant \\ \hline
@@ -29,8 +29,7 @@ This use case enables the applicant to create and download a PDF version of the 
             \item The file download starts in the browser of the applicant.
             \item The applicant downloads the application form in PDF format.
         \end{enumerate} \\ \hline
-        Exception & \textbf{Generation Error:} If the server fails or the database cannot be reached, the system displays a "PDF Generation Failed" error. \\ \hline
+        Exception & {Generation Error:} If the server fails or the database cannot be reached, the system displays a "PDF Generation Failed" error. \\ \hline
         Frequency of Use & High (Once per applicant after submission). \\ \hline
     \end{tabularx}
 \end{table}
-\FloatBarrier
