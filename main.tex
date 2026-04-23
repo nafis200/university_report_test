@@ -1,37 +1,47 @@
 \documentclass[12pt, a4paper]{report}
 
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx} 
+\usepackage{graphicx}
+\usepackage{times}
+
 \usepackage{geometry}
-\geometry{margin=1.2in, bottom=1.5in}
+\geometry{
+    margin=1.2in,
+    bottom=1.0in,
+    headheight=8pt,
+    headsep=0.2in,
+    footskip=0.6in
+}
+
 \usepackage{setspace}
 \onehalfspacing
+
 \usepackage{tocloft}
 \usepackage{fancyhdr}
-\usepackage{tabularx}      
-\usepackage{enumitem}      
-\usepackage[table]{xcolor} 
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
 \usepackage{float}
 \usepackage[section]{placeins}
+
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows, positioning}
-\graphicspath{ {./images/}{./chapters/chapter3/images/} } 
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric} 
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta}
+
+\graphicspath{{./images/}{./chapters/chapter3/images/}}
+
 \usepackage{adjustbox}
 \usepackage[hidelinks]{hyperref}
 
-
-\setcounter{tocdepth}{3}   
-\setcounter{secnumdepth}{3} 
-
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 
 \pagestyle{fancy}
-\fancyhf{} 
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{1pt}
-\fancyfoot[L]{Digital Admission Procedure Management for Post-GST Candidates} 
-\fancyfoot[R]{Page | \thepage} 
+
+\fancyfoot[L]{Digital Admission Procedure Management for Post-GST Candidates}
+\fancyfoot[R]{Page | \thepage}
 
 \fancypagestyle{plain}{
   \fancyhf{}
@@ -46,6 +56,7 @@
 \begin{document}
 
 \pagenumbering{roman}
+
 \include{Start}
 \include{certificate}
 \include{acknowledgement}
@@ -54,12 +65,13 @@
 \include{Abbreviation}
 
 \newpage
-\tableofcontents 
-\newpage
-\listoftables    
+\tableofcontents
 
 \newpage
-\pagenumbering{arabic}    
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
 \pagestyle{fancy}
 
 \chapter{Introduction}
@@ -73,5 +85,7 @@
 \include{chapters/chapter4/ch4_main}
 \include{chapters/chapter5/testing}
 \include{chapters/chapter6/deployment}
+
 \include{references}
+
 \end{document}

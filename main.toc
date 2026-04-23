@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.2}Motivation}{2}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Existing System}{2}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Limitations of the System}{2}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Objectives}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Objectives}{2}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Contributors}{4}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Chapter Organization}{4}{subsection.1.3.2}%
 \contentsline {chapter}{\numberline {2}\mbox {Software Requirement Specification}}{5}{chapter.2}%
@@ -15,34 +15,34 @@
 \contentsline {subsection}{\numberline {2.2.1}Product Perspective}{6}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Product Functions}{7}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}User Classes and Characteristics}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Constraints}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Constraints}{9}{section.2.4}%
 \contentsline {section}{\numberline {2.5}External Interface Requirements}{10}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}User Interfaces}{10}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Integration with Existing Data}{11}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Integration with Internal Modules}{11}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.2}Integration with Existing Data}{10}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Integration with Internal Modules}{10}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}Authentication and Authorization}{11}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}System Features: Admin Management}{11}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Description and Priority}{11}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Functional Requirements}{11}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2.7}System Features: Dean Office}{13}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Description}{13}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Functional Requirements}{13}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.7}System Features: Dean Office}{12}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Description}{12}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Functional Requirements}{12}{subsection.2.7.2}%
 \contentsline {section}{\numberline {2.8}System Features: Hall Office}{13}{section.2.8}%
 \contentsline {subsection}{\numberline {2.8.1}Description}{13}{subsection.2.8.1}%
 \contentsline {subsection}{\numberline {2.8.2}Functional Requirements}{13}{subsection.2.8.2}%
-\contentsline {section}{\numberline {2.9}System Features: Medical Office}{14}{section.2.9}%
-\contentsline {subsection}{\numberline {2.9.1}Description}{14}{subsection.2.9.1}%
+\contentsline {section}{\numberline {2.9}System Features: Medical Office}{13}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Description}{13}{subsection.2.9.1}%
 \contentsline {subsection}{\numberline {2.9.2}Functional Requirements}{14}{subsection.2.9.2}%
 \contentsline {section}{\numberline {2.10}System Features: Registrar Office}{14}{section.2.10}%
 \contentsline {subsection}{\numberline {2.10.1}Description}{14}{subsection.2.10.1}%
 \contentsline {subsection}{\numberline {2.10.2}Functional Requirements}{14}{subsection.2.10.2}%
-\contentsline {section}{\numberline {2.11}System Features: Applicant}{15}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}Description}{15}{subsection.2.11.1}%
+\contentsline {section}{\numberline {2.11}System Features: Applicant}{14}{section.2.11}%
+\contentsline {subsection}{\numberline {2.11.1}Description}{14}{subsection.2.11.1}%
 \contentsline {subsection}{\numberline {2.11.2}Functional Requirements}{15}{subsection.2.11.2}%
 \contentsline {section}{\numberline {2.12}Non-Functional Requirements}{15}{section.2.12}%
 \contentsline {subsection}{\numberline {2.12.1}Performance}{15}{subsection.2.12.1}%
 \contentsline {subsection}{\numberline {2.12.2}Security}{15}{subsection.2.12.2}%
-\contentsline {subsection}{\numberline {2.12.3}Scalability}{16}{subsection.2.12.3}%
+\contentsline {subsection}{\numberline {2.12.3}Scalability}{15}{subsection.2.12.3}%
 \contentsline {subsection}{\numberline {2.12.4}Maintainability}{16}{subsection.2.12.4}%
 \contentsline {subsection}{\numberline {2.12.5}Usability}{16}{subsection.2.12.5}%
 \contentsline {subsection}{\numberline {2.12.6}Reliability}{16}{subsection.2.12.6}%
@@ -50,13 +50,13 @@
 \contentsline {section}{\numberline {3.1}Use Case Diagram}{17}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}User Management}{17}{subsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.1.1}Login Process}{18}{subsubsection.3.1.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.1.2}View Applicant List}{19}{subsubsection.3.1.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.1.3}Update User Information}{19}{subsubsection.3.1.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}View Applicant List}{18}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}Update User Information}{20}{subsubsection.3.1.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.1.4}View User Information}{21}{subsubsection.3.1.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.1.5}Fill-Up Application Form}{21}{subsubsection.3.1.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.1.6}Download Application Form}{23}{subsubsection.3.1.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.1.6}Download Application Form}{22}{subsubsection.3.1.1.6}%
 \contentsline {subsection}{\numberline {3.1.2}Dean Office Management}{24}{subsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.2.1}Applicant Search}{25}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Applicant Search}{24}{subsubsection.3.1.2.1}%
 \contentsline {subsubsection}{\numberline {3.1.2.2}Display Applicant Profile}{25}{subsubsection.3.1.2.2}%
 \contentsline {subsubsection}{\numberline {3.1.2.3}Validate Applicant’s Form}{26}{subsubsection.3.1.2.3}%
 \contentsline {subsubsection}{\numberline {3.1.2.4}Admit Applicant (Dean Clearance)}{27}{subsubsection.3.1.2.4}%
@@ -70,18 +70,18 @@
 \contentsline {subsubsection}{\numberline {3.1.3.4}Admit Applicant (Hall Clearance)}{34}{subsubsection.3.1.3.4}%
 \contentsline {subsubsection}{\numberline {3.1.3.5}Viewing Lists of Candidates}{35}{subsubsection.3.1.3.5}%
 \contentsline {subsubsection}{\numberline {3.1.3.6}Exporting and Downloading Candidate Records}{35}{subsubsection.3.1.3.6}%
-\contentsline {subsection}{\numberline {3.1.4}Medical Office Management}{36}{subsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.4.1}Search Applicant}{36}{subsubsection.3.1.4.1}%
+\contentsline {subsection}{\numberline {3.1.4}Medical Office Management}{37}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}Search Applicant}{37}{subsubsection.3.1.4.1}%
 \contentsline {subsubsection}{\numberline {3.1.4.2}Show Applicant Profile}{37}{subsubsection.3.1.4.2}%
-\contentsline {subsubsection}{\numberline {3.1.4.3}Insert/Update Medical Information}{37}{subsubsection.3.1.4.3}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}Insert/Update Medical Information}{38}{subsubsection.3.1.4.3}%
 \contentsline {subsubsection}{\numberline {3.1.4.4}Generate and Print Medical Report}{38}{subsubsection.3.1.4.4}%
-\contentsline {subsubsection}{\numberline {3.1.4.5}Admit Applicant (Medical Clearance)}{38}{subsubsection.3.1.4.5}%
+\contentsline {subsubsection}{\numberline {3.1.4.5}Admit Applicant (Medical Clearance)}{39}{subsubsection.3.1.4.5}%
 \contentsline {subsubsection}{\numberline {3.1.4.6}View Applicant Lists}{39}{subsubsection.3.1.4.6}%
-\contentsline {subsection}{\numberline {3.1.5}Registrar Office Management}{39}{subsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.5.1}Search Applicant}{41}{subsubsection.3.1.5.1}%
-\contentsline {subsubsection}{\numberline {3.1.5.2}Show Applicant Profile}{41}{subsubsection.3.1.5.2}%
-\contentsline {subsubsection}{\numberline {3.1.5.3}Receive Documents}{42}{subsubsection.3.1.5.3}%
-\contentsline {subsubsection}{\numberline {3.1.5.4}Admit Applicant}{43}{subsubsection.3.1.5.4}%
+\contentsline {subsection}{\numberline {3.1.5}Registrar Office Management}{40}{subsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}Search Applicant}{40}{subsubsection.3.1.5.1}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Show Applicant Profile}{42}{subsubsection.3.1.5.2}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}Receive Documents}{43}{subsubsection.3.1.5.3}%
+\contentsline {subsubsection}{\numberline {3.1.5.4}Admit Applicant}{44}{subsubsection.3.1.5.4}%
 \contentsline {subsubsection}{\numberline {3.1.5.5}View All Applicant}{44}{subsubsection.3.1.5.5}%
 \contentsline {subsubsection}{\numberline {3.1.5.6}View Waited Applicant}{45}{subsubsection.3.1.5.6}%
 \contentsline {subsubsection}{\numberline {3.1.5.7}View Pending Document Applicant}{46}{subsubsection.3.1.5.7}%
@@ -93,64 +93,64 @@
 \contentsline {subsubsection}{\numberline {3.1.6.2}Update Profile}{52}{subsubsection.3.1.6.2}%
 \contentsline {subsubsection}{\numberline {3.1.6.3}Fill-up Application Form}{53}{subsubsection.3.1.6.3}%
 \contentsline {subsubsection}{\numberline {3.1.6.4}Generate Application Form}{54}{subsubsection.3.1.6.4}%
-\contentsline {subsubsection}{\numberline {3.1.6.5}Download Application Form}{55}{subsubsection.3.1.6.5}%
-\contentsline {subsubsection}{\numberline {3.1.6.6}Update Applicant Information (Admin)}{56}{subsubsection.3.1.6.6}%
-\contentsline {subsubsection}{\numberline {3.1.6.7}User Management}{57}{subsubsection.3.1.6.7}%
-\contentsline {subsubsection}{\numberline {3.1.6.8}Dean Office Management}{59}{subsubsection.3.1.6.8}%
-\contentsline {subsubsection}{\numberline {3.1.6.9}Hall Office Management}{60}{subsubsection.3.1.6.9}%
-\contentsline {subsubsection}{\numberline {3.1.6.10}Medical Office Management}{61}{subsubsection.3.1.6.10}%
-\contentsline {subsubsection}{\numberline {3.1.6.11}Registrar Office Management}{62}{subsubsection.3.1.6.11}%
-\contentsline {subsubsection}{\numberline {3.1.6.12}Applicant Profile Management}{63}{subsubsection.3.1.6.12}%
-\contentsline {subsection}{\numberline {3.1.7}System Database Schema}{65}{subsection.3.1.7}%
-\contentsline {chapter}{\numberline {4}Implementation Details}{66}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Authentication}{66}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Sign in Page and Process}{66}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Student Module Implementation}{68}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Final Admission Form}{68}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Application Summary and PDF Download}{70}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Submission Confirmation and Complaint Management}{71}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Admin Module: Data and Resource Management}{72}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Bulk Data Import and External Storage Integration}{72}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Examination Announcement}{73}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Admin Module: User Control and Security}{73}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Role-Based Credential Generation}{73}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Admin Module: Complaint Resolution System}{74}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Reviewing Pending Complaints}{74}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Dean Module: Applicant Verification}{75}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Departmental Applicant Queue}{75}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Detailed Information Table}{76}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Dean Module: Student Status Management}{76}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Dean Module: Data Redundancy and Sync}{77}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Google Drive Integration}{77}{subsection.4.8.1}%
-\contentsline {section}{\numberline {4.9}Registrar Module: Centralized Data Validation}{78}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Master Applicant Queue}{78}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Detailed Verification Matrix}{79}{subsection.4.9.2}%
-\contentsline {section}{\numberline {4.10}Registrar Module: Data Archiving and Redundancy}{79}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Automatic Back Up to Cloud Services}{80}{subsection.4.10.1}%
-\contentsline {section}{\numberline {4.11}Registrar Module: Final Authorization}{80}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Hall Registrar: Residential Clearance}{81}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Hall Registrar Module: Resident Data Verification}{81}{section.4.13}%
-\contentsline {subsection}{\numberline {4.13.1}Hall Applicant Queue}{82}{subsection.4.13.1}%
-\contentsline {subsection}{\numberline {4.13.2}Detailed Resident Attributes}{82}{subsection.4.13.2}%
-\contentsline {section}{\numberline {4.14}Hall Registrar Module: Redundant Data}{82}{section.4.14}%
-\contentsline {subsection}{\numberline {4.14.1}Cloud Synchronization of Hall Data}{83}{subsection.4.14.1}%
-\contentsline {section}{\numberline {4.15}Hall Registrar: Residential Clearance}{83}{section.4.15}%
-\contentsline {section}{\numberline {4.16}Medical Officer Module: Applicant Health Data}{84}{section.4.16}%
-\contentsline {subsection}{\numberline {4.16.1}Medical Record Verification Queue}{84}{subsection.4.16.1}%
-\contentsline {subsection}{\numberline {4.16.2}Medical Record Detail Table Matrix}{84}{subsection.4.16.2}%
-\contentsline {section}{\numberline {4.17}Module of Medical Officer: Synchronization of Data}{85}{section.4.17}%
-\contentsline {subsection}{\numberline {4.17.1}Cloud Storage for Health Information}{85}{subsection.4.17.1}%
-\contentsline {chapter}{\numberline {5}Testing and Quality Assurance}{87}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Automated White Box Testing with Vitest}{87}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Component Rendering Tests}{87}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Utility Function Testing}{88}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Backend API Testing with Postman}{88}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Manual Functional Testing}{88}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Form Validation Testing}{88}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Role-Based Access Control (RBAC) Test}{89}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Summary of Test Results}{89}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Deployment and Conclusion}{90}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Deployment Process}{90}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Deployment Status and URL}{91}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Conclusion}{91}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Future Work}{92}{section.6.4}%
+\contentsline {subsubsection}{\numberline {3.1.6.5}Download Application Form}{54}{subsubsection.3.1.6.5}%
+\contentsline {subsubsection}{\numberline {3.1.6.6}Update Applicant Information (Admin)}{55}{subsubsection.3.1.6.6}%
+\contentsline {subsubsection}{\numberline {3.1.6.7}User Management}{56}{subsubsection.3.1.6.7}%
+\contentsline {subsubsection}{\numberline {3.1.6.8}Dean Office Management}{58}{subsubsection.3.1.6.8}%
+\contentsline {subsubsection}{\numberline {3.1.6.9}Hall Office Management}{59}{subsubsection.3.1.6.9}%
+\contentsline {subsubsection}{\numberline {3.1.6.10}Medical Office Management}{59}{subsubsection.3.1.6.10}%
+\contentsline {subsubsection}{\numberline {3.1.6.11}Registrar Office Management}{60}{subsubsection.3.1.6.11}%
+\contentsline {subsubsection}{\numberline {3.1.6.12}Applicant Profile Management}{61}{subsubsection.3.1.6.12}%
+\contentsline {subsection}{\numberline {3.1.7}System Database Schema}{62}{subsection.3.1.7}%
+\contentsline {chapter}{\numberline {4}Implementation Details}{64}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Authentication}{64}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Sign in Page and Process}{64}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Student Module Implementation}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Final Admission Form}{66}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Application Summary and PDF Download}{67}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Submission Confirmation and Complaint Management}{68}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Admin Module: Data and Resource Management}{69}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Bulk Data Import and External Storage Integration}{69}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Examination Announcement}{70}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Admin Module: User Control and Security}{70}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Role-Based Credential Generation}{70}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Admin Module: Complaint Resolution System}{71}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Reviewing Pending Complaints}{71}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Dean Module: Applicant Verification}{71}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Departmental Applicant Queue}{72}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Detailed Information Table}{72}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Dean Module: Student Status Management}{73}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Dean Module: Data Redundancy and Sync}{73}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Google Drive Integration}{73}{subsection.4.8.1}%
+\contentsline {section}{\numberline {4.9}Registrar Module: Centralized Data Validation}{74}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Master Applicant Queue}{74}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Detailed Verification Matrix}{75}{subsection.4.9.2}%
+\contentsline {section}{\numberline {4.10}Registrar Module: Data Archiving and Redundancy}{75}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Automatic Back Up to Cloud Services}{76}{subsection.4.10.1}%
+\contentsline {section}{\numberline {4.11}Registrar Module: Final Authorization}{76}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Hall Registrar: Residential Clearance}{77}{section.4.12}%
+\contentsline {section}{\numberline {4.13}Hall Registrar Module: Resident Data Verification}{77}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Hall Applicant Queue}{77}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Detailed Resident Attributes}{78}{subsection.4.13.2}%
+\contentsline {section}{\numberline {4.14}Hall Registrar Module: Redundant Data}{78}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Cloud Synchronization of Hall Data}{78}{subsection.4.14.1}%
+\contentsline {section}{\numberline {4.15}Hall Registrar: Residential Clearance}{79}{section.4.15}%
+\contentsline {section}{\numberline {4.16}Medical Officer Module: Applicant Health Data}{80}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Medical Record Verification Queue}{80}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Medical Record Detail Table Matrix}{80}{subsection.4.16.2}%
+\contentsline {section}{\numberline {4.17}Module of Medical Officer: Synchronization of Data}{81}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Cloud Storage for Health Information}{81}{subsection.4.17.1}%
+\contentsline {chapter}{\numberline {5}Testing and Quality Assurance}{82}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Automated White Box Testing with Vitest}{82}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Component Rendering Tests}{82}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Utility Function Testing}{83}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Backend API Testing with Postman}{83}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Manual Functional Testing}{83}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Form Validation Testing}{83}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Role-Based Access Control (RBAC) Test}{83}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Summary of Test Results}{84}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Deployment and Conclusion}{85}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Deployment Process}{85}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Deployment Status and URL}{86}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conclusion}{86}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Future Work}{87}{section.6.4}%
