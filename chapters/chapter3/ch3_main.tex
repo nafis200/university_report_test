@@ -1,6 +1,12 @@
 \chapter{System Design and Methodology}
 \label{ch:system_design}
 
+\section{Chapter Overview}
+
+This chapter gives an insight into the architecture of the system design before the actual implementation of the system in question. Starting off, use case diagrams show how various people interact with the system, and the chapter breaks down particular parts of the process involved like secure user logins, submission of application forms by the applicant, and the verification process by the Dean. Through these, the processes of approval of each office including the Hall, Medical and Registrar's office are depicted to give an overview of the sequence of processing admission data in various departments.
+
+\noindent The chapter further provides a schematic diagram of the system's database design. Various tables of data, for example, for users, applicants, and other supporting document information are discussed in detail. There is an emphasis on various relationships that exist between various types of data in the system. The data flow architecture is included in the discussions to give technical details on how the data flows within the environment.
+
 \section{Use Case Diagram}
 
 % --- USER MANAGEMENT ---
@@ -26,7 +32,7 @@ The User Management use case diagram consists of six primary actors: Admin, Dean
 % --- DEAN OFFICE MANAGEMENT ---
 \subsection{Dean Office Management}
 
-\begin{figure}[H] % [htbp] এর বদলে [H] ব্যবহার করা হয়েছে গ্যাপ কমানোর জন্য
+\begin{figure}[H] % [htbp] এর বদলে [H] ব্যবহার করা হয়েছে গ্যাপ কমানোর জন্য
     \centering
     \includegraphics[width=0.85\textwidth]{dean.png}
     \caption{Use Case Diagram of Dean Office Management}
@@ -59,7 +65,7 @@ This module controls various types of use cases including searching applicants, 
 The Hall Office Management use case diagram consists of two primary actors: Admin and Hall Authority. This module handles various operations including searching applicants, admitting them after bank receipt verification, managing lists, and updating information.
 
 \input{chapters/chapter3/ch3_hall_search}
-\input{chapters/chapter3/ch3_hall_profile}
+% \input{chapters/chapter3/ch3_hall_profile}
 \input{chapters/chapter3/ch3_hall_receipt}
 \input{chapters/chapter3/ch3_hall_admit}
 \input{chapters/chapter3/ch3_hall_lists}
@@ -110,7 +116,7 @@ The Registrar Office Management use case diagram consists of two primary actors:
 % \input{chapters/chapter3/ch3_registrar_update}
 \input{chapters/chapter3/ch3_registrar_pending}
 % \input{chapters/chapter3/ch3_registrar_receive_pending}
-\input{chapters/chapter3/ch3_registrar_seat}
+% \input{chapters/chapter3/ch3_registrar_seat}
 \input{chapters/chapter3/ch3_registrar_export_all}
 \input{chapters/chapter3/ch3_registrar_create}
 

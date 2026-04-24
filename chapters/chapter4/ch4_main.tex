@@ -1,4 +1,13 @@
 \chapter{Implementation Details}
+\label{ch:implementation}
+
+\section{Chapter Overview}
+
+In this chapter, the discussion will be about the technical design of the various functional modules starting with the Authentication Module. This program creates a secured environment where access controls are implemented based on Role-Based Access Control (RBAC). The Students  Applicants Module is designed for the creation of profiles, handling multi-form applications, and automatic PDF file creation. Lastly, the Administration Module will act as the main module which facilitates all the data-related functions as well as monitoring functions in the system.
+
+\noindent Other areas included in the development of this implementation will be special workflow designs for Dean, Registrar, Hall, and Medical modules. Through these modules, applicants can be verified, and all the required data can be validated prior to making the admission official. At last, we will discuss in this chapter the process for System Integration, focusing on integration with cloud storage and other third-party systems.
+
+\section{Introduction}
 
 This chapter discusses the detailed implementation aspects of the Digital Admission Procedure Management for Post-GST Candidates (JUST-DAPM-PGC). It presents the actual user interfaces developed, focusing on the workflows, data handling, and specific functionalities of different user roles, starting with the authentication process and subsequent role-specific modules.
 
@@ -16,7 +25,7 @@ This chapter discusses the detailed implementation aspects of the Digital Admiss
 % --- Dean Module (Divided) ---
 \input{chapters/chapter4/7_dean_verification}
 \input{chapters/chapter4/8_dean_approval}
-\input{chapters/chapter4/9_dean_sync}
+% \input{chapters/chapter4/9_dean_sync}
 
 % --- Registrar Module (Divided) ---
 \input{chapters/chapter4/10_registrar_verification}

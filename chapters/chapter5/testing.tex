@@ -1,51 +1,84 @@
 \chapter{Testing and Quality Assurance}
 
-\setlength{\parindent}{0pt} % পুরো চ্যাপ্টারের জন্য ইন্ডেন্ট বন্ধ করা হলো
+\section{Chapter Overview}
 
-The Digital Admission Procedure Management for Post-GST Candidates needs to be tested well. This is an important part of making sure the system works correctly before we use it for the 2026 admission session. We want to make sure the Digital Admission Procedure Management for Post-GST Candidates is reliable, secure and correct.
+This chapter will outline the detailed testing procedure carried out to guarantee the system's accuracy, security, and reliability. Initially, there was API testing where all the backend endpoints' accuracy of returning appropriate responses and handling the information were tested using Postman. Next, there was functional testing where all the functionalities of the system's interfaces were manually checked to ensure that all the form validations are working appropriately to provide users with a smooth experience when using the application. Security testing was one of the main tests carried out on the system where the role-based access control system was validated to ensure that unauthorized users cannot gain access to the application's administrative module.
+
+\noindent To test the platform's reliability when subjected to a considerable number of requests, a load test was carried out where several requests were sent concurrently to test response times and stability. According to the results obtained from the various stages of testing, all the modules of the system worked perfectly without any challenges. Therefore, even after being loaded with many concurrent requests, the system showed reliability. Thus, the system's infrastructure for conducting an online admission process is fit for deployment.
+
+
+
+\setlength{\parindent}{0pt}
+
+The Digital Admission Procedure Management for Post-GST Candidates has been thoroughly tested to ensure that the system functions correctly and reliably. This stage is a crucial part of the development process before deploying the system for the 2026 admission session.
 
 \medskip
-This part of the book explains how we tested the Undergraduate Final Admission System in many different ways from automatic tests to manual checks.
-
-\section{Automated White Box Testing with Vitest}
-
-We used Vitest to test the Undergraduate Final Admission System because it is built on the Next.js framework. Vitest helps us test the parts of the Digital Admission Procedure Management for Post-GST Candidates like the functions and components to make sure they work correctly.
-
-\subsection{Component Rendering Tests}
-We used Vitest and React Testing Library to test if the main parts of the user interface work properly. We checked to see if the main page navigation bar and admission form show up without any problems. The tests showed that the title of the Undergraduate Final Admission System and the important buttons are in the right place.
+This chapter explains the different testing approaches used for the Undergraduate Final Admission System, including automated testing, backend API validation, and manual functional testing.
 
 \subsection{Utility Function Testing}
-We tested the functions that handle sensitive data like dates and scores. We tested a function that changes dates from the database into a format that's easy to read, like ``DD-MM-YYYY''. We also tested the functions that calculate scores to make sure they are correct.
+
+We also tested important utility functions responsible for handling sensitive data such as dates and score calculations. All functions produced correct and expected outputs.
 
 \section{Backend API Testing with Postman}
-We used Postman to test the backend of the Undergraduate Final Admission System, which was built with Node.js and Prisma. We sent kinds of requests to the backend to make sure it works correctly. We checked to see if the backend returns the information like a list of applicants with their scores and positions.
+
+Postman was used to test the backend of the Undergraduate Final Admission System, which is developed using Node.js and Prisma. The backend successfully returned expected responses, confirming correct API functionality.
 
 \section{Manual Functional Testing}
-We did tests to make sure the Digital Admission Procedure Management for Post-GST Candidates works well from a users point of view. We tested the admission form to make sure it works correctly. We tried submitting the form without filling in all the required fields. We got an error message.
+
+Manual testing was conducted to evaluate the system from a user perspective. The admission form was tested by submitting both valid and invalid inputs to verify system behavior. 
+
+\subsection{Component Rendering Tests}
+
+Using Vitest and React Testing Library, we tested whether the main user interface components are rendering correctly. The results confirmed that the system UI elements, including titles and key action buttons, are correctly displayed and functional.
 
 \subsection{Form Validation Testing}
-We tested all the fields in the admission form to make sure they work correctly. We tried putting in the kind of information like letters in a field that only allows numbers.
+
+All form fields were carefully tested to ensure proper validation. Invalid inputs were intentionally entered, and the system successfully detected and rejected incorrect data.
 
 \subsection{Role-Based Access Control (RBAC) Test}
-We tested to make sure that different users can only access the parts of the Undergraduate Final Admission System that they are allowed to. We tried to access a part of the system that's only, for administrators and we were redirected to the login page.
+
+Attempts to access restricted administrative pages without proper authentication resulted in redirection to the login page, confirming secure access control implementation.
+
+\section{Load Testing and Performance Evaluation}
+
+The load testing of the PDF generation module was carried out to examine how the system operates while processing concurrent requests. All incoming requests were successfully processed during testing; no failed operations were recorded. 
+
+\subsection{Outcomes}
+
+\begin{itemize}
+\item 100\% of the requests were successfully completed without any errors.
+\item Every API response was valid (HTTP 200).
+\item No system crashes, deadlocks, or disruptions were observed.
+\item The generated PDF outputs were consistent and accurate.
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\fbox{\includegraphics[width=0.85\textwidth]{chapters/chapter5/images/test.png}}
+\caption{Load Testing Result Overview}
+\label{fig:load_testing_result}
+\end{figure}
 
 \section{Summary of Test Results}
-All the tests we did on the Undergraduate Final Admission System passed, which means it is working correctly. The table below shows the results of the tests.
+
+All testing phases were successful. The results of different testing categories are summarized in the table below.
 
 \vspace{0.5cm}
 
 \begin{table}[h]
-    \centering
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|l|c|}
-        \hline
-        {Test Category} & {Testing Tool} & {Status} \\ \hline
-        White Box Testing & Vitest & Passed \\ \hline
-        API Testing & Postman & Passed \\ \hline
-        Functional Testing & Manual & Passed \\ \hline
-        Validation & Manual & Passed \\ \hline
-        RBAC & Manual & Passed \\ \hline
-    \end{tabular}
-    \caption{Summary of Testing Results for JUST-DAPM-PGC}
-    \label{tab:test_summary}
+\centering
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|l|c|}
+\hline
+\textbf{Test Category} & \textbf{Testing Tool} & \textbf{Status} \\ \hline
+White Box Testing & Vitest & Passed \\ \hline
+API Testing       & Postman & Passed \\ \hline
+Functional Testing & Manual & Passed \\ \hline
+Validation        & Manual & Passed \\ \hline
+RBAC              & Manual & Passed \\ \hline
+Load Testing      & Hey Tool & Passed \\ \hline
+\end{tabular}
+\caption{Summary of Testing Results for JUST-DAPM-PGC}
+\label{tab:test_summary}
 \end{table}
