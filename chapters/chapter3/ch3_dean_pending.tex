@@ -21,17 +21,26 @@ The reminders could also keep a record as to whether the applicants responded to
         Use Case ID & UC-2.11, 2.12, 2.13 \\ \hline
         Use Case Name & Manage Pending Documents \& Send Reminders \\ \hline
         Primary Actor & Dean Office \\ \hline
-        Scenarios Reminder Scenario: & 
-        \begin{enumerate}[nosep, leftmargin=*]
-            \item Determine which applicant does not have pending documents.
-            \item Select the required documents and choose Send Message.
-            \item The system sends an alert to the applicant's communication point.
-        \end{enumerate} \\ \hline
-        Scenario: Receive Documents: & 
-        \begin{enumerate}[nosep, leftmargin=*]
-            \item Select the Action Pending Documents in the side bar menu.
-            \item Document receipt is noted after receiving the physical document.
-        \end{enumerate} \\ \hline
+       Reminders Reminder Scenario: &
+\begin{enumerate}[nosep, leftmargin=*]
+	\item Locate the applicants whose documents are incomplete.
+	\item Identify the particular incomplete documents for each applicant.
+	\item Pick the necessary documents and click on Send Message.
+	\item A notification alert will be sent by the system to the applicant.
+	\item Reminder status will be updated once notification alert is sent.
+	\item The system will save the reminder history for any future use.
+	\item The dean office can re-notify the applicant if the application does not respond to the notification.
+\end{enumerate} \\ \hline 
+
+Receive Documents: & 
+\begin{enumerate}[nosep, leftmargin=*]
+	\item Open the Action Pending Documents on the side bar menu.
+	\item Crosscheck the submitted physical documents.
+	\item Update the status of the documents that were successfully checked.
+	\item Register the receipt of the missing documents.
+	\item Update the verification status of the applicant automatically.
+	\item Save the updated information for auditing purposes.
+\end{enumerate} \\ \hline
     \end{tabularx}
 \end{table}
 \FloatBarrier

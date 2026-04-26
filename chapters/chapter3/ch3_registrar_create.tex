@@ -4,19 +4,29 @@ The Create New Record use case gives the opportunity for the Registrar to create
     \centering
     \small
     \renewcommand{\arraystretch}{1.4}
-    \caption{Use Case Table: Create New Record (UC-5.14)} % ক্যাপশন উপরে আনা হয়েছে
+    \caption{Use Case Table: Create New Record (UC-5.14)}
     \label{tab:create-new-record-registrar}
     \begin{tabularx}{\textwidth}{|l|X|}
         \hline 
         \rowcolor[gray]{0.9} {Characteristics} & {Description} \\ \hline
         Use Case ID & UC-5.14 \\ \hline
         Use Case Name & Create New Record \\ \hline
-        Primary Actors & Registrar \\ \hline
-        Goal & Create and download a customized record or list of applicants for office use. \\ \hline
-        Precondition & User must be signed in with Registrar credentials. \\ \hline
-        Scenario & 1. Log in to dashboard. 2. Click 'Create New Record' from the sidebar. 3. Select required data columns. 4. Provide a file name. 5. Click the 'Download' button to save the record. \\ \hline
-        Exception & Unauthorized access or invalid file format. \\ \hline
-        Frequency of Use & High frequency during the processing of applicant data. \\ \hline
-    \end{tabularx}
+        Primary Actor & Registrar \\ \hline
+        Goal & To create a customized record or list of applicants that can be downloaded for office usage. \\ \hline
+        Precondition & The user must be logged into the system using Registrar’s account. \\ \hline
+        Scenario & 1. Log in to dashboard. 2. Click “Create New Record” from the sidebar. 3. Select necessary data columns. 4. Enter a name for the file. 5. Click on the “Download” button. \\ \hline
+        Exception & Unsuccessful authentication or invalid format of file. \\ \hline
+        Frequency of Use & Frequently used when processing applicant data. \\ \hline
+        Postcondition \& Result & 
+        1. Required data is compiled. \\
+        2. Validated all selected columns. \\
+        3. Downloadable file is created in PDF/Excel format. \\
+        4. The file is saved temporarily to the server’s cache. \\
+        5. Confirmation of download is provided to the user
+        6. Record is recorded for auditing purposes. \\
+	    7. No confidential data is revealed without authorization. \\
+	    8. File name is noted. \\
+	    9. Process ends successfully. \\ \hline
+\end{tabularx}
 \end{table}
 \FloatBarrier

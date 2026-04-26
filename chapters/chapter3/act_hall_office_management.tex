@@ -1,67 +1,56 @@
 \begin{tikzpicture}[
     node distance=1.1cm and 0.4cm, 
     auto,
-    % Style Definitions (রং এবং শেপ আগের মতোই রাখা হয়েছে)
-    start/.style={circle, fill=purple!80!black, minimum size=10pt},
-    action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
-    decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
-    fork/.style={rectangle, fill=purple!90!black, minimum height=0.15cm},
-    stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=8pt},
+    start/.style={circle, fill=blue!80!black, minimum size=10pt},
+    action/.style={rectangle, draw, fill=teal!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
+    decision/.style={diamond, draw, fill=cyan!60!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
+    fork/.style={rectangle, fill=blue!85!black, minimum height=0.15cm},
+    stop/.style={circle, draw=black, double, fill=gray!70, minimum size=8pt},
     arrow/.style={-Stealth, thick, draw=gray!80},
-    labelNode/.style={font=\tiny\bfseries, fill=green!80, inner sep=1pt}
+    labelNode/.style={font=\tiny\bfseries, fill=teal!50, inner sep=1pt}
 ]
 
-    % --- Authentication Section (Step i) ---
-    \node [start] (start) {};
-    \node [action, below=of start, text width=1.8cm] (signin) {Sign in \\ (User/Pass)};
-    \node [decision, below=0.6cm of signin] (checkSign) {Valid?};
-    \node [fork, below=1cm of checkSign, minimum width=13cm] (forkMain) {};
+\node [start] (start) {};
+\node [action, below=of start, text width=1.8cm] (signin) {Sign in \\ (User/Pass)};
+\node [decision, below=0.6cm of signin] (checkSign) {Valid?};
+\node [fork, below=1cm of checkSign, minimum width=13cm] (forkMain) {};
 
-    % --- LEFT BRANCH: ADMISSION (Step ii) ---
-    \node [action, below=1cm of forkMain, xshift=-4.5cm] (actAdmin) {Admission Management};
-    \node [fork, below=0.8cm of actAdmin, minimum width=5cm] (forkAdmin) {};
-    
-    \node [action, below=0.8cm of forkAdmin, xshift=-1.4cm] (actSearch) {Search \& Show Applicant};
-    \node [action, right=0.3cm of actSearch] (actAdmit) {Receive Receipt \& Admit};
-    \node [stop, below=1.2cm of actAdmit] (stopLeft) {};
+\node [action, below=1cm of forkMain, xshift=-4.5cm] (actAdmin) {Admission Management};
+\node [fork, below=0.8cm of actAdmin, minimum width=5cm] (forkAdmin) {};
 
-    % --- MIDDLE BRANCH: SIDEBAR DOWNLOAD (Step vi) ---
-    \node [action, below=1cm of forkMain, xshift=-0.5cm] (actDownload) {Download Official Record (PDF)};
+\node [action, below=0.8cm of forkAdmin, xshift=-1.4cm] (actSearch) {Search \& Show Applicant};
+\node [action, right=0.3cm of actSearch] (actAdmit) {Receive Receipt \& Admit};
+\node [stop, below=1.2cm of actAdmit] (stopLeft) {};
 
-    % --- RIGHT BRANCH: VIEW & EXPORT (Step iii, iv, v) ---
-    \node [action, below=1cm of forkMain, xshift=3.5cm] (actView) {View \& Export Applicants};
-    \node [fork, below=0.8cm of actView, minimum width=4.5cm] (forkView) {};
-    
-    \node [action, below=0.8cm of forkView, xshift=-1.3cm] (actLists) {Waited/Admitted Lists};
-    \node [action, right=0.3cm of actLists] (actExport) {Export Applicant List};
-    \node [stop, below=2.5cm of actExport] (stopRight) {};
+\node [action, below=1cm of forkMain, xshift=-0.5cm] (actDownload) {Download Official Record (PDF)};
 
-    % --- DRAWING ARROWS ---
-    
-    % Step i: Authentication
-    \draw [arrow] (start) -- (signin);
-    \draw [arrow] (signin) -- (checkSign);
-    \draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
-    \draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
+\node [action, below=1cm of forkMain, xshift=3.5cm] (actView) {View \& Export Applicants};
+\node [fork, below=0.8cm of actView, minimum width=4.5cm] (forkView) {};
 
-    % Step ii: Admission logic
-    \draw [arrow] (forkMain.south -| actAdmin) -- (actAdmin);
-    \draw [arrow] (actAdmin) -- (forkAdmin);
-    \draw [arrow] (forkAdmin.south -| actSearch) -- (actSearch);
-    \draw [arrow] (forkAdmin.south -| actAdmit) -- (actAdmit);
-    \draw [arrow] (actSearch.south) -- ++(0,-0.5) -| (stopLeft);
-    \draw [arrow] (actAdmit) -- (stopLeft);
+\node [action, below=0.8cm of forkView, xshift=-1.3cm] (actLists) {Waited/Admitted Lists};
+\node [action, right=0.3cm of actLists] (actExport) {Export Applicant List};
+\node [stop, below=2.5cm of actExport] (stopRight) {};
 
-    % Step vi: Download
-    \draw [arrow] (forkMain.south -| actDownload) -- (actDownload);
-    \draw [arrow] (actDownload.south) -- ++(0,-0.5) -| (stopRight);
+\draw [arrow] (start) -- (signin);
+\draw [arrow] (signin) -- (checkSign);
+\draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+\draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
 
-    % Step iii, iv, v: View & Export
-    \draw [arrow] (forkMain.south -| actView) -- (actView);
-    \draw [arrow] (actView) -- (forkView);
-    \draw [arrow] (forkView.south -| actLists) -- (actLists);
-    \draw [arrow] (forkView.south -| actExport) -- (actExport);
-    \draw [arrow] (actLists.south) -- ++(0,-0.5) -| (stopRight);
-    \draw [arrow] (actExport) -- (stopRight);
+\draw [arrow] (forkMain.south -| actAdmin) -- (actAdmin);
+\draw [arrow] (actAdmin) -- (forkAdmin);
+\draw [arrow] (forkAdmin.south -| actSearch) -- (actSearch);
+\draw [arrow] (forkAdmin.south -| actAdmit) -- (actAdmit);
+\draw [arrow] (actSearch.south) -- ++(0,-0.5) -| (stopLeft);
+\draw [arrow] (actAdmit) -- (stopLeft);
+
+\draw [arrow] (forkMain.south -| actDownload) -- (actDownload);
+\draw [arrow] (actDownload.south) -- ++(0,-0.5) -| (stopRight);
+
+\draw [arrow] (forkMain.south -| actView) -- (actView);
+\draw [arrow] (actView) -- (forkView);
+\draw [arrow] (forkView.south -| actLists) -- (actLists);
+\draw [arrow] (forkView.south -| actExport) -- (actExport);
+\draw [arrow] (actLists.south) -- ++(0,-0.5) -| (stopRight);
+\draw [arrow] (actExport) -- (stopRight);
 
 \end{tikzpicture}

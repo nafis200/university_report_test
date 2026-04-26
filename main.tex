@@ -31,9 +31,14 @@
 
 \usepackage{adjustbox}
 \usepackage[hidelinks]{hyperref}
-
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -62,13 +67,17 @@
 \include{acknowledgement}
 \include{abstract}
 \include{preface}
-\include{Abbreviation}
+
 
 \newpage
 \tableofcontents
 
 \newpage
 \listoftables
+\listoffigures
+
+\newpage
+\include{Abbreviation}
 
 \newpage
 \pagenumbering{arabic}
@@ -80,11 +89,12 @@
 \input{chapters/chapter1/objectives}
 \input{chapters/chapter1/contributor}
 
-\include{chapters/chapter2/ch2_main}
+% \include{chapters/chapter2/ch2_main}
 \include{chapters/chapter3/ch3_main}
 \include{chapters/chapter4/ch4_main}
 \include{chapters/chapter5/testing}
 \include{chapters/chapter6/deployment}
+\include{chapters/chapter6/conclusion}
 
 \include{references}
 

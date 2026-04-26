@@ -1,62 +1,52 @@
 \begin{tikzpicture}[
     node distance=1.1cm and 0.5cm, 
     auto,
-    start/.style={circle, fill=purple!80!black, minimum size=10pt},
-    action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.5cm, align=center, font=\scriptsize\bfseries},
-    decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=1.8, inner sep=0pt, text width=1.8cm, align=center, font=\tiny\bfseries},
-    fork/.style={rectangle, fill=purple!90!black, minimum height=0.15cm},
-    stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=8pt},
+    start/.style={circle, fill=blue!80!black, minimum size=10pt},
+    action/.style={rectangle, draw, fill=teal!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.5cm, align=center, font=\scriptsize\bfseries},
+    decision/.style={diamond, draw, fill=cyan!60!black, text=white, aspect=1.8, inner sep=0pt, text width=1.8cm, align=center, font=\tiny\bfseries},
+    fork/.style={rectangle, fill=blue!85!black, minimum height=0.15cm},
+    stop/.style={circle, draw=black, double, fill=gray!70, minimum size=8pt},
     arrow/.style={-Stealth, thick, draw=gray!80},
-    labelNode/.style={font=\tiny\bfseries, fill=green!80, inner sep=1pt}
+    labelNode/.style={font=\tiny\bfseries, fill=teal!50, inner sep=1pt}
 ]
 
-    % --- Authentication (Step i) ---
-    \node [start] (start) {};
-    \node [action, below=of start, text width=1.8cm] (signin) {Sign in \\ (GST ID/Pass)};
-    \node [decision, below=0.6cm of signin] (checkSign) {Valid Login?};
-    \node [fork, below=1cm of checkSign, minimum width=10cm] (forkMain) {};
+\node [start] (start) {};
+\node [action, below=of start, text width=1.8cm] (signin) {Sign in \\ (GST ID/Pass)};
+\node [decision, below=0.6cm of signin] (checkSign) {Valid Login?};
+\node [fork, below=1cm of checkSign, minimum width=10cm] (forkMain) {};
 
-    % --- Left: Profile Update (Step ii) ---
-    \node [action, below=1cm of forkMain, xshift=-3.5cm] (actUpdate) {Update Profile Data};
-    \node [decision, below=0.8cm of actUpdate] (checkUpdate) {Updated?};
-    \node [stop, below=1.2cm of checkUpdate] (stopLeft) {};
+\node [action, below=1cm of forkMain, xshift=-3.5cm] (actUpdate) {Update Profile Data};
+\node [decision, below=0.8cm of actUpdate] (checkUpdate) {Updated?};
+\node [stop, below=1.2cm of checkUpdate] (stopLeft) {};
 
-    % --- Middle: Application Form (Step iii, iv) ---
-    \node [action, below=1cm of forkMain, xshift=0cm] (actFill) {Fill-up Application Form};
-    \node [decision, below=0.8cm of actFill] (checkFill) {All Steps \\ Completed?};
-    \node [action, below=1cm of checkFill] (actGenerate) {Generate \& Download Form};
-    \node [stop, below=1cm of actGenerate] (stopMid) {};
+\node [action, below=1cm of forkMain, xshift=0cm] (actFill) {Fill-up Application Form};
+\node [decision, below=0.8cm of actFill] (checkFill) {All Steps \\ Completed?};
+\node [action, below=1cm of checkFill] (actGenerate) {Generate \& Download Form};
+\node [stop, below=1cm of actGenerate] (stopMid) {};
 
-    % --- Right: Edit Request (Step v) ---
-    \node [action, below=1cm of forkMain, xshift=3.5cm] (actRequest) {Send Edit Request};
-    \node [decision, below=0.8cm of actRequest] (checkSent) {Request Sent?};
-    \node [stop, below=1.2cm of checkSent] (stopRight) {};
+\node [action, below=1cm of forkMain, xshift=3.5cm] (actRequest) {Send Edit Request};
+\node [decision, below=0.8cm of actRequest] (checkSent) {Request Sent?};
+\node [stop, below=1.2cm of checkSent] (stopRight) {};
 
-    % --- Drawing Arrows ---
-    
-    % Step i Flow
-    \draw [arrow] (start) -- (signin);
-    \draw [arrow] (signin) -- (checkSign);
-    \draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
-    \draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
+\draw [arrow] (start) -- (signin);
+\draw [arrow] (signin) -- (checkSign);
+\draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+\draw [arrow] (checkSign) -- node[labelNode] {Yes} (forkMain);
 
-    % Step ii Flow
-    \draw [arrow] (forkMain.south -| actUpdate) -- (actUpdate);
-    \draw [arrow] (actUpdate) -- (checkUpdate);
-    \draw [arrow] (checkUpdate.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actUpdate.west);
-    \draw [arrow] (checkUpdate) -- node[labelNode] {Yes} (stopLeft);
+\draw [arrow] (forkMain.south -| actUpdate) -- (actUpdate);
+\draw [arrow] (actUpdate) -- (checkUpdate);
+\draw [arrow] (checkUpdate.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actUpdate.west);
+\draw [arrow] (checkUpdate) -- node[labelNode] {Yes} (stopLeft);
 
-    % Step iii & iv Flow
-    \draw [arrow] (forkMain.south -| actFill) -- (actFill);
-    \draw [arrow] (actFill) -- (checkFill);
-    \draw [arrow] (checkFill.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actFill.west);
-    \draw [arrow] (checkFill) -- node[labelNode] {Yes} (actGenerate);
-    \draw [arrow] (actGenerate) -- (stopMid);
+\draw [arrow] (forkMain.south -| actFill) -- (actFill);
+\draw [arrow] (actFill) -- (checkFill);
+\draw [arrow] (checkFill.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actFill.west);
+\draw [arrow] (checkFill) -- node[labelNode] {Yes} (actGenerate);
+\draw [arrow] (actGenerate) -- (stopMid);
 
-    % Step v Flow
-    \draw [arrow] (forkMain.south -| actRequest) -- (actRequest);
-    \draw [arrow] (actRequest) -- (checkSent);
-    \draw [arrow] (checkSent.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actRequest.west);
-    \draw [arrow] (checkSent) -- node[labelNode] {Yes} (stopRight);
+\draw [arrow] (forkMain.south -| actRequest) -- (actRequest);
+\draw [arrow] (actRequest) -- (checkSent);
+\draw [arrow] (checkSent.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actRequest.west);
+\draw [arrow] (checkSent) -- node[labelNode] {Yes} (stopRight);
 
 \end{tikzpicture}

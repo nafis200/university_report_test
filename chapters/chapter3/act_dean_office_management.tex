@@ -1,73 +1,61 @@
 \begin{tikzpicture}[
     node distance=1.1cm and 0.5cm, 
     auto,
-    % Style Definitions
-    start/.style={circle, fill=purple!80!black, minimum size=10pt},
-    action/.style={rectangle, draw, fill=purple!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
-    decision/.style={diamond, draw, fill=purple!70!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
-    fork/.style={rectangle, fill=purple!90!black, minimum height=0.15cm},
-    stop/.style={circle, draw=black, double, fill=purple!80!black, minimum size=8pt},
-    arrow/.style={-Stealth, thick, draw=gray!80},
-    labelNode/.style={font=\tiny\bfseries, fill=green!80, inner sep=1pt}
+    start/.style={circle, fill=blue!70!black, minimum size=10pt},
+    action/.style={rectangle, draw, fill=teal!70!black, text=white, rounded corners=6pt, inner sep=4pt, text width=2.2cm, align=center, font=\scriptsize\bfseries},
+    decision/.style={diamond, draw, fill=cyan!60!black, text=white, aspect=1.8, inner sep=0pt, text width=1.7cm, align=center, font=\tiny\bfseries},
+    fork/.style={rectangle, fill=blue!80!black, minimum height=0.15cm},
+    stop/.style={circle, draw=black, double, fill=gray!70, minimum size=8pt},
+    arrow/.style={-Stealth, thick, draw=gray!70},
+    labelNode/.style={font=\tiny\bfseries, fill=teal!50, inner sep=1pt}
 ]
 
-    % --- Authentication ---
-    \node [start] (start) {};
-    \node [action, below=of start, text width=1.6cm] (signin) {Sign in};
-    \node [decision, below=0.6cm of signin] (checkSign) {Sign in Successful?};
-    \node [fork, below=1cm of checkSign, minimum width=12cm] (fork1) {};
+\node [start] (start) {};
+\node [action, below=of start, text width=1.6cm] (signin) {Sign in};
+\node [decision, below=0.6cm of signin] (checkSign) {Sign in Successful?};
+\node [fork, below=1cm of checkSign, minimum width=12cm] (fork1) {};
 
-    % --- LEFT BRANCH: ADMISSION ---
-    \node [action, below=1cm of fork1, xshift=-4cm] (actAdmin) {Admission Management};
-    \node [action, below=1cm of actAdmin] (actVerifyDoc) {Verify Documents};
-    \node [decision, below=0.7cm of actVerifyDoc] (checkDoc) {Document OK?};
-    \node [action, below=0.7cm of checkDoc] (actAdmit) {Admit Applicant};
-    \node [stop, below=1cm of actAdmit] (stopLeft) {};
+\node [action, below=1cm of fork1, xshift=-4cm] (actAdmin) {Admission Management};
+\node [action, below=1cm of actAdmin] (actVerifyDoc) {Verify Documents};
+\node [decision, below=0.7cm of actVerifyDoc] (checkDoc) {Document OK?};
+\node [action, below=0.7cm of checkDoc] (actAdmit) {Admit Applicant};
+\node [stop, below=1cm of actAdmit] (stopLeft) {};
 
-    % --- MIDDLE BRANCH: STATUS ---
-    \node [action, below=1cm of fork1, xshift=0cm] (actSeatStatus) {Department Seat Status};
-    \node [action, below=1.5cm of actSeatStatus] (actPendRec) {Pending Doc Receive};
+\node [action, below=1cm of fork1, xshift=0cm] (actSeatStatus) {Department Seat Status};
+\node [action, below=1.5cm of actSeatStatus] (actPendRec) {Pending Doc Receive};
 
-    % --- RIGHT BRANCH: VIEW ---
-    \node [action, below=1cm of fork1, xshift=4cm] (actViewApp) {View Applicants};
-    \node [fork, below=0.8cm of actViewApp, minimum width=4cm] (forkView) {};
-    
-    \node [action, below=0.8cm of forkView, xshift=-1.2cm] (actWaitApp) {Waited List};
-    \node [action, right=0.3cm of actWaitApp] (actAdmitApp) {Admitted List};
-    
-    \node [action, below=1cm of actAdmitApp] (actFullClear) {Full Clearance};
-    \node [stop, below=2cm of actFullClear] (stopRight) {};
+\node [action, below=1cm of fork1, xshift=4cm] (actViewApp) {View Applicants};
+\node [fork, below=0.8cm of actViewApp, minimum width=4cm] (forkView) {};
 
-    % --- DRAWING ARROWS ---
-    
-    % Auth Flow
-    \draw [arrow] (start) -- (signin);
-    \draw [arrow] (signin) -- (checkSign);
-    \draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
-    \draw [arrow] (checkSign) -- node[labelNode] {Yes} (fork1);
+\node [action, below=0.8cm of forkView, xshift=-1.2cm] (actWaitApp) {Waited List};
+\node [action, right=0.3cm of actWaitApp] (actAdmitApp) {Admitted List};
 
-    % Fork 1 to Branches
-    \draw [arrow] (fork1.south -| actAdmin) -- (actAdmin);
-    \draw [arrow] (fork1.south -| actSeatStatus) -- (actSeatStatus);
-    \draw [arrow] (fork1.south -| actViewApp) -- (actViewApp);
+\node [action, below=1cm of actAdmitApp] (actFullClear) {Full Clearance};
+\node [stop, below=2cm of actFullClear] (stopRight) {};
 
-    % Left Branch Logic
-    \draw [arrow] (actAdmin) -- (actVerifyDoc);
-    \draw [arrow] (actVerifyDoc) -- (checkDoc);
-    \draw [arrow] (checkDoc) -- node[labelNode] {Yes} (actAdmit);
-    \draw [arrow] (checkDoc.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actVerifyDoc.west);
-    \draw [arrow] (actAdmit) -- (stopLeft);
+\draw [arrow] (start) -- (signin);
+\draw [arrow] (signin) -- (checkSign);
+\draw [arrow] (checkSign.west) -- ++(-0.6,0) |- node[labelNode, pos=0.2] {No} (signin.west);
+\draw [arrow] (checkSign) -- node[labelNode] {Yes} (fork1);
 
-    % Middle Branch Logic
-    \draw [arrow] (actSeatStatus) -- (actPendRec);
-    \draw [arrow] (actPendRec.south) -- ++(0,-0.5) -| (stopRight);
+\draw [arrow] (fork1.south -| actAdmin) -- (actAdmin);
+\draw [arrow] (fork1.south -| actSeatStatus) -- (actSeatStatus);
+\draw [arrow] (fork1.south -| actViewApp) -- (actViewApp);
 
-    % Right Branch Logic
-    \draw [arrow] (actViewApp) -- (forkView);
-    \draw [arrow] (forkView.south -| actWaitApp) -- (actWaitApp);
-    \draw [arrow] (forkView.south -| actAdmitApp) -- (actAdmitApp);
-    \draw [arrow] (actWaitApp.south) -- ++(0,-0.5) -| (stopRight);
-    \draw [arrow] (actAdmitApp) -- (actFullClear);
-    \draw [arrow] (actFullClear) -- (stopRight);
+\draw [arrow] (actAdmin) -- (actVerifyDoc);
+\draw [arrow] (actVerifyDoc) -- (checkDoc);
+\draw [arrow] (checkDoc) -- node[labelNode] {Yes} (actAdmit);
+\draw [arrow] (checkDoc.west) -- ++(-0.5,0) |- node[labelNode, pos=0.2] {No} (actVerifyDoc.west);
+\draw [arrow] (actAdmit) -- (stopLeft);
+
+\draw [arrow] (actSeatStatus) -- (actPendRec);
+\draw [arrow] (actPendRec.south) -- ++(0,-0.5) -| (stopRight);
+
+\draw [arrow] (actViewApp) -- (forkView);
+\draw [arrow] (forkView.south -| actWaitApp) -- (actWaitApp);
+\draw [arrow] (forkView.south -| actAdmitApp) -- (actAdmitApp);
+\draw [arrow] (actWaitApp.south) -- ++(0,-0.5) -| (stopRight);
+\draw [arrow] (actAdmitApp) -- (actFullClear);
+\draw [arrow] (actFullClear) -- (stopRight);
 
 \end{tikzpicture}

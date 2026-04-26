@@ -5,21 +5,38 @@
 
 This chapter gives an insight into the architecture of the system design before the actual implementation of the system in question. Starting off, use case diagrams show how various people interact with the system, and the chapter breaks down particular parts of the process involved like secure user logins, submission of application forms by the applicant, and the verification process by the Dean. Through these, the processes of approval of each office including the Hall, Medical and Registrar's office are depicted to give an overview of the sequence of processing admission data in various departments.
 
+\vspace{0.5cm}
+
 \noindent The chapter further provides a schematic diagram of the system's database design. Various tables of data, for example, for users, applicants, and other supporting document information are discussed in detail. There is an emphasis on various relationships that exist between various types of data in the system. The data flow architecture is included in the discussions to give technical details on how the data flows within the environment.
+
+\vspace{0.5cm}
+\noindent Aside from the structure and data-related perspectives on the design, another important perspective that is emphasized in this chapter is the modular design of the system. Every functional requirement is designed as an individual module to allow further improvements in the future without disrupting the entire functioning of the system. A significant part of designing the modules will be to incorporate security measures like user authentication, authorization, and data validation to ensure that sensitive admission data is secure against any threat. Besides, it is necessary to explain the integration of the back-end functionalities with the graphical user interface.
+
+\clearpage % এটি আগের পেজের কন্টেন্ট শেষ করে নতুন পেজ শুরু করবে
 
 \section{Use Case Diagram}
 
 % --- USER MANAGEMENT ---
 \subsection{User Management}
 
-\begin{figure}[htbp]
+\begin{figure}[H] % [H] ব্যবহার করলে ডায়াগ্রামটি ঠিক এই জায়গাতেই বসবে
     \centering
-    \includegraphics[width=0.85\textwidth]{user.png} 
+    \vspace*{\fill} % উপরে সমান খালি জায়গা রাখবে
+    \includegraphics[width=0.9\textwidth]{user.png} 
     \caption{Use Case Diagram of User Management}
     \label{fig:user_management_usecase}
+    \vspace*{\fill} % নিচে সমান খালি জায়গা রাখবে
 \end{figure}
 
-The User Management use case diagram consists of six primary actors: Admin, Dean Office, Hall Office, Medical Office, Registrar Office, and Applicant. 
+\noindent 
+The User Management use case diagram shows how the various participants interface with the system as per their different responsibilities. The  is the main external participant who starts the process of applying for admission to the university by entering the system and filling the form containing personal and academic data. From the administration point of view,the is a responsible for managing the user accounts, accessing control of the system, and granting authorities for all offices to operate. The Admin also ensures that all system actions are consistent and safe. All participants perform their interaction with the system by proper authentication processes.
+
+\vspace{0.5cm}
+
+\noindent
+The diagram of the user management use case depicts interactions between various stakeholders based on the roles that they play. The is an important stakeholder because he/she triggers the admission process by logging into the system and filling out the application form with relevant details. In terms of system administration, it is the job to ensure that there is efficient management of user accounts as well as system access. The role of the Admin also includes monitoring and maintenance of system activities.
+
+\clearpage 
 
 \input{chapters/chapter3/ch3_signin}
 \input{chapters/chapter3/ch3_view_applicant}
@@ -50,7 +67,7 @@ This module controls various types of use cases including searching applicants, 
 % \input{chapters/chapter3/ch3_dean_reject}
 \input{chapters/chapter3/ch3_dean_view_lists}
 \input{chapters/chapter3/ch3_dean_pending}
-\input{chapters/chapter3/ch3_dean_status_export}
+% \input{chapters/chapter3/ch3_dean_status_export}
 
 % --- HALL OFFICE MANAGEMENT ---
 \subsection{Hall Office Management}
@@ -84,14 +101,16 @@ The Hall Office Management use case diagram consists of two primary actors: Admi
 
 The Medical Office Management module handles the physical examination and medical clearance of applicants. This use case diagram involves two primary actors: Medical Officer and Admin. The system allows managing medical records, generating reports, and granting final medical clearance.
 
-\input{chapters/chapter3/ch3_medical_search}
+% \input{chapters/chapter3/ch3_medical_search}
 \input{chapters/chapter3/ch3_medical_profile}
 \input{chapters/chapter3/ch3_medical_info}
 \input{chapters/chapter3/ch3_medical_report}
 \input{chapters/chapter3/ch3_medical_admit}
-\input{chapters/chapter3/ch3_medical_lists}
+% \input{chapters/chapter3/ch3_medical_lists}
 % \input{chapters/chapter3/ch3_medical_update}
 % \input{chapters/chapter3/ch3_medical_export_download}
+
+\clearpage
 
 % --- REGISTRAR OFFICE MANAGEMENT ---
 \subsection{Registrar Office Management}
@@ -103,7 +122,8 @@ The Medical Office Management module handles the physical examination and medica
 \label{fig:registrar_usecase}
 \end{figure}
 
-The Registrar Office Management use case diagram consists of two primary actors: Admin and Registrar Office. This module controls operations including searching applicants, viewing profiles, receiving documents, and monitoring seat status.
+\noindent The Registrar Office Management use case diagram consists of two primary actors: Admin and Registrar Office. This module controls operations including searching applicants, viewing profiles, receiving documents, and monitoring seat status.This module also guarantees that all records relating to admission will be appropriately sorted out and easily available for review. Applicant’s performance at various stages of the admission process will be effectively monitored. It will also allow the Registrar’s Office to authenticate all submitted data according to the set standards before acceptance. Updates will be instantly available regarding application status so that any modifications 
+\clearpage
 
 \input{chapters/chapter3/ch3_registrar_search}
 \input{chapters/chapter3/ch3_registrar_profile}
@@ -118,10 +138,11 @@ The Registrar Office Management use case diagram consists of two primary actors:
 % \input{chapters/chapter3/ch3_registrar_receive_pending}
 % \input{chapters/chapter3/ch3_registrar_seat}
 \input{chapters/chapter3/ch3_registrar_export_all}
-\input{chapters/chapter3/ch3_registrar_create}
+% \input{chapters/chapter3/ch3_registrar_create}
 
 
 % ================= APPLICANT PROFILE MANAGEMENT =================
+\clearpage
 \subsection{Applicant Profile Management}
 
 \begin{figure}[htbp]
@@ -131,7 +152,8 @@ The Registrar Office Management use case diagram consists of two primary actors:
 \label{fig:applicant_management_usecase}
 \end{figure}
 
-The Applicant Profile Management module manages the student's interaction with the system, covering everything from registration to document retrieval.
+The Applicant Profile Management module manages the student's interaction with the system, covering everything from registration to document retrieval.this module makes sure that the information of every applicant is accessible and updated by them whenever they want. The module serves as a platform where one can check the status of their application instantly. This module also gives users the ability to upload, view, and Applicant Profile Management module will handle all interactions of the student with the software right from the point of application till the moment of document acquisition. It is important to note that through this module, information about each applicant is made available to him or her at all times. The Applicant Profile Management module provides a platform where the applicant's application status can be checked immediately. The user through this module can manage the uploading and viewing of his or her personal and educational documents. Consistency of data throughout the entire application process will be ensured through this module. The applicant will also be able to update his or her profile data whenever needed.
+\clearpage
 
 \input{chapters/chapter3/ch3_applicant_create}
 \input{chapters/chapter3/ch3_applicant_update_profile}
@@ -140,14 +162,17 @@ The Applicant Profile Management module manages the student's interaction with t
 \input{chapters/chapter3/ch3_applicant_download}
 % \input{chapters/chapter3/ch3_applicant_send_edit}
 % \input{chapters/chapter3/ch3_applicant_approve_edit}
-\input{chapters/chapter3/ch3_applicant_update_info}
+% \input{chapters/chapter3/ch3_applicant_update_info}
 
 
 \subsubsection{User Management}
 
 The User Management activity diagram represents the process flow of the system's administration and user functionalities. Admin and users need to sign in using their respective logins and passwords. After authentication, the system branches out depending on the user roles and operations to be performed. In the case of administrative users, the system offers various options for managing their tasks including verifying user credentials, assigning roles, and tracking system activities. The administrator can assess applications received, authenticate the validity of the information provided by the users, and either accept or deny the request based on predefined rules.
 
-In the case of regular users, the system enables users to have a personal interface through which they can manipulate their accounts, apply for services, and monitor the status of the applications made. Users are also permitted to modify their personal information and add necessary files whenever required. The system performs proper validations during the process to ensure consistency and correctness of the data entered. In the event the details are not accurate, the user is asked to correct his/her information before progressing any further. Notifications are sent out to alert the users of any notifications, acceptance, or pending issues.
+\vspace{0.5cm}
+
+\noindent In the case of regular users, the system enables users to have a personal interface through which they can manipulate their accounts, apply for services, and monitor the status of the applications made. Users are also permitted to modify their personal information and add necessary files whenever required. The system performs proper validations during the process to ensure consistency and correctness of the data entered. In the event the details are not accurate, the user is asked to correct his/her information before progressing any further. Notifications are sent out to alert the users of any notifications, acceptance, or pending issues.
+
 
 \begin{figure}[H] % [htbp] এর বদলে [H] ব্যবহার করুন
 \centering
@@ -189,7 +214,7 @@ The Hall Office Management activity diagram illustrates the operational workflow
 
 \subsubsection{Medical Office Management}
 
-The Medical Office Management activity diagram illustrates the workflow for managing applicant medical records and admissions. After a successful sign-in, the medical officer can search for applicants, update medical information, generate health reports, and manage the admitted and waited applicant lists.
+The Medical Office Management flow chart shows the process involved in handling the medical record and admissions for the applicants. Upon signing in successfully, the medical officer is allowed to look for applicants, update their medical records, produce medical reports, and handle the admitted applicants and those on waitlist. The system ensures that all medical updates are validated before submission to avoid any errors in data management. Moreover, the officer will also have access to check all pending documents to ensure that all applicants meet the necessary medical requirements. Reports produced by the system can be saved either in print or digital format.
 
 \begin{figure}[H]
     \centering
@@ -203,7 +228,7 @@ The Medical Office Management activity diagram illustrates the workflow for mana
 
 \subsubsection{Registrar Office Management}
 
-The Registrar Office Management activity diagram details the high-level administrative tasks handled by the registrar. This includes secure authentication, applicant management (searching, document receipt, and admission), and robust reporting features such as exporting lists and creating customized new records for official documentation.
+The Registrar Office Management activity diagram depicts the general administration tasks that the registrar will be involved in. These include authentication, management of applicants (search, submission of documents, and admitting of the applicants) and advanced reporting functionalities such as list exportation, creation of customized records for official purposes. Only authorized personnel will be able to access any administrative function in the system after successful authentication through login. The system is designed to efficiently handle huge amounts of applicants' information with minimal efforts. The registrar will also have the option of sorting and grouping applicants depending on their admission level such as waitlisted or admitted or other pending cases. The system ensures data consistency through validation of all information prior to being saved in the database.
 
 \begin{figure}[H]
     \centering
@@ -217,7 +242,7 @@ The Registrar Office Management activity diagram details the high-level administ
 
 \subsubsection{Applicant Profile Management}
 
-The Applicant Profile Management activity diagram illustrates the interactive workflow for students using the admission system. It encompasses the secure login process using GST credentials, profile updates, the multi-step application form filling process, and the final generation and download of the application form, including the ability to send edit requests post-submission.
+The Applicant Profile Management activity diagram illustrates the interactive workflow for students using the admission system. It encompasses the secure login process using GST credentials, profile updates, the multi-step application form filling process, and the final generation and download of the application form, including the ability to send edit requests post-submission. The system ensures that each step of the application process is completed in a structured and validated manner to reduce errors and incomplete submissions. Applicants can update their personal information whenever necessary before final submission, maintaining data accuracy. During the form-filling stage, the system guides users through all required sections to ensure completeness. After submission, applicants can still request modifications through an edit request mechanism, which is reviewed by the authority. The generated application form can be downloaded for future reference and official use. Overall, this module provides a user-friendly and controlled workflow that enhances efficiency and reliability in the admission proces
 
 \begin{figure}[H]
     \centering

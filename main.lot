@@ -1,46 +1,41 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Use Case Table: Login Process (UC-1.1)}}{19}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Use Case Table: View Applicant List (UC-1.2)}}{20}{table.3.2}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Use Case Table: Update User Information (UC-1.3)}}{21}{table.3.3}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Use Case Table: View User Information (UC-1.5)}}{22}{table.3.4}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Use Case Table: Fill-Up Application Form (UC-1.6)}}{23}{table.3.5}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Use Case Table: Download Application Form (UC-1.7)}}{24}{table.3.6}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Use Case Table: Applicant Search (UC-2.1)}}{26}{table.3.7}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Use Case Table: Display Applicant Profile (UC-2.2)}}{27}{table.3.8}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Use Case Table: Validate Applicant’s Form (UC-2.3)}}{28}{table.3.9}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Use Case Table 2.12: UC-2.5}}{29}{table.3.10}%
-\contentsline {table}{\numberline {3.11}{\ignorespaces Use Case Table: Application List Management (UC-2.7 - 2.9)}}{30}{table.3.11}%
-\contentsline {table}{\numberline {3.12}{\ignorespaces Use Case Table: Pending Documents Management (UC-2.11 - 2.13)}}{31}{table.3.12}%
-\contentsline {table}{\numberline {3.13}{\ignorespaces Use Case Table – Monitoring \& Export (UC-2.14 - UC-2.15)}}{32}{table.3.13}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Use Case Table: Search Applicant (UC-3.1)}}{34}{table.3.14}%
-\contentsline {table}{\numberline {3.15}{\ignorespaces Use Case: Receive Bank Receipt (UC-3.3)}}{34}{table.3.15}%
-\contentsline {table}{\numberline {3.16}{\ignorespaces Use Case: Admit Applicant (UC-3.4)}}{35}{table.3.16}%
-\contentsline {table}{\numberline {3.17}{\ignorespaces Use Case: Candidate Lists (UC-3.5 – 3.6)}}{35}{table.3.17}%
-\contentsline {table}{\numberline {3.18}{\ignorespaces Use Case: Candidate Report Generation (UC-3.8 – 3.9)}}{36}{table.3.18}%
-\contentsline {table}{\numberline {3.19}{\ignorespaces Use Case Table: Search Applicant (UC-4.1)}}{38}{table.3.19}%
-\contentsline {table}{\numberline {3.20}{\ignorespaces Use Case Table: Show Applicant Profile (UC-4.2)}}{38}{table.3.20}%
-\contentsline {table}{\numberline {3.21}{\ignorespaces Use Case Table: Insert/Update Medical Information (UC-4.3)}}{39}{table.3.21}%
-\contentsline {table}{\numberline {3.22}{\ignorespaces Use Case Table: Generate and Print Medical Report (UC-4.4)}}{39}{table.3.22}%
-\contentsline {table}{\numberline {3.23}{\ignorespaces Use Case Table: Admit Applicant (UC-4.5)}}{40}{table.3.23}%
-\contentsline {table}{\numberline {3.24}{\ignorespaces Use Case Table: View Applicant Lists (UC-4.6 - 4.7)}}{40}{table.3.24}%
-\contentsline {table}{\numberline {3.25}{\ignorespaces Use Case Table: Search Applicant (UC-5.1)}}{42}{table.3.25}%
-\contentsline {table}{\numberline {3.26}{\ignorespaces Use Case Table: Show Applicant Profile (UC-5.2)}}{43}{table.3.26}%
-\contentsline {table}{\numberline {3.27}{\ignorespaces Use Case Table: Receive Documents (UC-5.3)}}{43}{table.3.27}%
-\contentsline {table}{\numberline {3.28}{\ignorespaces Use Case Table: Admit Applicant (UC-5.4)}}{44}{table.3.28}%
-\contentsline {table}{\numberline {3.29}{\ignorespaces Use Case Table: View All Applicant (UC-5.5)}}{45}{table.3.29}%
-\contentsline {table}{\numberline {3.30}{\ignorespaces Use Case Table: View Waited Applicant (UC-5.6)}}{46}{table.3.30}%
-\contentsline {table}{\numberline {3.31}{\ignorespaces Use Case Table: View Pending Document Applicant (UC-5.10)}}{47}{table.3.31}%
-\contentsline {table}{\numberline {3.32}{\ignorespaces Use Case Table: Export Applicant List (UC-5.8)}}{48}{table.3.32}%
-\contentsline {table}{\numberline {3.33}{\ignorespaces Use Case Table: Create New Record (UC-5.14)}}{49}{table.3.33}%
-\contentsline {table}{\numberline {3.34}{\ignorespaces Use Case Table: Create Account (UC-6.1)}}{51}{table.3.34}%
-\contentsline {table}{\numberline {3.35}{\ignorespaces Use Case Table: Update Profile (UC-6.2)}}{52}{table.3.35}%
-\contentsline {table}{\numberline {3.36}{\ignorespaces Use Case Table: Fill-up Application Form (UC-6.3)}}{52}{table.3.36}%
-\contentsline {table}{\numberline {3.37}{\ignorespaces Use Case Table: Generate Application Form (UC-6.4)}}{53}{table.3.37}%
-\contentsline {table}{\numberline {3.38}{\ignorespaces Use Case Table: Download Application Form (UC-6.5)}}{54}{table.3.38}%
-\contentsline {table}{\numberline {3.39}{\ignorespaces Use Case Table: Update Applicant Information (UC-6.8)}}{54}{table.3.39}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Use Case Table: Login Process (UC-1.1)}}{7}{table.caption.4}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Use Case Table: View Applicant List (UC-1.2)}}{8}{table.caption.5}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Use Case Table: Update User Information (UC-1.3)}}{9}{table.caption.6}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Use Case Table: View User Information (UC-1.5)}}{10}{table.caption.7}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Use Case Table: Fill-Up Application Form (UC-1.6)}}{11}{table.caption.8}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Use Case Table: Download Application Form (UC-1.7)}}{12}{table.caption.9}%
+\contentsline {table}{\numberline {2.7}{\ignorespaces Use Case Table: Applicant Search (UC-2.1)}}{14}{table.caption.11}%
+\contentsline {table}{\numberline {2.8}{\ignorespaces Use Case Table: Display Applicant Profile (UC-2.2)}}{15}{table.caption.12}%
+\contentsline {table}{\numberline {2.9}{\ignorespaces Use Case Table: Validate Applicant’s Form (UC-2.3)}}{16}{table.caption.13}%
+\contentsline {table}{\numberline {2.10}{\ignorespaces Use Case Table 2.12: UC-2.5}}{17}{table.caption.14}%
+\contentsline {table}{\numberline {2.11}{\ignorespaces Use Case Table: Application List Management (UC-2.7 - 2.9)}}{18}{table.caption.15}%
+\contentsline {table}{\numberline {2.12}{\ignorespaces Use Case Table: Pending Documents Management (UC-2.11 - 2.13)}}{19}{table.caption.16}%
+\contentsline {table}{\numberline {2.13}{\ignorespaces Use Case Table: Search Applicant (UC-3.1)}}{21}{table.caption.18}%
+\contentsline {table}{\numberline {2.14}{\ignorespaces Use Case: Receive Bank Receipt (UC-3.3)}}{21}{table.caption.19}%
+\contentsline {table}{\numberline {2.15}{\ignorespaces Use Case: Admit Applicant (UC-3.4)}}{22}{table.caption.20}%
+\contentsline {table}{\numberline {2.16}{\ignorespaces Use Case: Candidate Lists (UC-3.5 – 3.6)}}{22}{table.caption.21}%
+\contentsline {table}{\numberline {2.17}{\ignorespaces Use Case: Candidate Report Generation (UC-3.8 – 3.9)}}{23}{table.caption.22}%
+\contentsline {table}{\numberline {2.18}{\ignorespaces Use Case Table: Show Applicant Profile (UC-4.2)}}{24}{table.caption.24}%
+\contentsline {table}{\numberline {2.19}{\ignorespaces Use Case Table: Insert/Update Medical Information (UC-4.3)}}{24}{table.caption.25}%
+\contentsline {table}{\numberline {2.20}{\ignorespaces Use Case Table: Generate and Print Medical Report (UC-4.4)}}{25}{table.caption.26}%
+\contentsline {table}{\numberline {2.21}{\ignorespaces Use Case Table: Admit Applicant (UC-4.5)}}{25}{table.caption.27}%
+\contentsline {table}{\numberline {2.22}{\ignorespaces Use Case Table: Search Applicant (UC-5.1)}}{27}{table.caption.29}%
+\contentsline {table}{\numberline {2.23}{\ignorespaces Use Case Table: Show Applicant Profile (UC-5.2)}}{28}{table.caption.30}%
+\contentsline {table}{\numberline {2.24}{\ignorespaces Use Case Table: Receive Documents (UC-5.3)}}{28}{table.caption.31}%
+\contentsline {table}{\numberline {2.25}{\ignorespaces Use Case Table: Admit Applicant (UC-5.4)}}{29}{table.caption.32}%
+\contentsline {table}{\numberline {2.26}{\ignorespaces Use Case Table: View All Applicant (UC-5.5)}}{30}{table.caption.33}%
+\contentsline {table}{\numberline {2.27}{\ignorespaces Use Case Table: View Waited Applicant (UC-5.6)}}{31}{table.caption.34}%
+\contentsline {table}{\numberline {2.28}{\ignorespaces Use Case Table: View Pending Document Applicant (UC-5.10)}}{32}{table.caption.35}%
+\contentsline {table}{\numberline {2.29}{\ignorespaces Use Case Table: Export Applicant List (UC-5.8)}}{32}{table.caption.36}%
+\contentsline {table}{\numberline {2.30}{\ignorespaces Use Case Table: Create Account (UC-6.1)}}{34}{table.caption.38}%
+\contentsline {table}{\numberline {2.31}{\ignorespaces Use Case Table: Update Profile (UC-6.2)}}{35}{table.caption.39}%
+\contentsline {table}{\numberline {2.32}{\ignorespaces Use Case Table: Fill-up Application Form (UC-6.3)}}{35}{table.caption.40}%
+\contentsline {table}{\numberline {2.33}{\ignorespaces Use Case Table: Generate Application Form (UC-6.4)}}{36}{table.caption.41}%
+\contentsline {table}{\numberline {2.34}{\ignorespaces Use Case Table: Download Application Form (UC-6.5)}}{37}{table.caption.42}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of Testing Results for JUST-DAPM-PGC}}{84}{table.5.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Testing Results for JUST-DAPM-PGC}}{65}{table.caption.74}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
