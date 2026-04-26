@@ -1,0 +1,307 @@
+\chapter{Background and Related Technologies}
+
+\section{Overview of the Chapter}
+
+The process of enrollment in many public establishments, particularly those conducting admissions after GST (General, Science, and Technology), is highly sensitive, requiring a lot of data processing activities. Historically, the manual handling of these activities has been done in highly unstructured and inefficiently designed digitally assisted manual systems.
+
+In this chapter, it is intended to describe the operation of the current admission management system, including its shortcomings and the technology environment used in the development of the current online admission system.
+
+\section{Traditional Admission Management Approaches}
+
+The traditional methods of admissions involve manual or semi-computerized procedures. This includes:
+
+\begin{itemize}
+    \item Manual forms for students’ admission
+    \item Document submission via paper
+    \item Use of spreadsheets (Excel) for recording applications
+    \item Sending notifications via email
+    \item Manual validation of application status by administrative or faculty staff
+\end{itemize}
+
+{Problems Associated with Traditional Methods}
+
+\begin{itemize}
+    \item Possibility of errors during manual data entry
+    \item Non-availability of centralized database management
+    \item Inability to track application status
+    \item Lack of any system for validating documents
+    \item Tedious process of verifying documents
+\end{itemize}
+
+All of these shortcomings make the system inefficient and incapable of handling admissions such as Post-GST admissions.
+
+\section{Existing Digital Solutions for Admission Management}
+
+A number of universities have come up with half-baked solutions which provide applicants with the option to register online and fill out their details. But all such digital solutions lack the appropriate software architecture.
+
+
+
+\subsection*{Common Features of These Systems}
+
+\begin{itemize}
+    \item Tightly coupled or monolithic frontend and backend codes
+    \item Not having strict RBAC implementation
+    \item No efficient file upload feature (especially for circulars or any sort of notices)
+    \item Lack of proper data validation
+    \item Inefficient database architecture
+    \item Complete reliance on administrative authorities to keep a check on things
+\end{itemize}
+
+\subsection{Flaws in Existing Digital Systems}
+
+Despite being digitized systems, these solutions carry with them certain limitations that include:
+
+\begin{itemize}
+    \item Not Having Proper Software Architecture: Due to the lack of proper architecture in these systems, frontend and backend are tightly coupled together.
+    \item Weak Data Validation Feature: It allows users to submit invalid data.
+    \item No Efficient File Upload Management System: No provision for file uploads (e.g., circulars, notices, schedules).
+    \item Administrative Authority in Manual Mode: All the data is accessible to faculty and dean in the absence of any RBAC policy.
+    \item No Implementation of RBAC: Any authorized individual can perform actions freely.
+    \item Not Being an Audit System: Nothing is logged while making changes to data entries.
+\end{itemize}
+
+\section{Role-Based Access Control in Management Systems}
+
+Role-Based Access Control (RBAC) plays an important role as a security component in current web applications. This component allows users to have access to functionalities based on the role assigned.
+
+\subsection*{Roles in Current Admission System}
+
+\begin{itemize}
+    \item Admin (system administration and configuration)
+    \item Admissions Committee
+    \item Faculty / Dean (approval rights limited)
+    \item Student (application process and follow-up)
+\end{itemize}
+
+\subsection*{Advantages of RBAC}
+
+\begin{itemize}
+    \item Access control
+    \item Data Security
+    \item Prevention of data tampering
+    \item Accountability of the system
+\end{itemize}
+
+The current system does not contain this component at all or it has been wrongly implemented.
+
+\section{The Strong Backend Design of Modern Systems}
+
+Modern systems should have a strong backend architecture so that it will scale and be maintainable.
+
+\subsection*{Characteristics of the Backend Architecture}
+
+\begin{itemize}
+    \item Frontend vs. backend separation
+    \item Design of RESTful API
+    \item Logic segregation into services
+    \item Database administration centrally
+    \item Authentication and validation through middleware
+\end{itemize}
+
+The improvement that your system brings is:
+
+\begin{itemize}
+    \item Backend API with Node.js + Express.js
+    \item Use of Prisma ORM for database
+    \item PostgreSQL database engine
+    \item Separate frontend from backend (with Next.js)
+\end{itemize}
+
+\section{Current Web Technologies Employed}
+
+Modern technologies employed for the creation of the proposed web app include:
+
+\subsection*{Front-end}
+
+\begin{itemize}
+    \item Next.js (framework based on React)
+    \item TypeScript (improves safety and maintainability)
+    \item Tailwind CSS (CSS utility classes)
+    \item ShadCN UI (modern UI components)
+\end{itemize}
+
+\subsection*{Back-end}
+
+\begin{itemize}
+    \item Node.js (runtime environment)
+    \item Express.js (API framework)
+    \item Prisma (ORM for managing databases and queries)
+    \item Postman (for API testing and debugging)
+\end{itemize}
+
+\subsection*{Advantages of This Tech Stack}
+
+\begin{itemize}
+    \item Faster development process
+    \item Scalable architecture
+    \item Improved type safety (TypeScript)
+    \item High-quality UI/UX design
+    \item Effective communication between APIs
+\end{itemize}
+
+\section{Comparative Analysis: Existing System vs Proposed System}
+
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+{Feature} & {Existing System} & {Proposed System} \\
+\hline
+Architecture & Frontend \& backend mixed & Fully separated (Next.js + Node.js API) \\
+\hline
+Data Validation & Weak or missing & Strong validation using backend rules \\
+\hline
+File Upload System & Not available & Available (notices, documents, schedules) \\
+\hline
+Role-Based Access & Poor or uncontrolled & Proper RBAC implementation \\
+\hline
+Data Management & Excel/manual tracking & Centralized database (Prisma ORM) \\
+\hline
+Security & Low & High (structured API + validation) \\
+\hline
+Maintainability & Difficult & Easy due to modular structure \\
+\hline
+Scalability & Limited & High scalability using modern stack \\
+\hline
+Notice System & Manual or external & Built-in dynamic notice system \\
+\hline
+\end{tabular}
+
+\section{System Features: Admin Management}
+
+\subsection{Description and Priority}
+The Admin module has the highest priority and controls the entire system. The admin uploads applicant data (Excel file), manages users, controls admission deadlines, and monitors all activities.
+
+\subsection{Functional Requirements}
+
+\noindent Authentication:
+Facilitates the login process for users via their username and password. This feature guarantees secure login and prevents unauthorized usage of the system.
+\begin{itemize}
+    \item Input: Username and password
+    \item Output: Secure login access
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent Upload Applicant Data:
+Facilitates the uploading of applicant data into the system via Excel sheets. The system automatically generates accounts for all applicants after the data importing process is complete.
+\begin{itemize}
+    \item Input: Excel file containing applicant information
+    \item Output: System generates applicant accounts
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent Manage Users:
+Facilitates the management of user accounts by allowing administrators to view, update, and delete accounts as needed. This fosters effective user control and comprehensive management of the system environment.
+\begin{itemize}
+    \item View, update, and delete users
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent Update Applicant Information:
+Facilitates the modification of applicant data whenever changes are required, ensuring that all stored information remains accurate and up-to-date.
+\begin{itemize}
+    \item Modify applicant data if required
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent Control Admission:
+Facilitates the opening and closing of the admission process for candidates. This assists in controlling the application timeline and managing system availability.
+\begin{itemize}
+    \item Open or close admission system
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent View Reports:
+Generates detailed reports regarding the admission process and seat availability. This enables the administrator to monitor progress and maintain oversight of the entire system.
+\begin{itemize}
+    \item Monitor admission progress and seat status
+\end{itemize}
+
+\section{System Features: Dean Office}
+
+\subsection{Description}
+The Dean Office verifies applicant information and approves or rejects applications based on eligibility criteria.
+
+\subsection{Functional Requirements}
+
+\begin{itemize}
+    \item Search applicant using ID
+    \item View applicant profile
+    \item Verify documents
+    \item Approve or reject applicant
+    \item View applicant lists (all, pending, approved)
+\end{itemize}
+
+\section{System Features: Hall Office}
+
+\subsection{Description}
+The Hall Office Module is in charge of handling financial and accommodation clearances of the applicants. It checks the validity of the applicants' payments using their bank statements and makes sure that all necessary payments are made correctly. The module also takes care of accommodation clearances of qualified students.
+
+\subsection{Functional Requirements}
+
+\begin{itemize}
+    \item Search applicant
+    \item View profile
+    \item Verify bank receipt
+    \item Approve applicant
+\end{itemize}
+
+\section{System Features: Medical Office}
+
+\subsection{Description}
+Task of conducting medical evaluations for the applicants falls to the Medical Office module.
+Medical data are collected, and required physical examinations are performed.
+On completion of the procedure, medical report cards are produced for each applicant.
+This guarantees selection of medically sound applicants.
+
+\subsection{Functional Requirements}
+
+
+\begin{itemize}
+    \item Search applicant
+    \item Insert medical data
+    \item Generate report
+    \item Approve applicant
+\end{itemize}
+
+\section{System Features: Registrar Office}
+
+\subsection{Description}
+The function of the Registrar Office module lies in granting final approval to applicants admitted. 
+It checks all documents submitted by the applicant and ensures that all previous stages of approvals are done. 
+Also, it keeps the official record of the student.
+
+\subsection{Functional Requirements}
+
+\begin{itemize}
+    \item Search applicant
+    \item Receive documents
+    \item Final approval
+    \item Generate reports
+\end{itemize}
+
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance}
+The system should be able to handle many users and queries simultaneously, which would enable quick responses during the admission processes. It would be required to optimize queries to the database and improve server performance for ensuring seamless system operation.
+
+\subsection{Security}
+The system must protect information from any external threats by incorporating proper authentication mechanisms and role-based access control methods. Information encryption and other security protocols are necessary for achieving security objectives by keeping user information strictly confidential.
+
+\subsection{Scalability}
+The system must be scalable enough to support more users in the future, ensuring that the system can be scaled up easily according to its capabilities. The flexibility of designing and allocating resources is critical for facilitating future usability and stability of the system.
+
+\subsection{Maintainability}
+A good code structure is needed for facilitating modifications and debugging of the system. Documentation plays an important role in supporting maintainability goals by enabling developers to perform necessary changes quickly without raising expenses. 
+
+\subsection{Usability}
+A user-friendly interface must be made available to all users and must ensure that there is no confusion in using the system as everything will be done in an efficient manner. Tasks must be performed by users easily and with clarity.
+
+\subsection{Reliability}
+The operation of the system must never fail, and availability must be assured at all times. The correct handling of errors must be ensured through the use of backups.
+
+\subsection{Availability}
+The system must always be available to the user. Proper management of server uptime and monitoring processes will help ensure the availability of the system. Load balancing and failover capabilities can be deployed to guarantee constant availability of the system.
+
+\subsection{Flexibility}
+The system must be flexible enough to adjust to any changes in the policies, procedures, or even the rules of admission. The system should be capable of updating itself based on the admission process without undergoing extensive development activities. Flexibility is important for ensuring that the system retains its relevance.
+

@@ -36,6 +36,17 @@
 \usepackage{enumitem}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\bfseries\huge\centering} 
+  {\vspace{3in}Chapter \thechapter}
+  {20pt}
+  {\Huge} 
+  [\aftergroup\clearpage] 
+
+
+
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
@@ -88,7 +99,7 @@
 \input{chapters/chapter1/motivation}
 \input{chapters/chapter1/objectives}
 \input{chapters/chapter1/contributor}
-
+\include{chapters/chapter7/ch7_main}
 % \include{chapters/chapter2/ch2_main}
 \include{chapters/chapter3/ch3_main}
 \include{chapters/chapter4/ch4_main}
